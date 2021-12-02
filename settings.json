@@ -1,0 +1,320 @@
+{
+	"terminal.integrated.fontFamily": "'SourceCodePro+Powerline+Awesome Regular', 'D2Coding', 'Inconsolata-g for Powerline'",
+	// "editor.fontFamily": "'Hack', 'D2Coding', 'SourceCodePro+Powerline+Awesome Regular', 'D2Coding', Menlo, Monaco, 'Courier New', monospace, FiraCode-Retina",
+	"terminal.integrated.fontSize": 13,
+	// "terminal.integrated.shell.osx": "/bin/zsh",
+	"terminal.integrated.defaultProfile.osx": "fish",
+	"editor.insertSpaces": true,
+	"git.autofetch": true,
+	"python.terminal.activateEnvironment": false,
+	"[html]": {
+		"editor.defaultFormatter": "vscode.html-language-features"
+	},
+	"workbench.iconTheme": "file-icons",
+	"[json]": {
+		"editor.defaultFormatter": "vscode.json-language-features"
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"javascript.format.enable": false,
+	"git.enableSmartCommit": true,
+	"dart.debugExternalLibraries": false,
+	"dart.debugSdkLibraries": false,
+	"editor.fontSize": 14.5,
+	// "editor.fontFamily": "Operator Mono, Fira Code iScript, Menlo, Monaco, 'Courier New', monospace",
+	// "editor.fontFamily": "FiraCode-Retina, monospace",
+	"editor.fontFamily": "FiraCode-Retina, monospace",
+	"editor.fontLigatures": true,
+	"editor.accessibilitySupport": "off",
+	// "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'zero', 'onum'",
+	"editor.tokenColorCustomizations": {
+		"textMateRules": [
+			{
+				"scope": [
+					//following will be in italic
+					"comment",
+					"entity.name.type.class", //class names
+					"constant", //String, Number, Boolean…, this, super
+					"storage.modifier", //static keyword
+					"storage.type.class.js", //class keyword
+					"keyword" //import, export, return…
+				],
+				"settings": {
+					"fontStyle": "italic"
+				}
+			},
+			{
+				"scope": [
+					//following will be excluded from italics (VSCode has some defaults for italics)
+
+					"invalid",
+					"keyword.operator",
+					"constant.numeric.css",
+					"keyword.other.unit.px.css",
+					"constant.numeric.decimal.js",
+					"constant.numeric.json"
+				],
+				"settings": {
+					"fontStyle": ""
+				}
+			}
+		]
+	},
+	"[jsonc]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	// Causes the debug view to automatically appear when a breakpoint is hit. This
+	// setting is global and not configurable per-language.
+	"debug.openDebug": "openOnDebugBreak",
+	"dart.previewFlutterUiGuidesCustomTracking": true,
+	"[dart]": {
+		// Automatically format code on save and during typing of certain characters
+		// (like `;` and `}`).
+		"editor.formatOnSave": true,
+		"editor.formatOnType": true,
+
+		// Draw a guide line at 80 characters, where Dart's formatting will wrap code.
+		"editor.rulers": [80],
+
+		// Disables built-in highlighting of words that match your selection. Without
+		// this, all instances of the selected text will be highlighted, interfering
+		// with Dart's ability to highlight only exact references to the selected variable.
+		"editor.selectionHighlight": false,
+
+		// By default, VS Code prevents code completion from popping open when in
+		// "snippet mode" (editing placeholders in inserted code). Setting this option
+		// to `false` stops that and allows completion to open as normal, as if you
+		// weren't in a snippet placeholder.
+		"editor.suggest.snippetsPreventQuickSuggestions": false,
+
+		// By default, VS Code will pre-select the most recently used item from code
+		// completion. This is usually not the most relevant item.
+		//
+		// "first" will always select top item
+		// "recentlyUsedByPrefix" will filter the recently used items based on the
+		//     text immediately preceding where completion was invoked.
+		"editor.suggestSelection": "first",
+
+		// Allows pressing <TAB> to complete snippets such as `for` even when the
+		// completion list is not visible.
+		"editor.tabCompletion": "onlySnippets",
+
+		// By default, VS Code will populate code completion with words found in the
+		// current file when a language service does not provide its own completions.
+		// This results in code completion suggesting words when editing comments and
+		// strings. This setting will prevent that.
+		"editor.wordBasedSuggestions": false
+	},
+	"githubIssues.queries": [
+		{
+			"label": "My Issues",
+			"query": "default"
+		},
+		{
+			"label": "Created Issues",
+			"query": "author:${user} state:open repo:${owner}/${repository} sort:created-desc"
+		}
+	],
+	"workbench.editorAssociations": {
+		"*.ipynb": "jupyter-notebook"
+	},
+	"dart.previewFlutterUiGuides": true,
+	"files.autoSave": "afterDelay",
+	"githubPullRequests.queries": [
+		{
+			"label": "Waiting For My Review",
+			"query": "is:open review-requested:${user}"
+		},
+		{
+			"label": "Assigned To Me",
+			"query": "is:open assignee:${user}"
+		},
+		{
+			"label": "Created By Me",
+			"query": "is:open author:${user}"
+		}
+	],
+	"todo-tree.tree.showScanModeButton": false,
+	"css.validate": false,
+	"dart.sdkPath": "/Users/john/sdk/flutter/bin/dart",
+	"debug.allowBreakpointsEverywhere": true,
+	"todo-tree.general.tags": [
+		"BUG",
+		"HACK",
+		"FIXME",
+		"TODO",
+		"XXX",
+		"[ ]",
+		"[x]"
+	],
+	"todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+	"jupyter.alwaysTrustNotebooks": true,
+	"python.languageServer": "Pylance",
+	"git.ignoreRebaseWarning": true,
+	"githubPullRequests.fileListLayout": "tree",
+	"git.confirmSync": false,
+	"codestream.email": "jacegem@gmail.com",
+	"editor.largeFileOptimizations": false,
+	"python.autoComplete.addBrackets": true,
+	"tabnine.experimentalAutoImports": true,
+	"python.analysis.completeFunctionParens": true,
+	"hediet.vscode-drawio.local-storage": "eyIuZHJhd2lvLWNvbmZpZyI6IntcImxhbmd1YWdlXCI6XCJcIixcImN1c3RvbUZvbnRzXCI6W10sXCJsaWJyYXJpZXNcIjpcImdlbmVyYWxcIixcImN1c3RvbUxpYnJhcmllc1wiOltcIkwuc2NyYXRjaHBhZFwiXSxcInBsdWdpbnNcIjpbXSxcInJlY2VudENvbG9yc1wiOltdLFwiZm9ybWF0V2lkdGhcIjpcIjI0MFwiLFwiY3JlYXRlVGFyZ2V0XCI6ZmFsc2UsXCJwYWdlRm9ybWF0XCI6e1wieFwiOjAsXCJ5XCI6MCxcIndpZHRoXCI6ODI3LFwiaGVpZ2h0XCI6MTE2OX0sXCJzZWFyY2hcIjp0cnVlLFwic2hvd1N0YXJ0U2NyZWVuXCI6dHJ1ZSxcImdyaWRDb2xvclwiOlwiI2QwZDBkMFwiLFwiZGFya0dyaWRDb2xvclwiOlwiIzZlNmU2ZVwiLFwiYXV0b3NhdmVcIjp0cnVlLFwicmVzaXplSW1hZ2VzXCI6bnVsbCxcIm9wZW5Db3VudGVyXCI6MCxcInZlcnNpb25cIjoxOCxcInVuaXRcIjoxLFwiaXNSdWxlck9uXCI6ZmFsc2UsXCJ1aVwiOlwiXCJ9In0=",
+	"notebook.cellToolbarLocation": {
+		"default": "right",
+		"jupyter-notebook": "left"
+	},
+	"editor.inlineSuggest.enabled": true,
+	"github.copilot.enable": {
+		"*": true,
+		"yaml": true,
+		"plaintext": false,
+		"markdown": true
+	},
+	"[svelte]": {
+		"editor.defaultFormatter": "svelte.svelte-vscode"
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "vscode.typescript-language-features"
+	},
+	"files.exclude": {
+		"**/__pycache__": true
+	},
+	"dart.openDevTools": "flutter",
+	"editor.formatOnSave": true,
+	"editor.formatOnType": true,
+	"calva.prettyPrintingOptions": {
+		"enabled": true,
+		"width": 120,
+		"maxLength": 50,
+		"printEngine": "pprint"
+	},
+	"python.analysis.diagnosticMode": "workspace",
+	"workbench.tree.indent": 12,
+	"editor.tabSize": 2,
+	"prettier.configPath": "~/.prettierrc",
+	"workbench.colorTheme": "Ayu Mirage Bordered",
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	// https://marketplace.visualstudio.com/items?itemName=vscodevim.vim
+	"vim.easymotion": true,
+	"vim.incsearch": true,
+	"vim.useSystemClipboard": true,
+	// y로 복사하면 복사한 부분이 잠시 깜빡함.
+	"vim.highlightedyank.enable": true,
+	"vim.highlightedyank.duration": 1000,
+	"vim.useCtrlKeys": true,
+	"vim.hlsearch": true,
+	"vim.leader": "<space>",
+	"vim.handleKeys": {
+		"<C-a>": false,
+		"<C-f>": false
+	},
+	"vim.insertModeKeyBindings": [
+		{
+			"before": ["ㅓ", "ㅓ"],
+			"after": ["<Esc>"]
+		}
+	],
+	"vim.insertModeKeyBindingsNonRecursive": [
+		{
+			"before": ["j", "j"],
+			"after": ["<Esc>"]
+		}
+	],
+	"vim.visualModeKeyBindingsNonRecursive": [
+		{
+			"before": [">"],
+			"commands": ["editor.action.indentLines"]
+		},
+		{
+			"before": ["<"],
+			"commands": ["editor.action.outdentLines"]
+		},
+		{
+			"before": ["i"], // up
+			"after": ["k"]
+		},
+		{
+			"before": ["k"], // down
+			"after": ["j"]
+		},
+		{
+			"before": ["j"], // left
+			"after": ["h"]
+		}
+	],
+	"vim.normalModeKeyBindingsNonRecursive": [
+		{
+			"before": ["I"], // insert
+			"after": ["i"]
+		},
+		{
+			"before": ["o"], // insert
+			"after": ["i"]
+		},
+		{
+			"before": ["O"], // insert new line
+			"after": ["o"]
+		},
+		{
+			"before": ["a"], // insert beginning cursor
+			"after": ["I"]
+		},
+		{
+			"before": ["i"], // up
+			"after": ["k"]
+		},
+		{
+			"before": ["k"], // down
+			"after": ["j"]
+		},
+		{
+			"before": ["ㅏ"], // down
+			"after": ["j"]
+		},
+		{
+			"before": ["j"], // left
+			"after": ["h"]
+		},
+		{
+			"before": [","], // page half down
+			"after": ["<C-d>"]
+		},
+		{
+			"before": ["m"], // page half up
+			"after": ["<C-u>"]
+		},
+		{
+			"before": ["<"], // page down
+			"after": ["<C-f>"]
+		},
+		{
+			"before": ["M"], // page up
+			"after": ["<C-b>"]
+		},
+		{
+			"before": ["h"], // beginning of line
+			"after": ["^"]
+		},
+		{
+			"before": [";"], // end of line
+			"after": ["$"]
+		},
+		{
+			"before": ["<C-w>", "j"], // left window
+			"after": ["<C-w>", "h"]
+		},
+		{
+			"before": ["<S-j>"], // left window
+			"after": ["<C-w>", "h"]
+		},
+		{
+			"before": ["<S-l>"], // right window
+			"after": ["<C-w>", "l"]
+		},
+		{
+			"before": ["<TAB>"], // next window
+			"after": ["<C-w>", "w"]
+		}
+	]
+}
