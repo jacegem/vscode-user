@@ -11,6 +11,18 @@
 		"command": "-renameFile",
 		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
 	},
+
+	// {
+	// 	"key": "i",
+	// 	"command": "explorerCursorUp",
+	// 	"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+	// },
+	// {
+	// 	"key": "k",
+	// 	"command": "cursorDown",
+	// 	"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+	// },
+
 	{
 		"key": "cmd+d",
 		"command": "dictionary.google.translateSelected",
@@ -32,6 +44,7 @@
 		"key": "ctrl+shift+-",
 		"command": "-workbench.action.navigateForward"
 	},
+	// git
 	{
 		"key": "cmd+k",
 		"command": "git.commitAll"
@@ -40,6 +53,7 @@
 		"key": "cmd+shift+k",
 		"command": "git.pushTo"
 	},
+	// terminal
 	{
 		"key": "shift+cmd+left",
 		"command": "workbench.action.terminal.focusPreviousPane",
@@ -70,6 +84,7 @@
 		"command": "workbench.action.terminal.focusPrevious",
 		"when": "terminalFocus"
 	},
+	// editor
 	{
 		"key": "shift+space",
 		"command": "editor.action.triggerSuggest",
@@ -80,18 +95,13 @@
 		"command": "-editor.action.triggerSuggest",
 		"when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
 	},
-	{
-		"key": "cmd+shift+[",
-		"command": "workbench.files.action.openPreviousWorkingFile"
-	},
-	{
-		"key": "cmd+shift+]",
-		"command": "workbench.files.action.openNextWorkingFile"
-	},
+	// workbench
+
 	{
 		"key": "cmd+w",
 		"command": "workbench.files.action.closeFile"
 	},
+	// calva
 	{
 		"key": "shift+tab",
 		"command": "calva-fmt.formatCurrentForm",
@@ -101,7 +111,13 @@
 		"key": "tab",
 		"command": "-calva-fmt.formatCurrentForm",
 		"when": "calva:keybindingsEnabled && editorTextFocus && !editorReadOnly && !hasOtherSuggestions && !inSnippetMode && !suggestWidgetVisible && editorLangId == 'clojure'"
+	},
+	{
+		"key": "shift+;",
+		"command": "vim.showQuickpickCmdLine",
+		"when": "editorTextFocus && vim.mode != 'Insert'"
 	}
+
 	// {
 	//   "key": "enter",
 	//   "command": "explorer.openToSide",
@@ -118,3 +134,12 @@
 	//   "when": "viewContainer.workbench.view.explorer.enabled"
 	// }
 ]
+
+// {
+// 	"key": "cmd+shift+[",
+// 	"command": "workbench.files.action.openPreviousWorkingFile"
+// },
+// {
+// 	"key": "cmd+shift+]",
+// 	"command": "workbench.files.action.openNextWorkingFile"
+// },

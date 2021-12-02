@@ -81,7 +81,7 @@
 			"query": "is:open author:${user}"
 		}
 	],
-	"python.terminal.activateEnvironment": false,
+
 	"[html]": {
 		"editor.defaultFormatter": "vscode.html-language-features"
 	},
@@ -94,30 +94,26 @@
 	},
 	"javascript.format.enable": false,
 
-	"dart.debugExternalLibraries": false,
-	"dart.debugSdkLibraries": false,
-
 	"[jsonc]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
 	// Causes the debug view to automatically appear when a breakpoint is hit. This
 	// setting is global and not configurable per-language.
 	"debug.openDebug": "openOnDebugBreak",
+	"dart.debugExternalLibraries": false,
+	"dart.debugSdkLibraries": false,
 	"dart.previewFlutterUiGuidesCustomTracking": true,
 	"[dart]": {
 		// Automatically format code on save and during typing of certain characters
 		// (like `;` and `}`).
 		"editor.formatOnSave": true,
 		"editor.formatOnType": true,
-
 		// Draw a guide line at 80 characters, where Dart's formatting will wrap code.
 		"editor.rulers": [80],
-
 		// Disables built-in highlighting of words that match your selection. Without
 		// this, all instances of the selected text will be highlighted, interfering
 		// with Dart's ability to highlight only exact references to the selected variable.
 		"editor.selectionHighlight": false,
-
 		// By default, VS Code prevents code completion from popping open when in
 		// "snippet mode" (editing placeholders in inserted code). Setting this option
 		// to `false` stops that and allows completion to open as normal, as if you
@@ -151,7 +147,7 @@
 
 	"todo-tree.tree.showScanModeButton": false,
 	"css.validate": false,
-	"dart.sdkPath": "/Users/john/sdk/flutter/bin/dart",
+	"dart.sdkPath": "~/sdk/flutter/bin/dart",
 	"debug.allowBreakpointsEverywhere": true,
 	"todo-tree.general.tags": [
 		"BUG",
@@ -163,13 +159,12 @@
 		"[x]"
 	],
 	"todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+	"tabnine.experimentalAutoImports": true,
+	"codestream.email": "jacegem@gmail.com",
 	"jupyter.alwaysTrustNotebooks": true,
 	"python.languageServer": "Pylance",
-
-	"codestream.email": "jacegem@gmail.com",
-
+	"python.terminal.activateEnvironment": false,
 	"python.autoComplete.addBrackets": true,
-	"tabnine.experimentalAutoImports": true,
 	"python.analysis.completeFunctionParens": true,
 	"hediet.vscode-drawio.local-storage": "eyIuZHJhd2lvLWNvbmZpZyI6IntcImxhbmd1YWdlXCI6XCJcIixcImN1c3RvbUZvbnRzXCI6W10sXCJsaWJyYXJpZXNcIjpcImdlbmVyYWxcIixcImN1c3RvbUxpYnJhcmllc1wiOltcIkwuc2NyYXRjaHBhZFwiXSxcInBsdWdpbnNcIjpbXSxcInJlY2VudENvbG9yc1wiOltdLFwiZm9ybWF0V2lkdGhcIjpcIjI0MFwiLFwiY3JlYXRlVGFyZ2V0XCI6ZmFsc2UsXCJwYWdlRm9ybWF0XCI6e1wieFwiOjAsXCJ5XCI6MCxcIndpZHRoXCI6ODI3LFwiaGVpZ2h0XCI6MTE2OX0sXCJzZWFyY2hcIjp0cnVlLFwic2hvd1N0YXJ0U2NyZWVuXCI6dHJ1ZSxcImdyaWRDb2xvclwiOlwiI2QwZDBkMFwiLFwiZGFya0dyaWRDb2xvclwiOlwiIzZlNmU2ZVwiLFwiYXV0b3NhdmVcIjp0cnVlLFwicmVzaXplSW1hZ2VzXCI6bnVsbCxcIm9wZW5Db3VudGVyXCI6MCxcInZlcnNpb25cIjoxOCxcInVuaXRcIjoxLFwiaXNSdWxlck9uXCI6ZmFsc2UsXCJ1aVwiOlwiXCJ9In0=",
 	"notebook.cellToolbarLocation": {
@@ -270,6 +265,12 @@
 		{
 			"before": [";"], // end of line
 			"after": ["$"]
+		}
+	],
+	"vim.normalModeKeyBindings": [
+		{
+			"before": ["<leader>", "a"],
+			"commands": ["workbench.view.explorer"]
 		}
 	],
 	"vim.normalModeKeyBindingsNonRecursive": [
