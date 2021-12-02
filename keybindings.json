@@ -37,7 +37,7 @@
 		"command": "git.commitAll"
 	},
 	{
-		"key": "ctrl+cmd+p",
+		"key": "cmd+shift+k",
 		"command": "git.pushTo"
 	},
 	{
