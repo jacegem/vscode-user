@@ -346,5 +346,8 @@
 		"editor.autoClosingBrackets": "always",
 		"editor.autoClosingOvertype": "always",
 		"editor.formatOnPaste": true
+	},
+	"[markdown]": {
+		"editor.defaultFormatter": "josa.markdown-table-formatter"
 	}
 }

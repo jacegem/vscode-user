@@ -1,28 +1,120 @@
 // Place your key bindings in this file to override the defaultsauto[]
 [
-  {
-    "key": "r",
-    "command": "renameFile",
-    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
-  },
-  {
-    "key": "enter",
-    "command": "-renameFile",
-    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
-  },
-  // {
-  //   "key": "enter",
-  //   "command": "explorer.openToSide",
-  //   "when": "explorerViewletFocus && explorerViewletVisible && !inputFocus"
-  // },
-  // {
-  //   "key": "shift+cmd+r",
-  //   "command": "workbench.view.explorer",
-  //   "when": "viewContainer.workbench.view.explorer.enabled"
-  // },
-  // {
-  //   "key": "shift+cmd+e",
-  //   "command": "-workbench.view.explorer",
-  //   "when": "viewContainer.workbench.view.explorer.enabled"
-  // }
+	// explorer
+	{
+		"key": "r",
+		"command": "renameFile",
+		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+	},
+	{
+		"key": "enter",
+		"command": "-renameFile",
+		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+	},
+	{
+		"key": "cmd+d",
+		"command": "dictionary.google.translateSelected",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "cmd+[",
+		"command": "workbench.action.navigateBack"
+	},
+	{
+		"key": "ctrl+-",
+		"command": "-workbench.action.navigateBack"
+	},
+	{
+		"key": "cmd+]",
+		"command": "workbench.action.navigateForward"
+	},
+	{
+		"key": "ctrl+shift+-",
+		"command": "-workbench.action.navigateForward"
+	},
+	{
+		"key": "cmd+k",
+		"command": "git.commitAll"
+	},
+	{
+		"key": "ctrl+cmd+p",
+		"command": "git.pushTo"
+	},
+	{
+		"key": "shift+cmd+left",
+		"command": "workbench.action.terminal.focusPreviousPane",
+		"when": "terminalFocus"
+	},
+	{
+		"key": "alt+cmd+up",
+		"command": "-workbench.action.terminal.focusPreviousPane",
+		"when": "terminalFocus"
+	},
+	{
+		"key": "shift+cmd+right",
+		"command": "workbench.action.terminal.focusNextPane",
+		"when": "terminalFocus"
+	},
+	{
+		"key": "alt+cmd+right",
+		"command": "-workbench.action.terminal.focusNextPane",
+		"when": "terminalFocus"
+	},
+	{
+		"key": "cmd+k",
+		"command": "workbench.action.terminal.focusNext",
+		"when": "terminalFocus"
+	},
+	{
+		"key": "cmd+i",
+		"command": "workbench.action.terminal.focusPrevious",
+		"when": "terminalFocus"
+	},
+	{
+		"key": "shift+space",
+		"command": "editor.action.triggerSuggest",
+		"when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+	},
+	{
+		"key": "ctrl+space",
+		"command": "-editor.action.triggerSuggest",
+		"when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+	},
+	{
+		"key": "cmd+shift+[",
+		"command": "workbench.files.action.openPreviousWorkingFile"
+	},
+	{
+		"key": "cmd+shift+]",
+		"command": "workbench.files.action.openNextWorkingFile"
+	},
+	{
+		"key": "cmd+w",
+		"command": "workbench.files.action.closeFile"
+	},
+	{
+		"key": "shift+tab",
+		"command": "calva-fmt.formatCurrentForm",
+		"when": "calva:keybindingsEnabled && editorTextFocus && !editorReadOnly && !hasOtherSuggestions && !inSnippetMode && !suggestWidgetVisible && editorLangId == 'clojure'"
+	},
+	{
+		"key": "tab",
+		"command": "-calva-fmt.formatCurrentForm",
+		"when": "calva:keybindingsEnabled && editorTextFocus && !editorReadOnly && !hasOtherSuggestions && !inSnippetMode && !suggestWidgetVisible && editorLangId == 'clojure'"
+	}
+	// {
+	//   "key": "enter",
+	//   "command": "explorer.openToSide",
+	//   "when": "explorerViewletFocus && explorerViewletVisible && !inputFocus"
+	// },
+	// {
+	//   "key": "shift+cmd+r",
+	//   "command": "workbench.view.explorer",
+	//   "when": "viewContainer.workbench.view.explorer.enabled"
+	// },
+	// {
+	//   "key": "shift+cmd+e",
+	//   "command": "-workbench.view.explorer",
+	//   "when": "viewContainer.workbench.view.explorer.enabled"
+	// }
 ]

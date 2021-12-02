@@ -1,0 +1,136 @@
+{
+	/*
+	// Place your snippets for JavaScript here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	"Print to console": {
+		"prefix": "log",
+		"body": [
+			"console.log('$1');",
+			"$2"
+		],
+		"description": "Log output to console"
+	}
+*/
+	"export default": {
+		"prefix": "exd",
+		"body": [
+			"export default $1"
+		],
+		"description": "export default"
+	},
+	"export default connect()": {
+		"prefix": "edc",
+		"body": [
+			"export default connect($1)"
+		],
+		"description": "export default connect()"
+	},
+	"export { default } from '$1'": {
+		"prefix": "edf",
+		"body": [
+			"export { default } from '$1'"
+		],
+		"description": "export { default } from '$1'"
+	},
+	"export const": {
+		"prefix": "exc",
+		"body": [
+			"export const $1"
+		],
+		"description": "export const"
+	},
+	"Re-export module as": {
+		"prefix": "rex",
+		"body": [
+			"export { default as $1 } from './$1';"
+		],
+		"description": "Re-exports the ES6 module"
+	},
+	"import from destructuring": {
+		"prefix": "imd",
+		"body": [
+			"import { $2 } from '$1'"
+		],
+		"description": "import from destructuring"
+	},
+	"import PropTypes from 'prop-types';": {
+		"prefix": "imp",
+		"body": [
+			"import PropTypes from 'prop-types';"
+		],
+		"description": "import PropTypes from 'prop-types';"
+	},
+	"import from class": {
+		"prefix": "imc",
+		"body": [
+			"import $2 from '$1'"
+		],
+		"description": "import from class"
+	},
+	"import from components": {
+		"prefix": "imco",
+		"body": [
+			"import $2 from 'components/$1'"
+		],
+		"description": "import from components"
+	},
+	"import * as from": {
+		"prefix": "ima",
+		"body": [
+			"import * as $2 from '$1'"
+		],
+		"description": "import * as from"
+	},
+	"const { } = this": {
+		"prefix": "ctd",
+		"body": [
+			"const { $1 } = this;"
+		],
+		"description": "const this destructuring"
+	},
+	"const { } = this.props": {
+		"prefix": "cpd",
+		"body": [
+			"const { $1 } = this.props;"
+		],
+		"description": "const { } = this.props"
+	},
+	"const { } = ": {
+		"prefix": "cvd",
+		"body": [
+			"const { $2 } = $1;"
+		],
+		"description": "const value destructuring"
+	},
+	"const $1 = styled.div`$2`": {
+		"prefix": "csd",
+		"body": [
+			"const $1 = styled.div`$2`"
+		],
+		"description": "const $1 = styled.div`$2`´"
+	},
+	"const { $1 } = action.payload": {
+		"prefix": "cad",
+		"body": [
+			"const { $1 } = action.payload"
+		],
+		"description": "const { $1 } = action.payload"
+	},
+	"const $1 = require('$1');": {
+		"prefix": "crq",
+		"body": [
+			"const $1 = require('$1');"
+		],
+		"description": "const $1 = require('$1');"
+	},
+	"= ($1) => {$2}": {
+		"prefix": "eb",
+		"body": [
+			"= ($1) => {$2}"
+		],
+		"description": "equal bracket = ($1) => {$2}"
+	}
+}
