@@ -1,33 +1,18 @@
 {
 	"terminal.integrated.fontFamily": "'SourceCodePro+Powerline+Awesome Regular', 'D2Coding', 'Inconsolata-g for Powerline'",
-	// "editor.fontFamily": "'Hack', 'D2Coding', 'SourceCodePro+Powerline+Awesome Regular', 'D2Coding', Menlo, Monaco, 'Courier New', monospace, FiraCode-Retina",
 	"terminal.integrated.fontSize": 13,
-	// "terminal.integrated.shell.osx": "/bin/zsh",
 	"terminal.integrated.defaultProfile.osx": "fish",
 	"editor.insertSpaces": true,
-	"git.autofetch": true,
-	"python.terminal.activateEnvironment": false,
-	"[html]": {
-		"editor.defaultFormatter": "vscode.html-language-features"
-	},
-	"workbench.iconTheme": "file-icons",
-	"[json]": {
-		"editor.defaultFormatter": "vscode.json-language-features"
-	},
-	"[javascript]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"javascript.format.enable": false,
-	"git.enableSmartCommit": true,
-	"dart.debugExternalLibraries": false,
-	"dart.debugSdkLibraries": false,
 	"editor.fontSize": 14.5,
-	// "editor.fontFamily": "Operator Mono, Fira Code iScript, Menlo, Monaco, 'Courier New', monospace",
-	// "editor.fontFamily": "FiraCode-Retina, monospace",
+	// "editor.fontFamily": "'Hack', 'D2Coding', 'SourceCodePro+Powerline+Awesome Regular', 'D2Coding', Menlo, Monaco, 'Courier New', monospace, FiraCode-Retina",
 	"editor.fontFamily": "FiraCode-Retina, monospace",
 	"editor.fontLigatures": true,
 	"editor.accessibilitySupport": "off",
-	// "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'zero', 'onum'",
+	"editor.largeFileOptimizations": false,
+	"editor.inlineSuggest.enabled": true,
+	"editor.formatOnSave": true,
+	"editor.formatOnType": true,
+	"editor.tabSize": 2,
 	"editor.tokenColorCustomizations": {
 		"textMateRules": [
 			{
@@ -61,6 +46,57 @@
 			}
 		]
 	},
+	"git.autofetch": true,
+	"git.enableSmartCommit": true,
+	"git.ignoreRebaseWarning": true,
+	"git.confirmSync": false,
+	"github.copilot.enable": {
+		"*": true,
+		"yaml": true,
+		"plaintext": false,
+		"markdown": true
+	},
+	"githubPullRequests.fileListLayout": "tree",
+	"githubIssues.queries": [
+		{
+			"label": "My Issues",
+			"query": "default"
+		},
+		{
+			"label": "Created Issues",
+			"query": "author:${user} state:open repo:${owner}/${repository} sort:created-desc"
+		}
+	],
+	"githubPullRequests.queries": [
+		{
+			"label": "Waiting For My Review",
+			"query": "is:open review-requested:${user}"
+		},
+		{
+			"label": "Assigned To Me",
+			"query": "is:open assignee:${user}"
+		},
+		{
+			"label": "Created By Me",
+			"query": "is:open author:${user}"
+		}
+	],
+	"python.terminal.activateEnvironment": false,
+	"[html]": {
+		"editor.defaultFormatter": "vscode.html-language-features"
+	},
+	"workbench.iconTheme": "file-icons",
+	"[json]": {
+		"editor.defaultFormatter": "vscode.json-language-features"
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"javascript.format.enable": false,
+
+	"dart.debugExternalLibraries": false,
+	"dart.debugSdkLibraries": false,
+
 	"[jsonc]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
@@ -106,35 +142,13 @@
 		// strings. This setting will prevent that.
 		"editor.wordBasedSuggestions": false
 	},
-	"githubIssues.queries": [
-		{
-			"label": "My Issues",
-			"query": "default"
-		},
-		{
-			"label": "Created Issues",
-			"query": "author:${user} state:open repo:${owner}/${repository} sort:created-desc"
-		}
-	],
+
 	"workbench.editorAssociations": {
 		"*.ipynb": "jupyter-notebook"
 	},
 	"dart.previewFlutterUiGuides": true,
 	"files.autoSave": "afterDelay",
-	"githubPullRequests.queries": [
-		{
-			"label": "Waiting For My Review",
-			"query": "is:open review-requested:${user}"
-		},
-		{
-			"label": "Assigned To Me",
-			"query": "is:open assignee:${user}"
-		},
-		{
-			"label": "Created By Me",
-			"query": "is:open author:${user}"
-		}
-	],
+
 	"todo-tree.tree.showScanModeButton": false,
 	"css.validate": false,
 	"dart.sdkPath": "/Users/john/sdk/flutter/bin/dart",
@@ -151,11 +165,9 @@
 	"todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
 	"jupyter.alwaysTrustNotebooks": true,
 	"python.languageServer": "Pylance",
-	"git.ignoreRebaseWarning": true,
-	"githubPullRequests.fileListLayout": "tree",
-	"git.confirmSync": false,
+
 	"codestream.email": "jacegem@gmail.com",
-	"editor.largeFileOptimizations": false,
+
 	"python.autoComplete.addBrackets": true,
 	"tabnine.experimentalAutoImports": true,
 	"python.analysis.completeFunctionParens": true,
@@ -164,13 +176,7 @@
 		"default": "right",
 		"jupyter-notebook": "left"
 	},
-	"editor.inlineSuggest.enabled": true,
-	"github.copilot.enable": {
-		"*": true,
-		"yaml": true,
-		"plaintext": false,
-		"markdown": true
-	},
+
 	"[svelte]": {
 		"editor.defaultFormatter": "svelte.svelte-vscode"
 	},
@@ -181,8 +187,7 @@
 		"**/__pycache__": true
 	},
 	"dart.openDevTools": "flutter",
-	"editor.formatOnSave": true,
-	"editor.formatOnType": true,
+
 	"calva.prettyPrintingOptions": {
 		"enabled": true,
 		"width": 120,
@@ -191,8 +196,8 @@
 	},
 	"python.analysis.diagnosticMode": "workspace",
 	"workbench.tree.indent": 12,
-	"editor.tabSize": 2,
-	"prettier.configPath": "~/.prettierrc",
+
+	"prettier.configPath": "~/Library/Application Support/Code/User/.prettierrc",
 	"workbench.colorTheme": "Ayu Mirage Bordered",
 	"javascript.updateImportsOnFileMove.enabled": "always",
 	// https://marketplace.visualstudio.com/items?itemName=vscodevim.vim
@@ -241,6 +246,30 @@
 		{
 			"before": ["j"], // left
 			"after": ["h"]
+		},
+		{
+			"before": [","], // page half down
+			"after": ["<C-d>"]
+		},
+		{
+			"before": ["m"], // page half up
+			"after": ["<C-u>"]
+		},
+		{
+			"before": ["<"], // page down
+			"after": ["<C-f>"]
+		},
+		{
+			"before": ["M"], // page up
+			"after": ["<C-b>"]
+		},
+		{
+			"before": ["h"], // beginning of line
+			"after": ["^"]
+		},
+		{
+			"before": [";"], // end of line
+			"after": ["$"]
 		}
 	],
 	"vim.normalModeKeyBindingsNonRecursive": [
@@ -266,10 +295,6 @@
 		},
 		{
 			"before": ["k"], // down
-			"after": ["j"]
-		},
-		{
-			"before": ["ㅏ"], // down
 			"after": ["j"]
 		},
 		{
@@ -316,5 +341,10 @@
 			"before": ["<TAB>"], // next window
 			"after": ["<C-w>", "w"]
 		}
-	]
+	],
+	"[clojure]": {
+		"editor.autoClosingBrackets": "always",
+		"editor.autoClosingOvertype": "always",
+		"editor.formatOnPaste": true
+	}
 }
