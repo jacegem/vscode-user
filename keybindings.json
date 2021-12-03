@@ -12,17 +12,6 @@
 		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
 	},
 
-	// {
-	// 	"key": "i",
-	// 	"command": "explorerCursorUp",
-	// 	"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
-	// },
-	// {
-	// 	"key": "k",
-	// 	"command": "cursorDown",
-	// 	"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
-	// },
-
 	{
 		"key": "cmd+d",
 		"command": "dictionary.google.translateSelected",
@@ -75,6 +64,29 @@
 		"command": "list.focusDown",
 		"when": "listFocus && !inputFocus"
 	},
+	{
+		"key": "j",
+		"command": "list.collapse",
+		"when": "listFocus && !inputFocus"
+	},
+	{
+		"key": "l",
+		"command": "list.expand",
+		"when": "listFocus && !inputFocus"
+	},
+	{
+		"key": ",",
+		"command": "search.focus.nextInputBox",
+		"when": "inSearchEditor && inputBoxFocus || inputBoxFocus && searchViewletVisible"
+	},
+	// search.focus.nextInputBox, when: inSearchEditor && inputBoxFocus || inputBoxFocus && searchViewletVisible
+	{
+		"key": "m",
+		"command": "search.action.focusSearchFromResults",
+		"when": "searchViewletVisible"
+	},
+
+	// search.action.focusSearchFromResults, when: firstMatchFocus && searchViewletVisible,
 	// {
 	// 	"key": "cmd+l",
 	// 	"command": "list.focusDown",
@@ -142,6 +154,17 @@
 		"when": "editorTextFocus && vim.mode != 'Insert'"
 	}
 ]
+
+// {
+// 	"key": "i",
+// 	"command": "explorerCursorUp",
+// 	"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+// },
+// {
+// 	"key": "k",
+// 	"command": "cursorDown",
+// 	"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+// },
 
 // {
 //   "key": "cmd+f",

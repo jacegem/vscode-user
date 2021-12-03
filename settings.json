@@ -338,6 +338,10 @@
 			"commands": ["workbench.action.splitEditor"]
 		},
 		{
+			"before": ["<leader>", "z"],
+			"commands": ["workbench.action.toggleZenMode"]
+		},
+		{
 			"before": ["<leader>", "/"],
 			"commands": ["editor.action.commentLine"]
 		}
@@ -394,6 +398,10 @@
 		{
 			"before": [";"], // end of line
 			"after": ["$"]
+		},
+		{
+			"before": ["s"], // end of line
+			"after": ["b"]
 		},
 		{
 			"before": ["<C-w>", "j"], // left window
