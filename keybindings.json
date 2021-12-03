@@ -11,7 +11,6 @@
 		"command": "-renameFile",
 		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
 	},
-
 	{
 		"key": "cmd+d",
 		"command": "dictionary.google.translateSelected",
@@ -21,18 +20,18 @@
 		"key": "cmd+[",
 		"command": "workbench.action.navigateBack"
 	},
-	{
-		"key": "ctrl+-",
-		"command": "-workbench.action.navigateBack"
-	},
+	// {
+	// 	"key": "ctrl+-",
+	// 	"command": "-workbench.action.navigateBack"
+	// },
 	{
 		"key": "cmd+]",
 		"command": "workbench.action.navigateForward"
 	},
-	{
-		"key": "ctrl+shift+-",
-		"command": "-workbench.action.navigateForward"
-	},
+	// {
+	// 	"key": "ctrl+shift+-",
+	// 	"command": "-workbench.action.navigateForward"
+	// },
 	// git
 	{
 		"key": "cmd+k",
@@ -87,9 +86,19 @@
 	{
 		"key": ",",
 		"command": "workbench.scm.focus", //  "workbench.view.scm",o
-		"when": "scmRepository"
-		// "when": "scmViewlet"
+		"when": "scmRepository || isInDiffEditor"
 	},
+	{
+		"key": "i",
+		"command": "editor.action.diffReview.prev",
+		"when": "isInDiffEditor"
+	},
+	{
+		"key": "k",
+		"command": "editor.action.diffReview.next",
+		"when": "isInDiffEditor"
+	},
+	// editor.action.diffReview.prev, when: isInDiffEditor
 	{
 		"key": "cmd+l",
 		"command": "cursorBottom",
