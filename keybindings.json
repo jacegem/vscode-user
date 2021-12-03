@@ -86,6 +86,10 @@
 	// 	"when": "listFocus && !inputFocus"
 	// },
 	{
+		"key": "shift+cmd+enter",
+		"command": "workbench.action.maximizeEditor"
+	},
+	{
 		"key": "shift+cmd+left",
 		"command": "workbench.action.terminal.focusPreviousPane",
 		"when": "terminalFocus"
@@ -137,24 +141,32 @@
 		"command": "vim.showQuickpickCmdLine",
 		"when": "editorTextFocus && vim.mode != 'Insert'"
 	}
-	// {
-	//   "key": "shift+cmd+b",
-	//   "command": "workbench.action.toggleSidebarVisibility"
-	// },
-	// {
-	//   "key": "cmd+b",
-	//   "command": "-workbench.action.toggleSidebarVisibility"
-	// }
-	// {
-	//   "key": "shift+cmd+p",
-	//   "command": "workbench.action.quickOpen"
-	// },
-	// {
-	//   "key": "cmd+p",
-	//   "command": "-workbench.action.quickOpen"
-	// }
 ]
 
+// {
+//   "key": "cmd+f",
+//   "command": "workbench.action.findInFiles"
+// },
+// {
+//   "key": "shift+cmd+f",
+//   "command": "-workbench.action.findInFiles"
+// }
+// {
+//   "key": "shift+cmd+b",
+//   "command": "workbench.action.toggleSidebarVisibility"
+// },
+// {
+//   "key": "cmd+b",
+//   "command": "-workbench.action.toggleSidebarVisibility"
+// }
+// {
+//   "key": "shift+cmd+p",
+//   "command": "workbench.action.quickOpen"
+// },
+// {
+//   "key": "cmd+p",
+//   "command": "-workbench.action.quickOpen"
+// }
 // {
 // 	"key": "ctrl+space",
 // 	"command": "-editor.action.triggerSuggest",

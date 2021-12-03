@@ -276,9 +276,14 @@
 		}
 	],
 	"vim.normalModeKeyBindings": [
+		// a : action list
 		{
-			"before": ["<leader>", "a"],
+			"before": ["<leader>", "a", "e"],
 			"commands": ["workbench.view.explorer"]
+		},
+		{
+			"before": ["<leader>", "a", "f"],
+			"commands": ["workbench.action.findInFiles"]
 		},
 		{
 			"before": ["<leader>", "b"],
@@ -298,7 +303,11 @@
 		},
 		{
 			"before": ["<leader>", "f"],
-			"commands": ["workbench.action.quickFix"]
+			"commands": ["actions.find"] 
+		},
+		{
+			"before": ["<leader>", "n"],
+			"commands": ["extension.advancedNewFile"] // needs advancedNewFile extension / (opt + cmd + n)
 		},
 		{
 			"before": ["<leader>", "o"],
