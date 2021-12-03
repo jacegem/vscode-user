@@ -79,7 +79,6 @@
 		"command": "search.focus.nextInputBox",
 		"when": "inSearchEditor && inputBoxFocus || inputBoxFocus && searchViewletVisible"
 	},
-	// search.focus.nextInputBox, when: inSearchEditor && inputBoxFocus || inputBoxFocus && searchViewletVisible
 	{
 		"key": "m",
 		"command": "search.action.focusSearchFromResults",
@@ -87,16 +86,10 @@
 	},
 	{
 		"key": ",",
-		"command": "workbench.scm.focus" //  "workbench.view.scm",
+		"command": "workbench.scm.focus", //  "workbench.view.scm",o
+		"when": "scmRepository"
 		// "when": "scmViewlet"
 	},
-
-	// search.action.focusSearchFromResults, when: firstMatchFocus && searchViewletVisible,
-	// {
-	// 	"key": "cmd+l",
-	// 	"command": "list.focusDown",
-	// 	"when": "textInputFocus"
-	// },
 	{
 		"key": "cmd+l",
 		"command": "cursorBottom",
@@ -252,4 +245,10 @@
 // {
 // 	"key": "cmd+shift+]",
 // 	"command": "workbench.files.action.openNextWorkingFile"
+// },
+// search.action.focusSearchFromResults, when: firstMatchFocus && searchViewletVisible,
+// {
+// 	"key": "cmd+l",
+// 	"command": "list.focusDown",
+// 	"when": "textInputFocus"
 // },
