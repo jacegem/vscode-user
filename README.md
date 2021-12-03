@@ -2,7 +2,7 @@
 
 ### Extensions
 
-- [VIM]
+- [VIM](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
 - [file-icons]
 - [PlantUML]
 
@@ -19,3 +19,12 @@ git clone https://github.com/jacegem/vscode-user.git ~/Library/Application\ Supp
 ```
 defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 ```
+
+### VIM Surrounding
+
+yss) : (한줄 전체 괄호)
+ves) : (선택) 괄호
+
+### Shortcuts
+
+- https://demun.github.io/vscode-tutorial/shortcuts/ 

@@ -189,6 +189,11 @@
 		"maxLength": 50,
 		"printEngine": "pprint"
 	},
+	"[clojure]": {
+		"editor.autoClosingBrackets": "always",
+		"editor.autoClosingOvertype": "always",
+		"editor.formatOnPaste": true
+	},
 	"python.analysis.diagnosticMode": "workspace",
 	"workbench.tree.indent": 12,
 
@@ -199,8 +204,7 @@
 	"vim.easymotion": true,
 	"vim.incsearch": true,
 	"vim.useSystemClipboard": true,
-	// y로 복사하면 복사한 부분이 잠시 깜빡함.
-	"vim.highlightedyank.enable": true,
+	"vim.highlightedyank.enable": true, // y로 복사하면 복사한 부분이 잠시 깜빡함.
 	"vim.highlightedyank.duration": 1000,
 	"vim.useCtrlKeys": true,
 	"vim.hlsearch": true,
@@ -265,12 +269,68 @@
 		{
 			"before": [";"], // end of line
 			"after": ["$"]
+		},
+		{
+			"before": ["s"],
+			"after": ["S"]
 		}
 	],
 	"vim.normalModeKeyBindings": [
 		{
 			"before": ["<leader>", "a"],
 			"commands": ["workbench.view.explorer"]
+		},
+		{
+			"before": ["<leader>", "b"],
+			"commands": ["workbench.action.toggleSidebarVisibility"]
+		},
+		{
+			"before": ["<leader>", "c"],
+			"commands": ["workbench.action.showCommands"]
+		},
+		{
+			"before": ["<leader>", "d"],
+			"commands": ["workbench.view.debug"]
+		},
+		{
+			"before": ["<leader>", "e"],
+			"commands": ["workbench.view.explorer"]
+		},
+		{
+			"before": ["<leader>", "f"],
+			"commands": ["workbench.action.quickFix"]
+		},
+		{
+			"before": ["<leader>", "o"],
+			"commands": ["workbench.action.quickOpen"]
+		},
+		{
+			"before": ["<leader>", "."],
+			"commands": ["workbench.action.quickFix"]
+		},
+		{
+			"before": ["<leader>", "q"],
+			"commands": ["workbench.action.closeActiveEditor"]
+		},
+		{
+			"before": ["<leader>", "s"],
+			"commands": ["workbench.view.scm"]
+		},
+		{
+			"before": ["<leader>", "w", "j"],
+			"commands": ["workbench.action.moveActiveEditorGroupLeft"]
+		},
+		{
+			"before": ["<leader>", "w", "l"],
+			"commands": ["workbench.action.moveActiveEditorGroupRight"]
+		},
+		{
+			"before": ["<leader>", "w", "s"],
+			"commands": ["workbench.action.splitEditor"]
+		},
+		{
+			"before": ["<leader>", "/"],
+			"commands": ["editor.action.commentLine"]
 		}
 	],
 	"vim.normalModeKeyBindingsNonRecursive": [
@@ -342,13 +402,5 @@
 			"before": ["<TAB>"], // next window
 			"after": ["<C-w>", "w"]
 		}
-	],
-	"[clojure]": {
-		"editor.autoClosingBrackets": "always",
-		"editor.autoClosingOvertype": "always",
-		"editor.formatOnPaste": true
-	},
-	"[markdown]": {
-		"editor.defaultFormatter": "josa.markdown-table-formatter"
-	}
+	]
 }
