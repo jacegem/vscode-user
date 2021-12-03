@@ -81,7 +81,7 @@
 	{
 		"key": "m",
 		"command": "search.action.focusSearchFromResults",
-		"when": "searchViewletVisible"
+		"when": "searchViewletVisible && listFocus && !inputFocus"
 	},
 	{
 		"key": ",",
