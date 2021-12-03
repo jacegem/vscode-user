@@ -75,16 +75,16 @@
 		"command": "list.focusDown",
 		"when": "listFocus && !inputFocus"
 	},
-	{
-		"key": "cmd+l",
-		"command": "list.focusDown",
-		"when": "textInputFocus"
-	},
 	// {
 	// 	"key": "cmd+l",
-	// 	"command": "list.select",
-	// 	"when": "listFocus && !inputFocus"
+	// 	"command": "list.focusDown",
+	// 	"when": "textInputFocus"
 	// },
+	{
+		"key": "cmd+l",
+		"command": "cursorBottom",
+		"when": "textInputFocus"
+	},
 	{
 		"key": "shift+cmd+enter",
 		"command": "workbench.action.maximizeEditor"

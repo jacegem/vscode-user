@@ -303,7 +303,7 @@
 		},
 		{
 			"before": ["<leader>", "f"],
-			"commands": ["actions.find"] 
+			"commands": ["actions.find"]
 		},
 		{
 			"before": ["<leader>", "n"],

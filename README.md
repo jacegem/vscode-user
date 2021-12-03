@@ -3,8 +3,9 @@
 ### Extensions
 
 - [VIM](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
-- [file-icons]
-- [PlantUML]
+- [file-icons](https://marketplace.visualstudio.com/items?itemName=file-icons.file-icons)
+- [PlantUML](https://marketplace.visualstudio.com/items?itemName=jebbs.plantuml)
+- [advanced-new-file](https://marketplace.visualstudio.com/items?itemName=patbenatar.advanced-new-file)
 
 ### git clone
 
@@ -22,9 +23,13 @@ defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 
 ### VIM Surrounding
 
-yss) : (한줄 전체 괄호)
-ves) : (선택) 괄호
+`yss)` : (한줄 전체 괄호)
+`ves)` : (선택) 괄호
+
+### Keyboard Shortcuts debugging
+
+`Developer: Toggle Keyboard Shortcuts Troubleshooting` 실행
 
 ### Shortcuts
 
-- https://demun.github.io/vscode-tutorial/shortcuts/ 
+- https://demun.github.io/vscode-tutorial/shortcuts/
