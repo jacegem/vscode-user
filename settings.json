@@ -286,6 +286,10 @@
 			"commands": ["workbench.action.findInFiles"]
 		},
 		{
+			"before": ["<leader>", "a", "l"],
+			"commands": ["editor.action.openLink"]
+		},
+		{
 			"before": ["<leader>", "b"],
 			"commands": ["workbench.action.toggleSidebarVisibility"]
 		},
@@ -305,6 +309,7 @@
 			"before": ["<leader>", "f"],
 			"commands": ["actions.find"]
 		},
+
 		{
 			"before": ["<leader>", "n"],
 			"commands": ["extension.advancedNewFile"] // needs advancedNewFile extension / (opt + cmd + n)
@@ -325,6 +330,39 @@
 			"before": ["<leader>", "s"],
 			"commands": ["workbench.view.scm"]
 		},
+		{
+			"before": ["<leader>", "h"],
+			"commands": ["workbench.action.moveEditorToLeftGroup"]
+		},
+		{
+			"before": ["<leader>", ";"],
+			"commands": ["workbench.action.moveEditorToRightGroup"]
+		},
+		{
+			"before": ["<leader>", "m"],
+			"commands": ["workbench.action.focusPreviousGroup"]
+		},
+		{
+			"before": ["<leader>", ","],
+			"commands": ["workbench.action.focusNextGroup"]
+		},
+		{
+			"before": ["<leader>", "j"],
+			"commands": ["workbench.action.previousEditorInGroup"]
+		},
+		{
+			"before": ["<leader>", "l"],
+			"commands": ["workbench.action.nextEditorInGroup"]
+		},
+		{
+			"before": ["<leader>", "x"],
+			"commands": ["workbench.action.closeActiveEditor"]
+		},
+		// {
+		// 	"before": ["<leader>", "t"],
+		// 	"commands": ["workbench.action.quickOpenNavigateNextInEditorPicker"]
+		// },
+
 		{
 			"before": ["<leader>", "w", "j"],
 			"commands": ["workbench.action.moveActiveEditorGroupLeft"]
