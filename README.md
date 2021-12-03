@@ -33,3 +33,4 @@ defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 ### Shortcuts
 
 - https://demun.github.io/vscode-tutorial/shortcuts/
+- [VSCode Internal Commands](https://gist.github.com/skfarhat/4e88ef386c93b9dceb98121d9457edbf)

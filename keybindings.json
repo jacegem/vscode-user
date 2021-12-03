@@ -85,6 +85,11 @@
 		"command": "search.action.focusSearchFromResults",
 		"when": "searchViewletVisible"
 	},
+	{
+		"key": ",",
+		"command": "workbench.scm.focus" //  "workbench.view.scm",
+		// "when": "scmViewlet"
+	},
 
 	// search.action.focusSearchFromResults, when: firstMatchFocus && searchViewletVisible,
 	// {
