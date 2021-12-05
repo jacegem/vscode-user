@@ -35,3 +35,9 @@ defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 
 - https://demun.github.io/vscode-tutorial/shortcuts/
 - [VSCode Internal Commands](https://gist.github.com/skfarhat/4e88ef386c93b9dceb98121d9457edbf)
+
+
+## 폴더 명령
+
+- 이름변경 : r
+- 삭제, 이동, 

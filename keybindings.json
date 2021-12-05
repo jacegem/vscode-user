@@ -7,6 +7,29 @@
 		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
 	},
 	{
+		"key": "t",
+		"command": "moveFileToTrash",
+		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+	},
+	{
+		"key": "n",
+		"command": "explorer.newFile",
+		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+	},
+	{
+		"key": "f",
+		"command": "explorer.newFolder",
+		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+	},
+
+	{
+		"key": "e",
+		"command": "workbench.action.focusFirstEditorGroup",
+		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+	},
+	// workbench.action.focusFirstEditorGroup
+	// moveFileToTrash, when: explorerResourceMoveableToTrash && explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus,
+	{
 		"key": "enter",
 		"command": "-renameFile",
 		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
@@ -155,10 +178,20 @@
 		"command": "-calva-fmt.formatCurrentForm", // 자동완성과 중복되므로 명령 삭제
 		"when": "calva:keybindingsEnabled && editorTextFocus && !editorReadOnly && !hasOtherSuggestions && !inSnippetMode && !suggestWidgetVisible && editorLangId == 'clojure'"
 	},
+	// {
+	//   "key": "shift+;",
+	//   "command": "vim.showQuickpickCmdLine",
+	//   "when": "editorTextFocus && vim.mode != 'Insert'"
+	// },
 	{
-		"key": "shift+;",
-		"command": "vim.showQuickpickCmdLine",
-		"when": "editorTextFocus && vim.mode != 'Insert'"
+		"key": "shift+escape",
+		"command": "calva.clearInlineResults",
+		"when": "calva:keybindingsEnabled && editorTextFocus && !editorHasMultipleSelections && !editorHasSelection && !editorReadOnly && !hasOtherSuggestions && !parameterHintsVisible && !selectionAnchorSet && !suggestWidgetVisible && editorLangId == 'clojure'"
+	},
+	{
+		"key": "escape",
+		"command": "-calva.clearInlineResults",
+		"when": "calva:keybindingsEnabled && editorTextFocus && !editorHasMultipleSelections && !editorHasSelection && !editorReadOnly && !hasOtherSuggestions && !parameterHintsVisible && !selectionAnchorSet && !suggestWidgetVisible && editorLangId == 'clojure'"
 	}
 ]
 
