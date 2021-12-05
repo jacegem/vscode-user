@@ -280,6 +280,10 @@
 			"after": ["<leader>", "<leader>", "<leader>", "b", "d", "w"]
 		},
 		{
+			"before": ["U"],
+			"after": ["<C-r>"] // redo
+		},
+		{
 			"before": ["["],
 			"commands": ["workbench.action.navigateBack"]
 		},
@@ -372,6 +376,10 @@
 		{
 			"before": ["<leader>", "l"],
 			"commands": ["workbench.action.nextEditorInGroup"]
+		},
+		{
+			"before": ["<leader>", "m"],
+			"commands": ["editor.action.toggleMinimap"]
 		},
 		{
 			"before": ["<leader>", "x"],
@@ -474,10 +482,10 @@
 			"before": ["<S-l>"], // right window
 			"commands": ["workbench.action.nextEditorInGroup"]
 			// "after": ["<C-w>", "l"],
-		},
-		{
-			"before": ["<TAB>"], // next window
-			"after": ["<C-w>", "w"]
 		}
+		// {
+		// 	"before": ["<TAB>"], // next window
+		// 	"after": ["<C-w>", "w"]
+		// }
 	]
 }

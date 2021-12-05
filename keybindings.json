@@ -12,21 +12,46 @@
 		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
 	},
 	{
-		"key": "n",
+		"key": "d",
 		"command": "explorer.newFile",
 		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
 	},
 	{
 		"key": "f",
+		"command": "fileutils.newFile",
+		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+	},
+	{
+		"key": "g",
 		"command": "explorer.newFolder",
 		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
 	},
-
+	{
+		"key": "s",
+		"command": "fileutils.moveFile",
+		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+	},
 	{
 		"key": "e",
 		"command": "workbench.action.focusFirstEditorGroup",
 		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
 	},
+	{
+		"key": "p",
+		"command": "copyRelativeFilePath",
+		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+	},
+	{
+		"key": "c",
+		"command": "filesExplorer.copy",
+		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+	},
+	{
+		"key": "v",
+		"command": "filesExplorer.paste",
+		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+	},
+
 	// workbench.action.focusFirstEditorGroup
 	// moveFileToTrash, when: explorerResourceMoveableToTrash && explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus,
 	{
@@ -38,6 +63,12 @@
 		"key": "cmd+d",
 		"command": "dictionary.google.translateSelected",
 		"when": "editorTextFocus"
+	},
+	// workbench.action.focusNextGroup
+	{
+		"key": "tab",
+		"command": "workbench.action.focusNextGroup",
+		"when": "editorFocus && vim.active && !inDebugRepl"
 	},
 	{
 		"key": "cmd+[",
@@ -167,6 +198,7 @@
 		"command": "editor.action.triggerSuggest",
 		"when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
 	},
+
 	// calva
 	{
 		"key": "shift+tab",
@@ -192,12 +224,31 @@
 		"key": "escape",
 		"command": "-calva.clearInlineResults",
 		"when": "calva:keybindingsEnabled && editorTextFocus && !editorHasMultipleSelections && !editorHasSelection && !editorReadOnly && !hasOtherSuggestions && !parameterHintsVisible && !selectionAnchorSet && !suggestWidgetVisible && editorLangId == 'clojure'"
+	},
+	{
+		"key": "c",
+		"command": "extension.vim_cmd+c", // visual mode 인 경우 copy
+		"when": "editorFocus && vim.active && !inDebugRepl && vim.mode == 'Visual'"
+	},
+	{
+		"key": "/",
+		"command": "editor.action.commentLine", // visual mode 인 경우 copy
+		"when": "editorFocus && vim.active && !inDebugRepl && vim.mode == 'Visual'"
 	}
 ]
-
 // {
-// 	"key": "i",
-// 	"command": "explorerCursorUp",
+// 	"key": "tab",
+// 	"command": "-extension.vim_tab",
+// 	"when": "editorFocus && vim.active && !inDebugRepl && vim.mode != 'Insert'"
+// },
+// {
+// 	"key": "tab",
+// 	"command": "extension.vim_tab",
+// 	"when": "editorFocus && vim.active && !inDebugRepl && vim.mode != 'Insert' && vim.mode != 'EasyMotionInputMode'"
+// }
+// {
+// 	"key": "i": "i",,
+// 	"command": "explorerCursorUp",: "i",
 // 	"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
 // },
 // {
