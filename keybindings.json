@@ -20,19 +20,10 @@
 		"key": "cmd+[",
 		"command": "workbench.action.navigateBack"
 	},
-	// {
-	// 	"key": "ctrl+-",
-	// 	"command": "-workbench.action.navigateBack"
-	// },
 	{
 		"key": "cmd+]",
 		"command": "workbench.action.navigateForward"
 	},
-	// {
-	// 	"key": "ctrl+shift+-",
-	// 	"command": "-workbench.action.navigateForward"
-	// },
-	// git
 	{
 		"key": "cmd+k",
 		"command": "git.commitAll",
@@ -85,7 +76,7 @@
 	},
 	{
 		"key": ",",
-		"command": "workbench.scm.focus", //  "workbench.view.scm",o
+		"command": "workbench.scm.focus",
 		"when": "scmRepository || isInDiffEditor"
 	},
 	{
@@ -98,7 +89,6 @@
 		"command": "editor.action.diffReview.next",
 		"when": "isInDiffEditor"
 	},
-	// editor.action.diffReview.prev, when: isInDiffEditor
 	{
 		"key": "cmd+l",
 		"command": "cursorBottom",
@@ -261,3 +251,13 @@
 // 	"command": "list.focusDown",
 // 	"when": "textInputFocus"
 // },
+
+// {
+// 	"key": "ctrl+-",
+// 	"command": "-workbench.action.navigateBack"
+// },
+// {
+// 	"key": "ctrl+shift+-",
+// 	"command": "-workbench.action.navigateForward"
+// },
+// git

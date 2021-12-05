@@ -6,6 +6,7 @@
 - [file-icons](https://marketplace.visualstudio.com/items?itemName=file-icons.file-icons)
 - [PlantUML](https://marketplace.visualstudio.com/items?itemName=jebbs.plantuml)
 - [advanced-new-file](https://marketplace.visualstudio.com/items?itemName=patbenatar.advanced-new-file)
+- [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
 
 ### git clone
 
