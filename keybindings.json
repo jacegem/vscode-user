@@ -34,7 +34,7 @@
 	{
 		"key": "e",
 		"command": "workbench.action.focusFirstEditorGroup",
-		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+		"when": "explorerViewletVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
 	},
 	{
 		"key": "p",
@@ -65,10 +65,11 @@
 		"when": "editorTextFocus"
 	},
 	// workbench.action.focusNextGroup
+
 	{
 		"key": "tab",
 		"command": "workbench.action.focusNextGroup",
-		"when": "editorFocus && vim.active && !inDebugRepl"
+		"when": "editorFocus && vim.active && !inDebugRepl && vim.mode == 'Normal'"
 	},
 	{
 		"key": "cmd+[",
@@ -225,11 +226,11 @@
 		"command": "-calva.clearInlineResults",
 		"when": "calva:keybindingsEnabled && editorTextFocus && !editorHasMultipleSelections && !editorHasSelection && !editorReadOnly && !hasOtherSuggestions && !parameterHintsVisible && !selectionAnchorSet && !suggestWidgetVisible && editorLangId == 'clojure'"
 	},
-	{
-		"key": "c",
-		"command": "extension.vim_cmd+c", // visual mode 인 경우 copy
-		"when": "editorFocus && vim.active && !inDebugRepl && vim.mode == 'Visual'"
-	},
+	// {
+	// 	"key": "c",
+	// 	"command": "extension.vim_cmd+c", // visual mode 인 경우 copy
+	// 	"when": "editorFocus && vim.active && !inDebugRepl && vim.mode == 'Visual'"
+	// },
 	{
 		"key": "/",
 		"command": "editor.action.commentLine", // visual mode 인 경우 copy

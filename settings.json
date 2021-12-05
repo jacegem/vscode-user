@@ -204,9 +204,10 @@
 	"vim.incsearch": true,
 	"vim.useSystemClipboard": true,
 	"vim.highlightedyank.enable": true, // y로 복사하면 복사한 부분이 잠시 깜빡함.
-	"vim.highlightedyank.duration": 1000,
+	"vim.highlightedyank.duration": 500,
 	"vim.useCtrlKeys": true,
 	"vim.hlsearch": true,
+	"vim.visualstar": true,
 	"vim.leader": "<space>",
 	"vim.handleKeys": {
 		"<C-a>": false,
@@ -469,6 +470,11 @@
 			"before": ["s"], // end of line
 			"after": ["b"]
 		},
+		// not work -> use hammersppon
+		// {
+		// 	"before": ["<S-w>"], // surround a word
+		// 	"after": ["y", "s", "i", "w"]
+		// },
 		{
 			"before": ["<C-w>", "j"], // left window
 			"after": ["<C-w>", "h"]
