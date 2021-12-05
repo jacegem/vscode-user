@@ -276,10 +276,6 @@
 	],
 	"vim.normalModeKeyBindings": [
 		{
-			"before": ["/"],
-			"after": ["<leader>", "<leader>", "/"]
-		},
-		{
 			"before": ["f"],
 			"after": ["<leader>", "<leader>", "<leader>", "b", "d", "w"]
 		},
@@ -306,7 +302,8 @@
 		},
 		{
 			"before": ["<leader>", "c"],
-			"commands": ["workbench.action.showCommands"]
+			"commands": ["editor.action.commentLine"]
+			// "commands": ["workbench.action.showCommands"]
 		},
 		{
 			"before": ["<leader>", "d"],
@@ -395,7 +392,8 @@
 		},
 		{
 			"before": ["<leader>", "/"],
-			"commands": ["editor.action.commentLine"]
+			"after": ["<leader>", "<leader>", "/"]
+			// "commands": ["editor.action.commentLine"]
 		}
 	],
 	"vim.normalModeKeyBindingsNonRecursive": [
@@ -461,11 +459,13 @@
 		},
 		{
 			"before": ["<S-j>"], // left window
-			"after": ["<C-w>", "h"]
+			"commands": ["workbench.action.previousEditorInGroup"]
+			// "after": ["<C-w>", "h"]
 		},
 		{
 			"before": ["<S-l>"], // right window
-			"after": ["<C-w>", "l"]
+			"commands": ["workbench.action.nextEditorInGroup"]
+			// "after": ["<C-w>", "l"],
 		},
 		{
 			"before": ["<TAB>"], // next window
