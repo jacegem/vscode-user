@@ -163,6 +163,7 @@
 	],
 	"todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
 	"tabnine.experimentalAutoImports": true,
+	"tabnine.disable_file_regex": ["[.]md$", "[.]html$", "[.]css$", "[.]adoc$"],
 	"codestream.email": "jacegem@gmail.com",
 	"jupyter.alwaysTrustNotebooks": true,
 	"python.languageServer": "Pylance",
@@ -302,13 +303,10 @@
 			"commands": ["workbench.action.findInFiles"]
 		},
 		{
-			"before": ["<leader>", "a", "l"],
-			"commands": ["editor.action.openLink"]
-		},
-		{
 			"before": ["<leader>", "a", "x"],
 			"commands": ["workbench.view.extensions"]
 		},
+
 		{
 			"before": ["<leader>", "b"],
 			"commands": ["workbench.action.toggleSidebarVisibility"]
@@ -375,6 +373,10 @@
 			"commands": ["workbench.action.previousEditorInGroup"]
 		},
 		{
+			"before": ["<leader>", "k", "l"],
+			"commands": ["editor.action.openLink"]
+		},
+		{
 			"before": ["<leader>", "l"],
 			"commands": ["workbench.action.nextEditorInGroup"]
 		},
@@ -414,6 +416,10 @@
 		}
 	],
 	"vim.normalModeKeyBindingsNonRecursive": [
+		{
+			"before": ["="], // insert
+			"after": ["i"]
+		},
 		{
 			"before": ["I"], // insert
 			"after": ["i"]
@@ -493,5 +499,7 @@
 		// 	"before": ["<TAB>"], // next window
 		// 	"after": ["<C-w>", "w"]
 		// }
-	]
+	],
+	"asciidoc.use_kroki": true,
+	"asciidoc.preview.breaks": true
 }

@@ -64,8 +64,6 @@
 		"command": "dictionary.google.translateSelected",
 		"when": "editorTextFocus"
 	},
-	// workbench.action.focusNextGroup
-
 	{
 		"key": "tab",
 		"command": "workbench.action.focusNextGroup",
@@ -107,6 +105,11 @@
 	{
 		"key": "p",
 		"command": "git.pushTo",
+		"when": "listFocus && !inputFocus && scmProvider == git"
+	},
+	{
+		"key": "u",
+		"command": "git.pull",
 		"when": "listFocus && !inputFocus && scmProvider == git"
 	},
 	{
