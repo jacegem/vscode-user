@@ -89,7 +89,7 @@
 	],
 
 	"[html]": {
-		"editor.defaultFormatter": "vscode.html-language-features"
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
 
 	"[json]": {
@@ -352,6 +352,10 @@
 			"before": ["<leader>", "s"],
 			"commands": ["workbench.view.scm"]
 		},
+		// {
+		// 	"before": ["<leader>", "s"],
+		// 	"commands": ["magit.status"]
+		// },
 		{
 			"before": ["<leader>", "h"],
 			"commands": ["workbench.action.moveEditorToLeftGroup"]
@@ -501,5 +505,6 @@
 		// }
 	],
 	"asciidoc.use_kroki": true,
-	"asciidoc.preview.breaks": true
+	"asciidoc.preview.breaks": true,
+	"html.format.enable": false
 }
