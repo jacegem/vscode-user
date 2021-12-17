@@ -433,6 +433,10 @@
 			"after": ["i"]
 		},
 		{
+			"before": ["ㅐ"], // insert
+			"after": ["i"]
+		},
+		{
 			"before": ["O"], // insert new line
 			"after": ["o"]
 		},
@@ -441,7 +445,15 @@
 			"after": ["I"]
 		},
 		{
+			"before": ["ㅁ"], // insert beginning cursor
+			"after": ["I"]
+		},
+		{
 			"before": ["i"], // up
+			"after": ["k"]
+		},
+		{
+			"before": ["ㅑ"], // up
 			"after": ["k"]
 		},
 		{
@@ -506,5 +518,8 @@
 	],
 	"asciidoc.use_kroki": true,
 	"asciidoc.preview.breaks": true,
-	"html.format.enable": false
+	"html.format.enable": false,
+	"asciidoc.enableErrorDiagnostics": false,
+	"asciidoc.preview.refreshInterval": 1000,
+	"asciidoc.preview.style": "boot-darkly.css"
 }
