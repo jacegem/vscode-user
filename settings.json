@@ -200,6 +200,9 @@
 	"prettier.configPath": "~/Library/Application Support/Code/User/.prettierrc",
 	"javascript.updateImportsOnFileMove.enabled": "always",
 	// https://marketplace.visualstudio.com/items?itemName=vscodevim.vim
+	"vim.enableNeovim": true,
+	"vim.neovimPath": "/usr/local/bin/nvim",
+	"vim.disableAnnoyingNeovimMessage": true,
 	"vim.easymotion": true,
 	"vim.easymotionKeys": "hklyuiopnmqwertzxcvbasdgjf",
 	"vim.incsearch": true,
@@ -442,10 +445,6 @@
 		},
 		{
 			"before": ["a"], // insert beginning cursor
-			"after": ["I"]
-		},
-		{
-			"before": ["ㅁ"], // insert beginning cursor
 			"after": ["I"]
 		},
 		{
