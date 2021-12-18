@@ -238,6 +238,22 @@
 		"key": "/",
 		"command": "editor.action.commentLine", // visual mode 인 경우 copy
 		"when": "editorFocus && vim.active && !inDebugRepl && vim.mode == 'Visual'"
+	},
+	{
+		"key": "ctrl+alt+enter",
+		"command": "github.copilot.generate",
+		"when": "editorTextFocus && github.copilot.activated"
+	},
+	{
+		"key": "ctrl+enter",
+		"command": "-github.copilot.generate",
+		"when": "editorTextFocus && github.copilot.activated"
+	},
+	// calva
+	{
+		"key": "enter",
+		"command": "calva.evaluateCurrentTopLevelForm",
+		"when": "calva:connected && calva:keybindingsEnabled && editorTextFocus && editorLangId == 'clojure'"
 	}
 ]
 // {

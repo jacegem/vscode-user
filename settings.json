@@ -501,5 +501,6 @@
 		// }
 	],
 	"asciidoc.use_kroki": true,
-	"asciidoc.preview.breaks": true
+	"asciidoc.preview.breaks": true,
+	"diffEditor.ignoreTrimWhitespace": false
 }
