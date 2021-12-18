@@ -320,10 +320,14 @@
 			"before": ["<leader>", "b"],
 			"commands": ["workbench.action.toggleSidebarVisibility"]
 		},
+		// calva
 		{
-			"before": ["<leader>", "c"],
-			"commands": ["editor.action.commentLine"]
-			// "commands": ["workbench.action.showCommands"]
+			"before": ["<leader>", "c", "j"],
+			"commands": ["calva.jackIn"]
+		},
+		{
+			"before": ["<leader>", "c", "e"],
+			"commands": ["calva.evaluateSelection"]
 		},
 		{
 			"before": ["<leader>", "d"],
