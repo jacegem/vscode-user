@@ -89,7 +89,7 @@
 	],
 
 	"[html]": {
-		"editor.defaultFormatter": "vscode.html-language-features"
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
 
 	"[json]": {
@@ -199,7 +199,16 @@
 	},
 	"prettier.configPath": "~/Library/Application Support/Code/User/.prettierrc",
 	"javascript.updateImportsOnFileMove.enabled": "always",
+	"asciidoc.use_kroki": true,
+	"asciidoc.preview.breaks": true,
+	"html.format.enable": false,
+	"asciidoc.enableErrorDiagnostics": false,
+	"asciidoc.preview.refreshInterval": 1000,
+	"asciidoc.preview.style": "boot-darkly.css",
 	// https://marketplace.visualstudio.com/items?itemName=vscodevim.vim
+	"vim.enableNeovim": true,
+	"vim.neovimPath": "/usr/local/bin/nvim",
+	"vim.disableAnnoyingNeovimMessage": true,
 	"vim.easymotion": true,
 	"vim.easymotionKeys": "hklyuiopnmqwertzxcvbasdgjf",
 	"vim.incsearch": true,
@@ -352,6 +361,10 @@
 			"before": ["<leader>", "s"],
 			"commands": ["workbench.view.scm"]
 		},
+		// {
+		// 	"before": ["<leader>", "s"],
+		// 	"commands": ["magit.status"]
+		// },
 		{
 			"before": ["<leader>", "h"],
 			"commands": ["workbench.action.moveEditorToLeftGroup"]
@@ -429,6 +442,10 @@
 			"after": ["i"]
 		},
 		{
+			"before": ["ㅐ"], // insert
+			"after": ["i"]
+		},
+		{
 			"before": ["O"], // insert new line
 			"after": ["o"]
 		},
@@ -438,6 +455,10 @@
 		},
 		{
 			"before": ["i"], // up
+			"after": ["k"]
+		},
+		{
+			"before": ["ㅑ"], // up
 			"after": ["k"]
 		},
 		{
@@ -499,8 +520,5 @@
 		// 	"before": ["<TAB>"], // next window
 		// 	"after": ["<C-w>", "w"]
 		// }
-	],
-	"asciidoc.use_kroki": true,
-	"asciidoc.preview.breaks": true,
-	"diffEditor.ignoreTrimWhitespace": false
+	]
 }
