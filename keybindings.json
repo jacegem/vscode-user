@@ -240,7 +240,7 @@
 	{
 		"key": "enter",
 		"command": "calva.evaluateCurrentTopLevelForm",
-		"when": "calva:connected && calva:keybindingsEnabled && editorTextFocus && editorLangId == 'clojure'"
+		"when": "calva:connected && calva:keybindingsEnabled && editorTextFocus && editorLangId == 'clojure' && vim.mode != 'Insert'"
 	},
 
 	//edamagit
