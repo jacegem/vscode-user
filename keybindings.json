@@ -240,7 +240,7 @@
 	{
 		"key": "enter",
 		"command": "calva.evaluateCurrentTopLevelForm",
-		"when": "calva:connected && calva:keybindingsEnabled && editorTextFocus && editorLangId == 'clojure'"
+		"when": "calva:connected && calva:keybindingsEnabled && editorTextFocus && editorLangId == 'clojure' && vim.mode != 'Insert'"
 	},
 
 	//edamagit
@@ -254,16 +254,16 @@
 		"command": "magit.refresh",
 		"when": "editorTextFocus && editorLangId == 'magit' && vim.mode =~ /^(?!SearchInProgressMode|CommandlineInProgress).*$/"
 	},
-	{
-		"key": "tab",
-		"command": "extension.vim_tab",
-		"when": "editorFocus && vim.active && !inDebugRepl && vim.mode != 'Insert' && editorLangId != 'magit'"
-	},
-	{
-		"key": "tab",
-		"command": "-extension.vim_tab",
-		"when": "editorFocus && vim.active && !inDebugRepl && vim.mode != 'Insert'"
-	},
+	// {
+	// 	"key": "tab",
+	// 	"command": "extension.vim_tab",
+	// 	"when": "editorFocus && vim.active && !inDebugRepl && vim.mode != 'Insert' && editorLangId != 'magit'"
+	// },
+	// {
+	// 	"key": "tab",
+	// 	"command": "-extension.vim_tab",
+	// 	"when": "editorFocus && vim.active && !inDebugRepl && vim.mode != 'Insert'"
+	// },
 	{
 		"key": "x",
 		"command": "magit.discard-at-point",
