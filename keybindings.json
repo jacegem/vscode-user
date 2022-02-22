@@ -242,7 +242,16 @@
 		"command": "calva.evaluateCurrentTopLevelForm",
 		"when": "calva:connected && calva:keybindingsEnabled && editorTextFocus && editorLangId == 'clojure' && vim.mode != 'Insert'"
 	},
-
+	{
+		"key": "shift+enter",
+		"command": "calva.evaluateCurrentTopLevelForm",
+		"when": "calva:connected && calva:keybindingsEnabled && editorTextFocus && editorLangId == 'clojure' && vim.mode == 'Insert'"
+	},
+	{
+		"key": "ctrl+alt+cmd+right",
+		"command": "calva.evaluateCurrentTopLevelForm",
+		"when": "calva:connected && calva:keybindingsEnabled && editorTextFocus && editorLangId == 'clojure' && vim.mode == 'Insert'"
+	},
 	//edamagit
 	{
 		"key": "g g",
@@ -338,5 +347,25 @@
 		"key": "ctrl+enter",
 		"command": "-github.copilot.generate",
 		"when": "editorTextFocus && github.copilot.activated"
+	},
+	{
+		"key": "ctrl+alt+cmd+right",
+		"command": "paredit.slurpSexpForward",
+		"when": "calva:keybindingsEnabled && editorTextFocus && editorLangId == 'clojure' && paredit:keyMap =~ /original|strict/"
+	},
+	{
+		"key": "ctrl+alt+right",
+		"command": "-paredit.slurpSexpForward",
+		"when": "calva:keybindingsEnabled && editorTextFocus && editorLangId == 'clojure' && paredit:keyMap =~ /original|strict/"
+	},
+	{
+		"key": "ctrl+alt+cmd+left",
+		"command": "paredit.barfSexpForward",
+		"when": "calva:keybindingsEnabled && editorTextFocus && editorLangId == 'clojure' && paredit:keyMap =~ /original|strict/"
+	},
+	{
+		"key": "ctrl+alt+left",
+		"command": "-paredit.barfSexpForward",
+		"when": "calva:keybindingsEnabled && editorTextFocus && editorLangId == 'clojure' && paredit:keyMap =~ /original|strict/"
 	}
 ]
