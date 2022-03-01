@@ -192,7 +192,8 @@
 	"[clojure]": {
 		"editor.autoClosingBrackets": "always",
 		"editor.autoClosingOvertype": "always",
-		"editor.formatOnPaste": true
+		"editor.formatOnPaste": true,
+		"editor.defaultFormatter": "betterthantomorrow.calva"
 	},
 	"prettier.configPath": "~/Library/Application Support/Code/User/.prettierrc",
 	"javascript.updateImportsOnFileMove.enabled": "always",
@@ -537,5 +538,7 @@
 	],
 	"editor.unicodeHighlight.ambiguousCharacters": false,
 	"python.analysis.completeFunctionParens": true,
+	"calva.paredit.defaultKeyMap": "original",
+	"calva.highlight.rainbowIndentGuides": true,
 	"editor.formatOnSave": true
 }
