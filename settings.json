@@ -15,28 +15,106 @@
 		"textMateRules": [
 			{
 				"scope": [
-					//following will be in italic
 					"comment",
-					"entity.name.type.class", //class names
-					"constant", //String, Number, Boolean…, this, super
-					"storage.modifier", //static keyword
-					"storage.type.class.js", //class keyword
-					"keyword" //import, export, return…
-				],
-				"settings": {
-					"fontStyle": "italic"
-				}
-			},
-			{
-				"scope": [
-					//following will be excluded from italics (VSCode has some defaults for italics)
-
+					"comment.block",
+					"comment.block.documentation",
+					"comment.line",
+					"constant",
+					"constant.character",
+					"constant.character.escape",
+					"constant.numeric",
+					"constant.numeric.integer",
+					"constant.numeric.float",
+					"constant.numeric.hex",
+					"constant.numeric.octal",
+					"constant.other",
+					"constant.regexp",
+					"constant.rgb-value",
+					"emphasis",
+					"entity",
+					"entity.name",
+					"entity.name.class",
+					"entity.name.function",
+					"entity.name.method",
+					"entity.name.section",
+					"entity.name.selector",
+					"entity.name.tag",
+					"entity.name.type",
+					"entity.other",
+					"entity.other.attribute-name",
+					"entity.other.inherited-class",
 					"invalid",
+					"invalid.deprecated",
+					"invalid.illegal",
+					"keyword",
+					"keyword.control",
 					"keyword.operator",
-					"constant.numeric.css",
-					"keyword.other.unit.px.css",
-					"constant.numeric.decimal.js",
-					"constant.numeric.json"
+					"keyword.operator.new",
+					"keyword.operator.assignment",
+					"keyword.operator.arithmetic",
+					"keyword.operator.logical",
+					"keyword.other",
+					"markup",
+					"markup.bold",
+					"markup.changed",
+					"markup.deleted",
+					"markup.heading",
+					"markup.inline.raw",
+					"markup.inserted",
+					"markup.italic",
+					"markup.list",
+					"markup.list.numbered",
+					"markup.list.unnumbered",
+					"markup.other",
+					"markup.quote",
+					"markup.raw",
+					"markup.underline",
+					"markup.underline.link",
+					"meta",
+					"meta.block",
+					"meta.cast",
+					"meta.class",
+					"meta.function",
+					"meta.function-call",
+					"meta.preprocessor",
+					"meta.return-type",
+					"meta.selector",
+					"meta.tag",
+					"meta.type.annotation",
+					"meta.type",
+					"punctuation.definition.string.begin",
+					"punctuation.definition.string.end",
+					"punctuation.separator",
+					"punctuation.separator.continuation",
+					"punctuation.terminator",
+					"storage",
+					"storage.modifier",
+					"storage.type",
+					"string",
+					"string.interpolated",
+					"string.other",
+					"string.quoted",
+					"string.quoted.double",
+					"string.quoted.other",
+					"string.quoted.single",
+					"string.quoted.triple",
+					"string.regexp",
+					"string.unquoted",
+					"strong",
+					"support",
+					"support.class",
+					"support.constant",
+					"support.function",
+					"support.other",
+					"support.type",
+					"support.type.property-name",
+					"support.variable",
+					"variable",
+					"variable.language",
+					"variable.name",
+					"variable.other",
+					"variable.other.readwrite",
+					"variable.parameter"
 				],
 				"settings": {
 					"fontStyle": ""
@@ -44,7 +122,7 @@
 			}
 		]
 	},
-	"workbench.iconTheme": "file-icons",
+	"workbench.iconTheme": "material-icon-theme",
 	"workbench.editorAssociations": {
 		"*.ipynb": "jupyter-notebook"
 	},
@@ -57,7 +135,8 @@
 		"*": true,
 		"yaml": true,
 		"plaintext": false,
-		"markdown": true
+		"markdown": true,
+		"clojure": false
 	},
 	"githubPullRequests.fileListLayout": "tree",
 	"githubIssues.queries": [
@@ -294,10 +373,6 @@
 			"after": ["<C-r>"] // redo
 		},
 		{
-			"before": ["."],
-			"commands": ["editor.action.quickFix"]
-		},
-		{
 			"before": ["["],
 			"commands": ["workbench.action.navigateBack"]
 		},
@@ -332,9 +407,17 @@
 			"before": ["<leader>", "c", "e"],
 			"commands": ["calva.evaluateSelection"]
 		},
+		// {
+		// 	"before": ["<leader>", "d"],
+		// 	"commands": ["workbench.view.debug"]
+		// },
 		{
-			"before": ["<leader>", "d"],
-			"commands": ["workbench.view.debug"]
+			"before": ["<leader>", "d", "s"],
+			"commands": ["paredit.spliceSexp"]
+		},
+		{
+			"before": ["<leader>", "d", "j"],
+			"commands": ["paredit.splitSexp"]
 		},
 		{
 			"before": ["<leader>", "e"],
@@ -353,48 +436,8 @@
 			"commands": ["gitflow.featureFinish"]
 		},
 		{
-			"before": ["<leader>", "n"],
-			"commands": ["extension.advancedNewFile"] // needs advancedNewFile extension / (opt + cmd + n)
-		},
-		{
-			"before": ["<leader>", "o"],
-			"commands": ["workbench.action.quickOpen"]
-		},
-		{
-			"before": ["<leader>", "."],
-			"commands": ["workbench.action.quickFix"]
-		},
-		{
-			"before": ["<leader>", "p"],
-			"commands": ["workbench.action.showCommands"]
-		},
-		{
-			"before": ["<leader>", "q"],
-			"commands": ["workbench.action.closeActiveEditor"]
-		},
-		{
-			"before": ["<leader>", "s"],
-			"commands": ["workbench.view.scm"]
-		},
-		// {
-		// 	"before": ["<leader>", "s"],
-		// 	"commands": ["magit.status"]
-		// },
-		{
 			"before": ["<leader>", "h"],
 			"commands": ["workbench.action.moveEditorToLeftGroup"]
-		},
-		{
-			"before": ["<leader>", ";"],
-			"commands": ["workbench.action.moveEditorToRightGroup"]
-		},
-		{
-			"before": ["<leader>", "m"],
-			"commands": ["workbench.action.focusPreviousGroup"]
-		},
-		{
-			"before": ["<leader>", ","],
-			"commands": ["workbench.action.focusNextGroup"]
 		},
 		{
 			"before": ["<leader>", "j"],
@@ -405,22 +448,106 @@
 			"commands": ["editor.action.openLink"]
 		},
 		{
+			"before": ["<leader>", "k", "r"], // Kill Right
+			"commands": ["paredit.killRight"]
+		},
+		{
+			"before": ["<leader>", "k", "f"], // Kill Sexp Forward
+			"commands": ["paredit.killSexpForward"]
+		},
+		{
+			"before": ["<leader>", "k", "b"], // Kill Sexp Backward
+			"commands": ["paredit.killSexpBackward"]
+		},
+		{
+			"before": ["<leader>", "k", "l", "f"], // Kill List Forward
+			"commands": ["paredit.killListForward"]
+		},
+		{
+			"before": ["<leader>", "k", "l", "b"], // Kill List Backward
+			"commands": ["paredit.killListBackward"]
+		},
+		{
 			"before": ["<leader>", "l"],
 			"commands": ["workbench.action.nextEditorInGroup"]
+		},
+		{
+			"before": ["<leader>", "l", "s"],
+			"commands": ["paredit.splitSexp"]
+		},
+		{
+			"before": ["<leader>", "l", "j"],
+			"commands": ["paredit.joinSexp"]
 		},
 		{
 			"before": ["<leader>", "m"],
 			"commands": ["editor.action.toggleMinimap"]
 		},
 		{
-			"before": ["<leader>", "x"],
+			"before": ["<leader>", "m"],
+			"commands": ["workbench.action.focusPreviousGroup"]
+		},
+		{
+			"before": ["<leader>", "n"],
+			"commands": ["extension.advancedNewFile"] // needs advancedNewFile extension / (opt + cmd + n)
+		},
+		{
+			"before": ["<leader>", "o"],
+			"commands": ["workbench.action.quickOpen"]
+		},
+	
+		{
+			"before": ["<leader>", "p"],
+			"commands": ["workbench.action.showCommands"]
+		},
+		{
+			"before": ["<leader>", "q"],
 			"commands": ["workbench.action.closeActiveEditor"]
 		},
+		{
+			"before": ["<leader>", "r", "q"],
+			"commands": ["paredit.rewrapQuote"]
+		},
+		{
+			"before": ["<leader>", "r", "p"],
+			"commands": ["paredit.rewrapParens"]
+		},
+		{
+			"before": ["<leader>", "r", "s"],
+			"commands": ["paredit.rewrapSquare"]
+		},
+		{
+			"before": ["<leader>", "r", "c"],
+			"commands": ["paredit.rewrapCurly"]
+		},
 		// {
-		// 	"before": ["<leader>", "t"],
-		// 	"commands": ["workbench.action.quickOpenNavigateNextInEditorPicker"]
+		// 	"before": ["<leader>", "s"],
+		// 	"commands": ["workbench.view.scm"]
 		// },
-
+		{
+			"before": ["<leader>", "s", "e"],
+			"commands": ["paredit.sexpRangeExpansion"]
+		},
+		{
+			"before": ["<leader>", "s", "s"],
+			"commands": ["paredit.sexpRangeContraction"]
+		},
+		{
+			"before": ["<leader>", "s", "t"],
+			"commands": ["paredit.rangeForDefun"]
+		},
+		{
+			"before": ["<leader>", "s", "r"],
+			"commands": ["paredit.selectRight"]
+		},
+		{
+			"before": ["<leader>", "s", "k", "f"],
+			"commands": ["paredit.spliceSexpKillForward"]
+		},
+		{
+			"before": ["<leader>", "s", "k", "b"],
+			"commands": ["paredit.spliceSexpKillBackward"]
+		},
 		{
 			"before": ["<leader>", "w", "j"],
 			"commands": ["workbench.action.moveActiveEditorGroupLeft"]
@@ -434,14 +561,54 @@
 			"commands": ["workbench.action.splitEditor"]
 		},
 		{
+			"before": ["<leader>", "w", "p"],
+			"commands": ["paredit.wrapAroundParens"]
+		},
+		{
+			"before": ["<leader>", "w", "s"],
+			"commands": ["paredit.wrapAroundSquare"]
+		},
+		{
+			"before": ["<leader>", "w", "c"],
+			"commands": ["paredit.wrapAroundCurly"]
+		},
+		{
+			"before": ["<leader>", "w", "q"],
+			"commands": ["paredit.wrapAroundQuote"]
+		},
+		{
+			"before": ["<leader>", "x"],
+			"commands": ["workbench.action.closeActiveEditor"]
+		},
+		{
 			"before": ["<leader>", "z"],
 			"commands": ["workbench.action.toggleZenMode"]
+		},
+		// 	"before": ["<leader>", "s"],
+		// 	"commands": ["magit.status"]
+		// },
+		{
+			"before": ["<leader>", "."],
+			"commands": ["workbench.action.quickFix"]
+		},
+		{
+			"before": ["<leader>", ";"],
+			"commands": ["workbench.action.moveEditorToRightGroup"]
+		},
+		{
+			"before": ["<leader>", ","],
+			"commands": ["workbench.action.focusNextGroup"]
 		},
 		{
 			"before": ["<leader>", "/"],
 			"after": ["<leader>", "<leader>", "/"]
 			// "commands": ["editor.action.commentLine"]
 		}
+				// {
+		// 	"before": ["<leader>", "t"],
+		// 	"commands": ["workbench.action.quickOpenNavigateNextInEditorPicker"]
+		// },
+
 	],
 	"vim.normalModeKeyBindingsNonRecursive": [
 		{
@@ -468,6 +635,10 @@
 			"before": ["a"], // insert beginning cursor
 			"after": ["I"]
 		},
+		{
+			"before": [";"], // insert end cursor
+			"after": ["<S-a>"]
+		},	
 		{
 			"before": ["i"], // up
 			"after": ["k"]
@@ -504,12 +675,12 @@
 			"before": ["h"], // beginning of line
 			"after": ["^"]
 		},
+		// {
+		// 	"before": [";"], // end of line
+		// 	"after": ["$"]
+		// },
 		{
-			"before": [";"], // end of line
-			"after": ["$"]
-		},
-		{
-			"before": ["s"], // end of line
+			"before": ["s"], 
 			"after": ["b"]
 		},
 		// not work -> use hammersppon
@@ -540,5 +711,28 @@
 	"python.analysis.completeFunctionParens": true,
 	"calva.paredit.defaultKeyMap": "original",
 	"calva.highlight.rainbowIndentGuides": true,
-	"editor.formatOnSave": true
+	"editor.formatOnSave": true,
+	"nebulaOni.update.restoreConfiguration": {
+		"themeSettings": {
+			"background": "Grey",
+			"main": "Bumblebee",
+			"highlight": "Ultra Violet",
+			"focusBorder": "ON",
+			"fontStyle": "Italic",
+			"comments": "Dark Violet",
+			"favorite": "OFF"
+		},
+		"favoriteSettings": {
+			"background": "Glacial Blue",
+			"main": "Sakura",
+			"highlight": "Ultra Violet",
+			"focusBorder": "ON",
+			"fontStyle": "Italic",
+			"comments": "Dark Magenta",
+			"favorite": "Nebula Oni (Pegasus)"
+		}
+	},
+	"italicc.plugin.enabled": true,
+	"workbench.colorTheme": "Noctis Minimus",
+	"calva.paredit.strictPreventUnmatchedClosingBracket": true
 }

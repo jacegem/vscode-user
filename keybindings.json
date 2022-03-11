@@ -175,10 +175,10 @@
 		"command": "cursorBottom",
 		"when": "textInputFocus"
 	},
-	{
-		"key": "shift+cmd+enter",
-		"command": "workbench.action.maximizeEditor"
-	},
+	// {
+	// 	"key": "shift+cmd+enter",
+	// 	"command": "workbench.action.maximizeEditor"
+	// },
 	{
 		"key": "shift+cmd+left",
 		"command": "workbench.action.terminal.focusPreviousPane",
@@ -344,7 +344,7 @@
 	},
 	// copilot
 	{
-		"key": "ctrl+alt+enter",
+		"key": "ctrl+alt+cmd+enter",
 		"command": "github.copilot.generate",
 		"when": "editorTextFocus && github.copilot.activated"
 	},
@@ -372,5 +372,15 @@
 		"key": "ctrl+alt+left",
 		"command": "-paredit.barfSexpForward",
 		"when": "calva:keybindingsEnabled && editorTextFocus && editorLangId == 'clojure' && paredit:keyMap =~ /original|strict/"
+	},
+	{
+		"key": "ctrl+alt+'",
+		"command": "calva.copyLastResults",
+		"when": "calva:connected && calva:keybindingsEnabled && editorLangId == 'clojure'"
+	},
+	{
+		"key": "ctrl+alt+c ctrl+c",
+		"command": "-calva.copyLastResults",
+		"when": "calva:connected && calva:keybindingsEnabled && editorLangId == 'clojure'"
 	}
 ]
