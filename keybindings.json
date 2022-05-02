@@ -56,7 +56,6 @@
 		"command": "filesExplorer.paste",
 		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
 	},
-
 	// workbench.action.focusFirstEditorGroup
 	// moveFileToTrash, when: explorerResourceMoveableToTrash && explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus,
 	{
@@ -256,8 +255,7 @@
 		"key": "ctrl+alt+cmd+enter",
 		"command": "calva.calva.evaluateToCursor",
 		"when": "calva:connected && calva:keybindingsEnabled && editorTextFocus && editorLangId == 'clojure' && vim.mode == 'Insert'"
-	},	
-	
+	},
 	// === 작성중
 	{
 		"key": "shift+enter",
@@ -412,8 +410,22 @@
 	},
 	// joyride
 	{
-        "key": "cmd+1",
-        "command": "joyride.runWorkspaceScript",
-        "args": "ignore_form.cljs"
- 	}
+		"key": "cmd+1",
+		"command": "joyride.runWorkspaceScript",
+		"args": "ignore_form.cljs"
+	},
+	{
+		"key": "cmd+2",
+		"command": "joyride.runWorkspaceScript",
+		"args": "fontsize.cljs"
+	},
+	{
+		"key": "cmd+3",
+		"command": "joyride.runWorkspaceScript",
+		"args": "example.cljs"
+	},
+	{
+		"key": "cmd+alt+.",
+		"command": "joyride.runWorkspaceScript"
+	},
 ]
