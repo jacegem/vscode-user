@@ -2,6 +2,8 @@
 	"terminal.integrated.fontFamily": "'D2Coding ligature'",
 	"terminal.integrated.fontSize": 13,
 	"terminal.integrated.defaultProfile.osx": "fish",
+	"workbench.editor.highlightModifiedTabs": true,
+	
 	"editor.insertSpaces": true,
 	"editor.fontSize": 14.5,
 	// "editor.fontFamily": "'Hack', 'D2Coding', 'SourceCodePro+Powerline+Awesome Regular', 'D2Coding', Menlo, Monaco, 'Courier New', monospace, FiraCode-Retina",
@@ -11,6 +13,23 @@
 	"editor.largeFileOptimizations": false,
 	"editor.inlineSuggest.enabled": true,
 	"editor.formatOnType": true,
+	// https://neutrondev.com/vs-code-colored-bracket-pair-guides/
+	"workbench.colorCustomizations": {
+		"editorBracketPairGuide.background1": "#F8B46C",
+		"editorBracketPairGuide.background2": "#FB78B5",
+		"editorBracketPairGuide.background3": "#4AACFB",
+		"editorBracketPairGuide.background4": "#B98BF5",
+		"editorBracketPairGuide.background5": "#DAD8D8",
+		"editorBracketPairGuide.background6": "#18EECE",
+  
+		"editorBracketPairGuide.activeBackground1": "#F8B46C",
+		"editorBracketPairGuide.activeBackground2": "#FB78B5",
+		"editorBracketPairGuide.activeBackground3": "#4AACFB",
+		"editorBracketPairGuide.activeBackground4": "#B98BF5",
+		"editorBracketPairGuide.activeBackground5": "#DAD8D8",
+		"editorBracketPairGuide.activeBackground6": "#18EECE",
+	  },
+	"editor.guides.bracketPairs": "active",
 	"editor.tokenColorCustomizations": {
 		"textMateRules": [
 			{
@@ -124,9 +143,11 @@
 	},
 	"workbench.iconTheme": "material-icon-theme",
 	"workbench.editorAssociations": {
-		"*.ipynb": "jupyter-notebook"
+		"*.ipynb": "jupyter-notebook",
+		"*.html": "default"
 	},
 	"workbench.tree.indent": 12,
+	"typescript.inlayHints.parameterNames.enabled": "all",
 	"git.autofetch": true,
 	"git.enableSmartCommit": true,
 	"git.ignoreRebaseWarning": true,
@@ -390,6 +411,10 @@
 		{
 			"before": ["<leader>", "d", "s"],
 			"commands": ["paredit.spliceSexp"]
+		},
+		{
+			"before": ["<leader>", "d", "f"],
+			"commands": ["paredit.killSexpForward"]
 		},
 		{
 			"before": ["<leader>", "d", "j"],
@@ -710,7 +735,9 @@
 	"italicc.plugin.enabled": true,
 	"workbench.colorTheme": "Noctis Minimus",
 	"calva.paredit.strictPreventUnmatchedClosingBracket": true,
-	"bracket-pair-colorizer-2.depreciation-notice": false,
 	"asciidoc.use_kroki": true,
-	"calva.highlight.rainbowIndentGuides": true
+	"calva.highlight.rainbowIndentGuides": true,
+	"calva.highlight.enableBracketColors": false,
+	"editor.bracketPairColorization.enabled": true,
+	"redhat.telemetry.enabled": false
 }

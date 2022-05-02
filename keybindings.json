@@ -409,5 +409,11 @@
 		"key": "ctrl+enter",
 		"command": "-calva.evaluateSelection",
 		"when": "calva:connected && calva:keybindingsEnabled && editorTextFocus && !suggestWidgetVisible && editorLangId == 'clojure'"
-	}
+	},
+	// joyride
+	{
+        "key": "cmd+1",
+        "command": "joyride.runWorkspaceScript",
+        "args": "ignore_form.cljs"
+ 	}
 ]
