@@ -12,77 +12,93 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
-	"user/r" : {
+	"user/r": {
 		"prefix": "ur",
 		"body": [
 			"(user/r)"
 		],
 		"description": "user/r"
 	},
-	"def" : {
+	"def": {
 		"prefix": "d",
 		"body": [
 			"(def ${1:name} ${2:value})"
 		],
 		"description": "def"
 	},
-	"defn" : {
+	"deftest": {
+		"prefix": "dt",
+		"body": [
+			"(deftest ${1:name}",
+			"  (testing \"${2:desc}\"",
+			"))"
+		],
+		"description": "def"
+	},
+	"defn": {
 		"prefix": "n",
 		"body": [
 			"(defn ${1:name} [${2:param}] ${3:value})"
 		],
 		"description": "def"
 	},
-	"fn" : {
+	"function": {
 		"prefix": "f",
+		"body": [
+			"($0)"
+		],
+		"description": "(fucntion)"
+	},
+	"fn": {
+		"prefix": "fn",
 		"body": [
 			"(fn [${2:param}] ${3:value})"
 		],
-		"description": "def"
+		"description": "fn"
 	},
-	"keyword" : {
+	"keyword": {
 		"prefix": "k",
 		"body": [
 			":$1"
 		],
 		"description": "colon"
 	},
-	"vector" : {
+	"vector": {
 		"prefix": "v",
 		"body": [
 			"[${1:value}]"
 		],
 		"description": "vector"
-	},	
-	"map" :{
+	},
+	"map": {
 		"prefix": "m",
 		"body": [
 			"{:${1:key} ${2:value}}"
 		],
 		"description": "map"
 	},
-	"set" :{
+	"set": {
 		"prefix": "s",
 		"body": [
 			"#{${1:value}}"
 		],
 		"description": "set"
 	},
-	"keys":{
+	"keys": {
 		"prefix": "ks",
 		"body": [
 			"{:keys [${1:value}]}"
 		],
 		"description": "keys"
-	},	
-	"if" : {
+	},
+	"if": {
 		"prefix": "i",
 		"body": [
 			"(if ${1:condition} ${2:true} ${3:false})"
 		],
 		"description": "if"
 	},
-	"if-let" : {
+	"if-let": {
 		"prefix": "il",
 		"body": [
 			"(if-let [${1:key} ${2:value}] ${3:true} ${4:false})"
@@ -96,18 +112,88 @@
 		],
 		"description": "when"
 	},
-	"when-let" :{
+	"when-let": {
 		"prefix": "wl",
 		"body": [
 			"(when-let [${1:var} ${2:value}] ${3:value})"
 		],
 		"description": "when-let"
 	},
-	"let":{
+	"let": {
 		"prefix": "l",
 		"body": [
 			"(let [${1:name} ${2:value}] ${3:value})"
 		],
 		"description": "let"
+	},
+	"prn": {
+		"prefix": "pr",
+		"body": [
+			"(prn ${0:msg})"
+		],
+		"description": "prn"
+	},
+	"parentheses": {
+		"prefix": "p",
+		"body": [
+			"(${0:statement})"
+		],
+		"description": "(parentheses)"
+	},
+	"comment": {
+		"prefix": "c",
+		"body": [
+			"(comment",
+			"  $0",
+			"#_{})"
+		],
+		"description": "comment"
+	},
+	"comment-run-tests": {
+		"prefix": "cr",
+		"body": [
+			"(comment",
+			"  (run-tests)$0",
+			"#_{})"
+		],
+		"description": "comment-run-tests"
+	},
+	"atom": {
+		"prefix": "a",
+		"body": [
+			"(atom ${1:value})"
+		],
+		"description": "atom"
+	},
+	"equal": {
+		"prefix": "e",
+		"body": [
+			"(= ${1:first}) ${2:second})"
+		],
+		"description": "equal"
+	},
+	"threading-first": {
+		"prefix": "tf",
+		"body": [
+			"(->$0)"
+		],
+		"description": "threading-first"
+	},
+	"threading-last": {
+		"prefix": "tl",
+		"body": [
+			"(->>$0)"
+		],
+		"description": "threading-last"
+	},
+	"flutter widget": {
+		"prefix": "fw",
+		"body": [
+			"(f/widget",
+			"   :state []",
+			"   :with []",
+			")"
+		],
+		"description": "flutter widget"
 	},
 }

@@ -63,11 +63,11 @@
 		"command": "-renameFile",
 		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
 	},
-	{
-		"key": "cmd+d",
-		"command": "dictionary.google.translateSelected",
-		"when": "editorTextFocus"
-	},
+	// {
+	// 	"key": "cmd+d",
+	// 	"command": "dictionary.google.translateSelected",
+	// 	"when": "editorTextFocus"
+	// },
 	///////////////////////////////////////////
 	// vim
 	{
