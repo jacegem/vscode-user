@@ -17,12 +17,13 @@
 		"body": [
 			"(user/r)"
 		],
-		"description": "user/r"
+		"description": "user/r, integrant 재시작시에 사용하고 있습니다."
 	},
 	"def": {
 		"prefix": "d",
 		"body": [
-			"(def ${1:name} ${2:value})"
+			"(def ${1:name} ",
+			"     ${2:value})"
 		],
 		"description": "def"
 	},
@@ -33,14 +34,17 @@
 			"  (testing \"${2:desc}\"",
 			"))"
 		],
-		"description": "def"
+		"description": "deftest"
 	},
 	"defn": {
 		"prefix": "n",
 		"body": [
-			"(defn ${1:name} [${2:param}] ${3:value})"
+			"(defn ${1:name}",
+			"      \"${2:docstring}\"",
+			"      [${2:param}]",
+			"      ${3:value})"
 		],
-		"description": "def"
+		"description": "defn"
 	},
 	"function": {
 		"prefix": "f",
@@ -61,12 +65,12 @@
 		"body": [
 			":$1"
 		],
-		"description": "colon"
+		"description": "keyword"
 	},
 	"vector": {
 		"prefix": "v",
 		"body": [
-			"[${1:value}]"
+			"[$0]"
 		],
 		"description": "vector"
 	},
@@ -80,63 +84,70 @@
 	"set": {
 		"prefix": "s",
 		"body": [
-			"#{${1:value}}"
+			"#{$0}"
 		],
 		"description": "set"
 	},
 	"keys": {
 		"prefix": "ks",
 		"body": [
-			"{:keys [${1:value}]}"
+			"{:keys [${1:key}] :as ${2:param}}"
 		],
 		"description": "keys"
 	},
 	"if": {
 		"prefix": "i",
 		"body": [
-			"(if ${1:condition} ${2:true} ${3:false})"
+			"(if ${1:condition}",
+			"    ${2:true}",
+			"    ${3:false})"
 		],
 		"description": "if"
 	},
 	"if-let": {
 		"prefix": "il",
 		"body": [
-			"(if-let [${1:key} ${2:value}] ${3:true} ${4:false})"
+			"(if-let [${1:key} ${2:value}] ",
+			"        ${3:true}",
+			"        ${4:false})"
 		],
 		"description": "if-let"
 	},
 	"when": {
 		"prefix": "w",
 		"body": [
-			"(when ${1:condition} ${2:value})"
+			"(when ${1:condition} ",
+			"      ${2:value})"
 		],
 		"description": "when"
 	},
 	"when-let": {
 		"prefix": "wl",
 		"body": [
-			"(when-let [${1:var} ${2:value}] ${3:value})"
+			"(when-let [${1:var} ${2:value}] ",
+			"          ${3:true})"
 		],
 		"description": "when-let"
 	},
 	"let": {
 		"prefix": "l",
 		"body": [
-			"(let [${1:name} ${2:value}] ${3:value})"
+			"(let [${1:name} ${2:value}] ",
+			"     ${3:body})"
 		],
 		"description": "let"
 	},
 	"prn": {
 		"prefix": "pr",
 		"body": [
-			"(prn ${0:msg})"
+			"(prn $0)"
 		],
 		"description": "prn"
 	},
 	"parentheses": {
 		"prefix": "p",
 		"body": [
-			"(${0:statement})"
+			"($0)"
 		],
 		"description": "(parentheses)"
 	},
@@ -161,14 +172,14 @@
 	"atom": {
 		"prefix": "a",
 		"body": [
-			"(atom ${1:value})"
+			"(atom $0)"
 		],
 		"description": "atom"
 	},
 	"equal": {
 		"prefix": "e",
 		"body": [
-			"(= ${1:first}) ${2:second})"
+			"(= ${1:first} ${2:second})"
 		],
 		"description": "equal"
 	},

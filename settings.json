@@ -1205,4 +1205,5 @@
 	"redhat.telemetry.enabled": false,
 	"editor.tabSize": 2,
 	"diffEditor.ignoreTrimWhitespace": false,
+	"calva.evalOnSave": true,
 }
