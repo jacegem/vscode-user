@@ -41,8 +41,8 @@
 		"body": [
 			"(defn ${1:name}",
 			"      \"${2:docstring}\"",
-			"      [${2:param}]",
-			"      ${3:value})"
+			"      [${3:param}]",
+			"      ${4:value})"
 		],
 		"description": "defn"
 	},
