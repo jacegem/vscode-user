@@ -22,8 +22,8 @@
 	"def": {
 		"prefix": "d",
 		"body": [
-			"(def ${1:name} ",
-			"     ${2:value})"
+			"(def $0 ",
+			"     )"
 		],
 		"description": "def"
 	},
@@ -39,10 +39,8 @@
 	"defn": {
 		"prefix": "n",
 		"body": [
-			"(defn ${1:name}",
-			"      \"${2:docstring}\"",
-			"      [${3:param}]",
-			"      ${4:value})"
+			"(defn $0 []",
+			"      )"
 		],
 		"description": "defn"
 	},
@@ -116,8 +114,8 @@
 	"when": {
 		"prefix": "w",
 		"body": [
-			"(when ${1:condition} ",
-			"      ${2:value})"
+			"(when ($0) ",
+			"      )"
 		],
 		"description": "when"
 	},
@@ -132,8 +130,8 @@
 	"let": {
 		"prefix": "l",
 		"body": [
-			"(let [${1:name} ${2:value}] ",
-			"     ${3:body})"
+			"(let [$0] ",
+			"     )"
 		],
 		"description": "let"
 	},
@@ -206,5 +204,49 @@
 			")"
 		],
 		"description": "flutter widget"
+	},
+	"deref": {
+		"prefix": "dr",
+		"body": [
+			"@*$0"
+		],
+		"description": "deref"
+	},
+	"chan out": {
+		"prefix": "co",
+		"body": [
+			"(<! $0)"
+		],
+		"description": "chan out"
+	},
+	"chan in": {
+		"prefix": "ci",
+		"body": [
+			"(>! $0)"
+		],
+		"description": "chan in"
+	},
+	"go loop": {
+		"prefix": "gl",
+		"body": [
+			"(go-loop []",
+			"   $0 ",
+			"  (recur))"
+		],
+		"description": "go loop"
+	},
+	"chan": {
+		"prefix": "ch",
+		"body": [
+			"(chan)"
+		],
+		"description": "chan"
+	},
+	"go": {
+		"prefix": "g",
+		"body": [
+			"(go $0)"
+		],
+		"description": "go"
 	},
 }

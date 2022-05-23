@@ -276,7 +276,6 @@
 	"html.format.enable": false,
 	"asciidoc.enableErrorDiagnostics": false,
 	"asciidoc.preview.refreshInterval": 1000,
-	"asciidoc.preview.style": "boot-darkly.css",
 	// https://marketplace.visualstudio.com/items?itemName=vscodevim.vim
 	"vim.enableNeovim": true,
 	// "vim.neovimPath": "/usr/local/bin/nvim",
@@ -1135,7 +1134,7 @@
 		},
 		// not work -> use hammersppon
 		// {
-		// 	"before": ["<S-w>"], // surround a word
+		// "before": ["<S-w>"], // surround a word
 		// 	"after": ["y", "s", "i", "w"]
 		// },
 		{
@@ -1205,5 +1204,5 @@
 	"redhat.telemetry.enabled": false,
 	"editor.tabSize": 2,
 	"diffEditor.ignoreTrimWhitespace": false,
-	"calva.evalOnSave": true,
+	"dart.flutterHotReloadOnSave": "always",
 }

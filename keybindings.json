@@ -70,11 +70,11 @@
 	// },
 	///////////////////////////////////////////
 	// vim
-	{
-		"key": "/",
-		"command": "editor.action.commentLine", // visual mode 인 경우 copy
-		"when": "editorFocus && vim.active && !inDebugRepl && vim.mode == 'Visual'"
-	},
+	// {
+	// 	"key": "/",
+	// 	"command": "editor.action.commentLine", // visual mode 인 경우 copy
+	// 	"when": "editorFocus && vim.active && !inDebugRepl && vim.mode == 'Visual'"
+	// },
 	{
 		"key": "tab",
 		"command": "workbench.action.focusNextGroup",
