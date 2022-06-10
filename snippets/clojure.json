@@ -51,6 +51,13 @@
 		],
 		"description": "(fucntion)"
 	},
+	"S-Expression": {
+		"prefix": "s",
+		"body": [
+			"($0)"
+		],
+		"description": "(S-Expression)"
+	},
 	"fn": {
 		"prefix": "fn",
 		"body": [
@@ -89,16 +96,15 @@
 	"keys": {
 		"prefix": "ks",
 		"body": [
-			"{:keys [${1:key}] :as ${2:param}}"
+			"{:keys [$0]}"
 		],
 		"description": "keys"
 	},
 	"if": {
 		"prefix": "i",
 		"body": [
-			"(if ${1:condition}",
-			"    ${2:true}",
-			"    ${3:false})"
+			"(if $0",
+			"    )"
 		],
 		"description": "if"
 	},
@@ -248,5 +254,89 @@
 			"(go $0)"
 		],
 		"description": "go"
+	},
+	"type hint String": {
+		"prefix": "hs",
+		"body": [
+			"^String"
+		],
+		"description": "type hint String"
+	},
+	"type hint Integer": {
+		"prefix": "hi",
+		"body": [
+			"^Integer"
+		],
+		"description": "type hint Integer"
+	},
+	"type hint Double": {
+		"prefix": "hd",
+		"body": [
+			"^Double"
+		],
+		"description": "type hint Double"
+	},
+	"type hint Boolean": {
+		"prefix": "hb",
+		"body": [
+			"^Boolean"
+		],
+		"description": "type hint Boolean"
+	},
+	"log/info": {
+		"prefix": "li",
+		"body": [
+			"(log/info $0)"
+		],
+		"description": "log/info"
+	},
+	"map-type": {
+		"prefix": "mt",
+		"body": [
+			"{:type $0}"
+		],
+		"description": "map-type"
+	},
+	"map-type-string": {
+		"prefix": "ms",
+		"body": [
+			"{:type String}"
+		],
+		"description": "map-string"
+	},
+	"map-description": {
+		"prefix": "md",
+		"body": [
+			"{:description $0}"
+		],
+		"description": "map-description"
+	},
+	"do": {
+		"prefix": "do",
+		"body": [
+			"(do $0)"
+		],
+		"description": "do"
+	},
+	"mf": {
+		"prefix": "mf",
+		"body": [
+			"(map $0)"
+		],
+		"description": "map function"
+	},
+	"discard macro": {
+		"prefix": "ds",
+		"body": [
+			"#_$0"
+		],
+		"description": "discard macro"
+	},
+	"discard macro 2": {
+		"prefix": "dss",
+		"body": [
+			"#_#_$0"
+		],
+		"description": "discard macro"
 	},
 }

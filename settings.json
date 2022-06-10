@@ -336,6 +336,14 @@
 		},
 		{
 			"before": [
+				"t"
+			],
+			"after": [
+				"%"
+			]
+		},
+		{
+			"before": [
 				"i"
 			], // up
 			"after": [
@@ -590,6 +598,16 @@
 		{
 			"before": [
 				"<leader>",
+				"f",
+				"t"
+			],
+			"commands": [
+				"calva-fmt.trimCurrentFormWhiteSpace"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
 				"h"
 			],
 			"commands": [
@@ -609,10 +627,31 @@
 			"before": [
 				"<leader>",
 				"k",
+				"k"
+			],
+			"commands": [
+				"bookmarks.toggle"
+				// "editor.action.openLink"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"k",
+				"j"
+			],
+			"commands": [
+				"bookmarks.jumpToPrevious"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"k",
 				"l"
 			],
 			"commands": [
-				"editor.action.openLink"
+				"bookmarks.jumpToNext"
 			]
 		},
 		{
@@ -808,6 +847,16 @@
 			"before": [
 				"<leader>",
 				"s",
+				"f"
+			],
+			"commands": [
+				"paredit.selectForwardSexp"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"s",
 				"s"
 			],
 			"commands": [
@@ -995,9 +1044,17 @@
 		{
 			"before": [
 				"="
-			], // insert
+			],
 			"after": [
 				"i"
+			]
+		},
+		{
+			"before": [
+				"t"
+			],
+			"after": [
+				"%"
 			]
 		},
 		{
