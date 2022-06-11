@@ -466,6 +466,15 @@
 		},
 		{
 			"before": [
+				"s",
+				"c"
+			],
+			"commands": [
+				"workbench.view.scm"
+			],
+		},
+		{
+			"before": [
 				"b"
 			],
 			"commands": [
