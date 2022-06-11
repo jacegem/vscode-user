@@ -425,7 +425,19 @@
 		"args": "example.cljs"
 	},
 	{
-		"key": "cmd+alt+.",
-		"command": "joyride.runWorkspaceScript"
+		"key": "shift+cmd+e",
+		"command": "actions.findWithSelection"
 	},
+	{
+		"key": "cmd+e",
+		"command": "-actions.findWithSelection"
+	},
+	{
+		"key": "cmd+e",
+		"command": "workbench.files.action.showActiveFileInExplorer"
+	},
+	// {
+	// 	"key": "cmd+alt+.",
+	// 	"command": "joyride.runWorkspaceScript"
+	// },
 ]

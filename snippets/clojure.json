@@ -100,8 +100,16 @@
 		],
 		"description": "keys"
 	},
-	"if": {
+	"if-i": {
 		"prefix": "i",
+		"body": [
+			"(if $0",
+			"    )"
+		],
+		"description": "if"
+	},
+	"if": {
+		"prefix": "if",
 		"body": [
 			"(if $0",
 			"    )"
@@ -183,7 +191,7 @@
 	"equal": {
 		"prefix": "e",
 		"body": [
-			"(= ${1:first} ${2:second})"
+			"(= $0)"
 		],
 		"description": "equal"
 	},
@@ -338,5 +346,21 @@
 			"#_#_$0"
 		],
 		"description": "discard macro"
+	},
+	"lacinia resolver": {
+		"prefix": "lr",
+		"body": [
+			"(defn $0 [ctx args value]",
+			" ",
+			")"
+		],
+		"description": "lacinia resolver"
+	},
+	"or": {
+		"prefix": "or",
+		"body": [
+			"(or $0)"
+		],
+		"description": "lacinia resolver"
 	},
 }

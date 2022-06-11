@@ -29,6 +29,18 @@
 	},
 	"editor.guides.bracketPairs": "active",
 	"editor.tokenColorCustomizations": {
+		"[Noctis Minimus]": {
+			"textMateRules": [
+				{
+					"scope": [
+						"constant.keyword.clojure"
+					],
+					"settings": {
+						// "foreground": "#6ea24b"
+					}
+				}
+			]
+		},
 		"textMateRules": [
 			{
 				"scope": [
@@ -286,7 +298,7 @@
 	"vim.incsearch": true,
 	"vim.useSystemClipboard": true,
 	"vim.highlightedyank.enable": true, // y로 복사하면 복사한 부분이 잠시 깜빡함.
-	"vim.highlightedyank.duration": 500,
+	"vim.highlightedyank.duration": 200,
 	"vim.useCtrlKeys": true,
 	"vim.hlsearch": true,
 	"vim.visualstar": true,
@@ -304,6 +316,17 @@
 			"after": [
 				"<Esc>"
 			]
+		},
+		{
+			"before": [
+				";",
+				"s"
+			],
+			"after": [
+				"(",
+				")",
+				"<left>"
+			]
 		}
 	],
 	"vim.insertModeKeyBindingsNonRecursive": [
@@ -313,9 +336,18 @@
 				"j"
 			],
 			"after": [
-				"<Esc>"
+				"<Esc>",
 			]
-		}
+		},
+		{
+			"before": [
+				"k",
+				"k"
+			],
+			"after": [
+				"<Esc>",
+			]
+		},
 	],
 	"vim.visualModeKeyBindingsNonRecursive": [
 		{
@@ -426,6 +458,22 @@
 	"vim.normalModeKeyBindings": [
 		{
 			"before": [
+				"."
+			],
+			"commands": [
+				"editor.action.quickFix"
+			],
+		},
+		{
+			"before": [
+				"b"
+			],
+			"commands": [
+				"editor.action.revealDefinition"
+			],
+		},
+		{
+			"before": [
 				"f"
 			],
 			"after": [
@@ -520,6 +568,16 @@
 			],
 			"commands": [
 				"calva.evaluateSelection"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"c",
+				"h"
+			],
+			"commands": [
+				"calva.clearReplHistory"
 			]
 		},
 		// {
@@ -793,6 +851,16 @@
 			"before": [
 				"<leader>",
 				"r",
+				"c"
+			],
+			"commands": [
+				"paredit.rewrapCurly"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"r",
 				"q"
 			],
 			"commands": [
@@ -819,16 +887,6 @@
 				"paredit.rewrapSquare"
 			]
 		},
-		{
-			"before": [
-				"<leader>",
-				"r",
-				"c"
-			],
-			"commands": [
-				"paredit.rewrapCurly"
-			]
-		},
 		// {
 		// 	"before": ["<leader>", "s"],
 		// 	"commands": ["workbench.view.scm"]
@@ -850,7 +908,9 @@
 				"f"
 			],
 			"commands": [
-				"paredit.selectForwardSexp"
+				"paredit.selectForwardSexp",
+				"execCopy",
+				"extension.vim_escape"
 			]
 		},
 		{
@@ -903,6 +963,18 @@
 			],
 			"commands": [
 				"paredit.spliceSexpKillBackward"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"s",
+				"x"
+			],
+			"commands": [
+				"paredit.selectForwardSexp",
+				"editor.action.clipboardCutAction",
+				"extension.vim_escape"
 			]
 		},
 		{
@@ -1051,6 +1123,14 @@
 		},
 		{
 			"before": [
+				"x"
+			],
+			"after": [
+				"x"
+			]
+		},
+		{
+			"before": [
 				"t"
 			],
 			"after": [
@@ -1183,10 +1263,24 @@
 		// },
 		{
 			"before": [
-				"s"
+				"s",
+				"d"
 			],
-			"after": [
-				"b"
+			"commands": [
+				"paredit.selectForwardSexp",
+				"editor.action.clipboardCutAction",
+				"extension.vim_escape"
+			]
+		},
+		{
+			"before": [
+				"s",
+				"x"
+			],
+			"commands": [
+				"paredit.selectForwardSexp",
+				"editor.action.clipboardCutAction",
+				"extension.vim_escape"
 			]
 		},
 		// not work -> use hammersppon
@@ -1255,8 +1349,18 @@
 	"workbench.colorTheme": "Noctis Minimus",
 	"calva.paredit.strictPreventUnmatchedClosingBracket": true,
 	"asciidoc.use_kroki": true,
-	"calva.highlight.rainbowIndentGuides": true,
-	"calva.highlight.enableBracketColors": false,
+	// "calva.highlight.rainbowIndentGuides": true,
+	// "calva.highlight.enableBracketColors": false,
+	"calva.highlight": {
+		"enableBracketColors": false,
+		"rainbowIndentGuides": true,
+		"matchedBracketStyle": {
+			"backgroundColor": "#18EECE88", // "#777A"
+		},
+		"commentFormStyle": {
+			"fontStyle": "italic"
+		}
+	},
 	"editor.bracketPairColorization.enabled": true,
 	"redhat.telemetry.enabled": false,
 	"editor.tabSize": 2,
