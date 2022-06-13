@@ -32,7 +32,17 @@
 		"body": [
 			"(deftest ${1:name}",
 			"  (testing \"${2:desc}\"",
-			"))"
+			"    (are [x y] (= x y)",
+			")))"
+		],
+		"description": "deftest"
+	},
+	"testing": {
+		"prefix": "tt",
+		"body": [
+			"(testing $0",
+			"  (are [x y] (= x y)",
+			"))",
 		],
 		"description": "deftest"
 	},
@@ -180,6 +190,13 @@
 			"#_{})"
 		],
 		"description": "comment-run-tests"
+	},
+	"run-tests": {
+		"prefix": "rt",
+		"body": [
+			"(run-tests)$0",
+		],
+		"description": "run-tests"
 	},
 	"atom": {
 		"prefix": "a",
@@ -362,5 +379,14 @@
 			"(or $0)"
 		],
 		"description": "lacinia resolver"
+	},
+	"are": {
+		"prefix": "ar",
+		"body": [
+			"(are [x y] (= x y)",
+			"$0",
+			")"
+		],
+		"description": "test are"
 	},
 }

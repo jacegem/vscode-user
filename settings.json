@@ -29,18 +29,6 @@
 	},
 	"editor.guides.bracketPairs": "active",
 	"editor.tokenColorCustomizations": {
-		"[Noctis Minimus]": {
-			"textMateRules": [
-				{
-					"scope": [
-						"constant.keyword.clojure"
-					],
-					"settings": {
-						// "foreground": "#6ea24b"
-					}
-				}
-			]
-		},
 		"textMateRules": [
 			{
 				"scope": [
@@ -466,11 +454,60 @@
 		},
 		{
 			"before": [
+				"c",
+				"n"
+			],
+			"commands": [
+				"clojureLsp.refactor.cleanNs"
+			],
+		},
+		{
+			"before": [
+				"s",
+				"a"
+			],
+			"commands": [
+				"clojureLsp.refactor.addMissingLibspec"
+			],
+		},
+		{
+			"before": [
 				"s",
 				"c"
 			],
 			"commands": [
-				"workbench.view.scm"
+				"paredit.selectForwardSexp",
+				"execCopy",
+				"extension.vim_escape"
+			],
+		},
+		{
+			"before": [
+				"s",
+				"f"
+			],
+			"commands": [
+				"paredit.selectForwardSexp",
+				"execCopy",
+				"extension.vim_escape"
+			],
+		},
+		{
+			"before": [
+				"s",
+				"n"
+			],
+			"commands": [
+				"clojureLsp.refactor.cleanNs"
+			],
+		},
+		{
+			"before": [
+				"s",
+				"s"
+			],
+			"commands": [
+				"paredit.slurpSexpForward"
 			],
 		},
 		{
@@ -537,6 +574,26 @@
 			],
 			"commands": [
 				"workbench.action.findInFiles"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"a",
+				"r"
+			],
+			"commands": [
+				"clojureLsp.refactor.addMissingLibspec"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"a",
+				"m"
+			],
+			"commands": [
+				"clojureLsp.refactor.addMissingLibspec"
 			]
 		},
 		{
@@ -626,10 +683,21 @@
 		{
 			"before": [
 				"<leader>",
-				"e"
+				"e",
+				"f"
 			],
 			"commands": [
-				"workbench.view.explorer"
+				"clojureLsp.refactor.extractFunction"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"f",
+				"a"
+			],
+			"commands": [
+				"clojureLsp.refactor.threadFirstAll"
 			]
 		},
 		{
@@ -679,6 +747,16 @@
 			],
 			"commands": [
 				"workbench.action.moveEditorToLeftGroup"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"i",
+				"s"
+			],
+			"commands": [
+				"clojureLsp.refactor.inlineSymbol"
 			]
 		},
 		{
@@ -776,10 +854,41 @@
 		{
 			"before": [
 				"<leader>",
-				"l"
+				"l",
+				"a"
 			],
 			"commands": [
-				"workbench.action.nextEditorInGroup"
+				"clojureLsp.refactor.threadLastAll"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"l",
+				"e",
+			],
+			"commands": [
+				"clojureLsp.refactor.expandLet"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"l",
+				"i"
+			],
+			"commands": [
+				"clojureLsp.refactor.introduceLet"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"l",
+				"p"
+			],
+			"commands": [
+				"clojureLsp.refactor.moveToLet"
 			]
 		},
 		{
@@ -984,6 +1093,76 @@
 				"paredit.selectForwardSexp",
 				"editor.action.clipboardCutAction",
 				"extension.vim_escape"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"t",
+				"f"
+			],
+			"commands": [
+				"clojureLsp.refactor.threadFirst"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"t",
+				"l"
+			],
+			"commands": [
+				"clojureLsp.refactor.threadLast"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"t",
+				"p"
+			],
+			"commands": [
+				"clojureLsp.refactor.cyclePrivacy"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"u",
+				"a"
+			],
+			"commands": [
+				"clojureLsp.refactor.unwindAll"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"u",
+				"t"
+			],
+			"commands": [
+				"clojureLsp.refactor.unwindThread"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"u",
+				"t"
+			],
+			"commands": [
+				"clojureLsp.refactor.unwindThread"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"w",
+				"e"
+			],
+			"commands": [
+				"workbench.view.explorer"
 			]
 		},
 		{
@@ -1364,7 +1543,7 @@
 		"enableBracketColors": false,
 		"rainbowIndentGuides": true,
 		"matchedBracketStyle": {
-			"backgroundColor": "#18EECE88", // "#777A"
+			"backgroundColor": "#18EECE44", // "#777A"
 		},
 		"commentFormStyle": {
 			"fontStyle": "italic"
