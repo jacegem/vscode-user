@@ -380,6 +380,13 @@
 		],
 		"description": "lacinia resolver"
 	},
+	"ma->map": {
+		"prefix": "ma",
+		"body": [
+			"(map $0)",
+		],
+		"description": "ma->map"
+	},
 	"are": {
 		"prefix": "ar",
 		"body": [
@@ -388,5 +395,19 @@
 			")"
 		],
 		"description": "test are"
+	},
+	"apply": {
+		"prefix": "ap",
+		"body": [
+			"(apply $0)",
+		],
+		"description": "apply"
+	},
+	"merge": {
+		"prefix": "me",
+		"body": [
+			"(merge $0)",
+		],
+		"description": "merge"
 	},
 }

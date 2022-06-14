@@ -484,12 +484,10 @@
 		{
 			"before": [
 				"s",
-				"f"
+				"g"
 			],
 			"commands": [
-				"paredit.selectForwardSexp",
-				"execCopy",
-				"extension.vim_escape"
+				"workbench.view.scm"
 			],
 		},
 		{
