@@ -283,6 +283,21 @@
 		"command": "magit.refresh",
 		"when": "editorTextFocus && editorLangId == 'magit' && vim.mode =~ /^(?!SearchInProgressMode|CommandlineInProgress).*$/"
 	},
+	{
+		"key": "v",
+		"command": "magit.toggle-fold",
+		"when": "editorTextFocus && editorLangId == 'magit' && vim.mode =~ /^(?!SearchInProgressMode|CommandlineInProgress).*$/"
+	},
+	{
+		"key": "g m",
+		"command": "magit.merging",
+		"when": "editorTextFocus && editorLangId == 'magit' && vim.mode =~ /^(?!SearchInProgressMode|CommandlineInProgress).*$/"
+	},
+	{
+		"key": "m",
+		"command": "-magit.merging",
+		"when": "editorTextFocus && editorLangId == 'magit' && vim.mode =~ /^(?!SearchInProgressMode|CommandlineInProgress).*$/"
+	},
 	// {
 	// 	"key": "tab",
 	// 	"command": "extension.vim_tab",
@@ -435,6 +450,16 @@
 	{
 		"key": "cmd+e",
 		"command": "workbench.files.action.showActiveFileInExplorer"
+	},
+	{
+		"key": "g f",
+		"command": "magit.fetching",
+		"when": "editorTextFocus && editorLangId == 'magit' && vim.mode =~ /^(?!SearchInProgressMode|CommandlineInProgress).*$/"
+	},
+	{
+		"key": "f",
+		"command": "-magit.fetching",
+		"when": "editorTextFocus && editorLangId == 'magit' && vim.mode =~ /^(?!SearchInProgressMode|CommandlineInProgress).*$/"
 	},
 	// {
 	// 	"key": "cmd+alt+.",

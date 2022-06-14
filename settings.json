@@ -463,6 +463,24 @@
 		},
 		{
 			"before": [
+				"g",
+				"c"
+			],
+			"commands": [
+				"workbench.view.scm"
+			],
+		},
+		{
+			"before": [
+				"g",
+				"m"
+			],
+			"commands": [
+				"magit.status"
+			],
+		},
+		{
+			"before": [
 				"s",
 				"a"
 			],
@@ -484,12 +502,10 @@
 		{
 			"before": [
 				"s",
-				"f"
+				"g"
 			],
 			"commands": [
-				"paredit.selectForwardSexp",
-				"execCopy",
-				"extension.vim_escape"
+				"workbench.view.scm"
 			],
 		},
 		{
