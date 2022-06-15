@@ -315,7 +315,7 @@
 				")",
 				"<left>"
 			]
-		}
+		},
 	],
 	"vim.insertModeKeyBindingsNonRecursive": [
 		{
@@ -491,12 +491,30 @@
 		{
 			"before": [
 				"s",
+				"b"
+			],
+			"commands": [
+				"paredit.barfSexpForward"
+			],
+		},
+		{
+			"before": [
+				"s",
 				"c"
 			],
 			"commands": [
 				"paredit.selectForwardSexp",
 				"execCopy",
 				"extension.vim_escape"
+			],
+		},
+		{
+			"before": [
+				"s",
+				"f"
+			],
+			"commands": [
+				"paredit.slurpSexpForward"
 			],
 		},
 		{
@@ -515,15 +533,6 @@
 			],
 			"commands": [
 				"clojureLsp.refactor.cleanNs"
-			],
-		},
-		{
-			"before": [
-				"s",
-				"s"
-			],
-			"commands": [
-				"paredit.slurpSexpForward"
 			],
 		},
 		{
@@ -1327,6 +1336,14 @@
 		},
 		{
 			"before": [
+				"e",
+			],
+			"after": [
+				"b"
+			],
+		},
+		{
+			"before": [
 				"x"
 			],
 			"after": [
@@ -1427,6 +1444,14 @@
 			], // page half down
 			"after": [
 				"<C-d>"
+			]
+		},
+		{ // n-> m (marker) 
+			"before": [
+				"n"
+			],
+			"after": [
+				"m"
 			]
 		},
 		{
