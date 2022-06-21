@@ -155,7 +155,7 @@
 		"yaml": true,
 		"plaintext": false,
 		"markdown": true,
-		"clojure": false
+		"clojure": true
 	},
 	"githubPullRequests.fileListLayout": "tree",
 	"githubIssues.queries": [
@@ -553,7 +553,18 @@
 				"<leader>",
 				"b",
 				"d",
-				"w"
+				"w" // Start of word
+			]
+		},
+		{
+			"before": [
+				"F"
+			],
+			"after": [
+				"<leader>",
+				"<leader>",
+				"<leader>",
+				"j", // JumpToAnywhere motion;
 			]
 		},
 		{
@@ -1595,4 +1606,6 @@
 	"editor.tabSize": 2,
 	"diffEditor.ignoreTrimWhitespace": false,
 	"dart.flutterHotReloadOnSave": "always",
+	"vim.cursorStylePerMode.normal": "block-outline",
+	"files.insertFinalNewline": true,
 }

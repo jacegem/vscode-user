@@ -410,4 +410,18 @@
 		],
 		"description": "merge"
 	},
+	"update": {
+		"prefix": "up",
+		"body": [
+			"(update $0)",
+		],
+		"description": "update"
+	},
+	"count": {
+		"prefix": "cou",
+		"body": [
+			"(count $0)",
+		],
+		"description": "count"
+	},
 }

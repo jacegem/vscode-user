@@ -461,6 +461,16 @@
 		"command": "-magit.fetching",
 		"when": "editorTextFocus && editorLangId == 'magit' && vim.mode =~ /^(?!SearchInProgressMode|CommandlineInProgress).*$/"
 	},
+	{
+		"key": "shift+alt+cmd+j",
+		"command": "liveshare.join",
+		"when": "liveshare:state != 'Joined' && liveshare:state != 'Shared'"
+	},
+	{
+		"key": "alt+cmd+j",
+		"command": "-liveshare.join",
+		"when": "liveshare:state != 'Joined' && liveshare:state != 'Shared'"
+	},
 	// {
 	// 	"key": "cmd+alt+.",
 	// 	"command": "joyride.runWorkspaceScript"
