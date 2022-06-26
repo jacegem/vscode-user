@@ -424,4 +424,11 @@
 		],
 		"description": "count"
 	},
+	"defmethod": {
+		"prefix": "dm",
+		"body": [
+			"(defmethod $0)",
+		],
+		"description": "defmethod"
+	},
 }

@@ -155,7 +155,7 @@
 		"yaml": true,
 		"plaintext": false,
 		"markdown": true,
-		"clojure": true
+		"clojure": false
 	},
 	"githubPullRequests.fileListLayout": "tree",
 	"githubIssues.queries": [
@@ -911,6 +911,16 @@
 			"before": [
 				"<leader>",
 				"l",
+				"f"
+			],
+			"commands": [
+				"calva.loadFile"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"l",
 				"i"
 			],
 			"commands": [
@@ -1039,6 +1049,16 @@
 			],
 			"commands": [
 				"paredit.rewrapSquare"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"r",
+				"t"
+			],
+			"commands": [
+				"calva.runAllTests"
 			]
 		},
 		// {
@@ -1317,6 +1337,32 @@
 			],
 			"commands": [
 				"workbench.action.focusNextGroup"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"'"
+			],
+			"after": [
+				"y",
+				"s",
+				"i",
+				"w",
+				"\""
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"9"
+			],
+			"after": [
+				"y",
+				"s",
+				"i",
+				"w",
+				"("
 			]
 		},
 		{
