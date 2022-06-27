@@ -226,15 +226,24 @@
 		"command": "-calva-fmt.formatCurrentForm", // 자동완성과 중복되므로 명령 삭제
 		"when": "calva:keybindingsEnabled && editorTextFocus && !editorReadOnly && !hasOtherSuggestions && !inSnippetMode && !suggestWidgetVisible && editorLangId == 'clojure'"
 	},
+	// {
+	// 	"key": "shift+escape",
+	// 	"command": "calva.clearInlineResults",
+	// 	"when": "calva:keybindingsEnabled && editorTextFocus && !editorHasMultipleSelections && !editorHasSelection && !editorReadOnly && !hasOtherSuggestions && !parameterHintsVisible && !selectionAnchorSet && !suggestWidgetVisible && editorLangId == 'clojure'"
+	// },
+	// {
+	// 	"key": "escape",
+	// 	"command": "-calva.clearInlineResults",
+	// 	"when": "calva:keybindingsEnabled && editorTextFocus && !editorHasMultipleSelections && !editorHasSelection && !editorReadOnly && !hasOtherSuggestions && !parameterHintsVisible && !selectionAnchorSet && !suggestWidgetVisible && editorLangId == 'clojure'"
+	// },
+	{
+		"key": "escape",
+		"command": "-calva.clearInlineResults"
+	},
 	{
 		"key": "shift+escape",
 		"command": "calva.clearInlineResults",
-		"when": "calva:keybindingsEnabled && editorTextFocus && !editorHasMultipleSelections && !editorHasSelection && !editorReadOnly && !hasOtherSuggestions && !parameterHintsVisible && !selectionAnchorSet && !suggestWidgetVisible && editorLangId == 'clojure'"
-	},
-	{
-		"key": "escape",
-		"command": "-calva.clearInlineResults",
-		"when": "calva:keybindingsEnabled && editorTextFocus && !editorHasMultipleSelections && !editorHasSelection && !editorReadOnly && !hasOtherSuggestions && !parameterHintsVisible && !selectionAnchorSet && !suggestWidgetVisible && editorLangId == 'clojure'"
+		"when": "editorTextFocus && !editorHasMultipleSelections && !editorReadOnly && !hasOtherSuggestions && !suggestWidgetVisible && editorLangId == 'clojure'"
 	},
 	{
 		"key": "enter",

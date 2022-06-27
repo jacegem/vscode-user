@@ -259,10 +259,10 @@
 	},
 	"dart.openDevTools": "flutter",
 	"calva.prettyPrintingOptions": {
+		"printEngine": "pprint",
 		"enabled": true,
 		"width": 120,
-		"maxLength": 50,
-		"printEngine": "pprint"
+		"maxLength": 50
 	},
 	"[clojure]": {
 		"editor.autoClosingBrackets": "always",
@@ -300,6 +300,14 @@
 			"before": [
 				"ㅓ",
 				"ㅓ"
+			],
+			"after": [
+				"<Esc>"
+			]
+		},
+		{
+			"before": [
+				"<Esc>"
 			],
 			"after": [
 				"<Esc>"
@@ -1609,7 +1617,7 @@
 	],
 	"editor.unicodeHighlight.ambiguousCharacters": false,
 	"python.analysis.completeFunctionParens": true,
-	"calva.paredit.defaultKeyMap": "original",
+	"calva.paredit.defaultKeyMap": "strict",
 	"editor.formatOnSave": true,
 	"nebulaOni.update.restoreConfiguration": {
 		"themeSettings": {
