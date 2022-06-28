@@ -693,7 +693,66 @@
 		// {
 		// 	"before": ["<leader>", "d"],
 		// 	"commands": ["workbench.view.debug"]
-		// },
+		{
+			"before": [
+				"<leader>",
+				"d",
+				"9"
+			],
+			"after": [
+				"d",
+				"s",
+				"("
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"d",
+				"0"
+			],
+			"after": [
+				"d",
+				"s",
+				")"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"d",
+				"'"
+			],
+			"after": [
+				"d",
+				"s",
+				"\""
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"d",
+				"["
+			],
+			"after": [
+				"d",
+				"s",
+				"["
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"d",
+				"]"
+			],
+			"after": [
+				"d",
+				"s",
+				"{"
+			]
+		},
 		{
 			"before": [
 				"<leader>",
