@@ -223,8 +223,8 @@
 	},
 	{
 		"key": "tab",
-		"command": "-calva-fmt.formatCurrentForm", // 자동완성과 중복되므로 명령 삭제
-		"when": "calva:keybindingsEnabled && editorTextFocus && !editorReadOnly && !hasOtherSuggestions && !inSnippetMode && !suggestWidgetVisible && editorLangId == 'clojure'"
+		"command": "-calva-fmt.formatCurrentForm",
+		"when": "calva:keybindingsEnabled && editorTextFocus && !editorReadOnly && !hasOtherSuggestions && !inSnippetMode && !inlineSuggestionVisible && !suggestWidgetVisible && editorLangId == 'clojure'"
 	},
 	// {
 	// 	"key": "shift+escape",
