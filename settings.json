@@ -243,7 +243,6 @@
 	"python.autoComplete.addBrackets": true,
 	"python.analysis.diagnosticMode": "workspace",
 	"python.analysis.indexing": true,
-	"hediet.vscode-drawio.local-storage": "eyIuZHJhd2lvLWNvbmZpZyI6IntcImxhbmd1YWdlXCI6XCJcIixcImN1c3RvbUZvbnRzXCI6W10sXCJsaWJyYXJpZXNcIjpcImdlbmVyYWxcIixcImN1c3RvbUxpYnJhcmllc1wiOltcIkwuc2NyYXRjaHBhZFwiXSxcInBsdWdpbnNcIjpbXSxcInJlY2VudENvbG9yc1wiOltdLFwiZm9ybWF0V2lkdGhcIjpcIjI0MFwiLFwiY3JlYXRlVGFyZ2V0XCI6ZmFsc2UsXCJwYWdlRm9ybWF0XCI6e1wieFwiOjAsXCJ5XCI6MCxcIndpZHRoXCI6ODI3LFwiaGVpZ2h0XCI6MTE2OX0sXCJzZWFyY2hcIjp0cnVlLFwic2hvd1N0YXJ0U2NyZWVuXCI6dHJ1ZSxcImdyaWRDb2xvclwiOlwiI2QwZDBkMFwiLFwiZGFya0dyaWRDb2xvclwiOlwiIzZlNmU2ZVwiLFwiYXV0b3NhdmVcIjp0cnVlLFwicmVzaXplSW1hZ2VzXCI6bnVsbCxcIm9wZW5Db3VudGVyXCI6MCxcInZlcnNpb25cIjoxOCxcInVuaXRcIjoxLFwiaXNSdWxlck9uXCI6ZmFsc2UsXCJ1aVwiOlwiXCJ9In0=",
 	"notebook.cellToolbarLocation": {
 		"default": "right",
 		"jupyter-notebook": "left"
@@ -323,7 +322,7 @@
 				")",
 				"<left>"
 			]
-		},
+		}
 	],
 	"vim.insertModeKeyBindingsNonRecursive": [
 		{
@@ -332,7 +331,7 @@
 				"j"
 			],
 			"after": [
-				"<Esc>",
+				"<Esc>"
 			]
 		},
 		{
@@ -341,9 +340,9 @@
 				"k"
 			],
 			"after": [
-				"<Esc>",
+				"<Esc>"
 			]
-		},
+		}
 	],
 	"vim.visualModeKeyBindingsNonRecursive": [
 		{
@@ -458,7 +457,7 @@
 			],
 			"commands": [
 				"editor.action.quickFix"
-			],
+			]
 		},
 		{
 			"before": [
@@ -467,7 +466,7 @@
 			],
 			"commands": [
 				"clojureLsp.refactor.cleanNs"
-			],
+			]
 		},
 		{
 			"before": [
@@ -476,7 +475,7 @@
 			],
 			"commands": [
 				"workbench.view.scm"
-			],
+			]
 		},
 		{
 			"before": [
@@ -485,7 +484,7 @@
 			],
 			"commands": [
 				"magit.status"
-			],
+			]
 		},
 		{
 			"before": [
@@ -494,7 +493,7 @@
 			],
 			"commands": [
 				"clojureLsp.refactor.addMissingLibspec"
-			],
+			]
 		},
 		{
 			"before": [
@@ -503,7 +502,7 @@
 			],
 			"commands": [
 				"paredit.barfSexpForward"
-			],
+			]
 		},
 		{
 			"before": [
@@ -514,7 +513,7 @@
 				"paredit.selectForwardSexp",
 				"execCopy",
 				"extension.vim_escape"
-			],
+			]
 		},
 		{
 			"before": [
@@ -523,7 +522,7 @@
 			],
 			"commands": [
 				"paredit.slurpSexpForward"
-			],
+			]
 		},
 		{
 			"before": [
@@ -532,7 +531,7 @@
 			],
 			"commands": [
 				"workbench.view.scm"
-			],
+			]
 		},
 		{
 			"before": [
@@ -541,7 +540,7 @@
 			],
 			"commands": [
 				"clojureLsp.refactor.cleanNs"
-			],
+			]
 		},
 		{
 			"before": [
@@ -549,7 +548,7 @@
 			],
 			"commands": [
 				"editor.action.revealDefinition"
-			],
+			]
 		},
 		{
 			"before": [
@@ -572,7 +571,7 @@
 				"<leader>",
 				"<leader>",
 				"<leader>",
-				"j", // JumpToAnywhere motion;
+				"j" // JumpToAnywhere motion;
 			]
 		},
 		{
@@ -660,16 +659,6 @@
 			]
 		},
 		// calva
-		{
-			"before": [
-				"<leader>",
-				"c",
-				"j"
-			],
-			"commands": [
-				"calva.jackIn"
-			]
-		},
 		{
 			"before": [
 				"<leader>",
@@ -865,17 +854,7 @@
 		{
 			"before": [
 				"<leader>",
-				"j"
-			],
-			"commands": [
-				"workbench.action.previousEditorInGroup"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
 				"k",
-				"k"
 			],
 			"commands": [
 				"bookmarks.toggle"
@@ -885,7 +864,6 @@
 		{
 			"before": [
 				"<leader>",
-				"k",
 				"j"
 			],
 			"commands": [
@@ -1636,6 +1614,16 @@
 				"extension.vim_escape"
 			]
 		},
+		{
+			"before": [
+				"<leader>",
+				"c",
+				"j"
+			],
+			"commands": [
+				"calva.jackIn"
+			]
+		},
 		// not work -> use hammersppon
 		// {
 		// "before": ["<S-w>"], // surround a word
@@ -1676,7 +1664,7 @@
 	],
 	"editor.unicodeHighlight.ambiguousCharacters": false,
 	"python.analysis.completeFunctionParens": true,
-	"calva.paredit.defaultKeyMap": "strict",
+	"calva.paredit.defaultKeyMap": "original",
 	"editor.formatOnSave": true,
 	"nebulaOni.update.restoreConfiguration": {
 		"themeSettings": {
@@ -1718,7 +1706,9 @@
 	"redhat.telemetry.enabled": false,
 	"editor.tabSize": 2,
 	"diffEditor.ignoreTrimWhitespace": false,
-	"dart.flutterHotReloadOnSave": "always",
+	"dart.flutterHotReloadOnSave": "all",
 	"vim.cursorStylePerMode.normal": "block-outline",
 	"files.insertFinalNewline": true,
+	"hediet.vscode-drawio.codeLinkActivated": false,
+	"hediet.vscode-drawio.theme": "automatic",
 }
