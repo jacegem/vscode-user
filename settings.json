@@ -155,7 +155,8 @@
 		"yaml": true,
 		"plaintext": false,
 		"markdown": true,
-		"clojure": false
+		"clojure": false,
+		"lua": true
 	},
 	"githubPullRequests.fileListLayout": "tree",
 	"githubIssues.queries": [
@@ -312,17 +313,17 @@
 				"<Esc>"
 			]
 		},
-		{
-			"before": [
-				";",
-				"s"
-			],
-			"after": [
-				"(",
-				")",
-				"<left>"
-			]
-		}
+		// {
+		// 	"before": [
+		// 		";",
+		// 		"s"
+		// 	],
+		// 	"after": [
+		// 		"(",
+		// 		")",
+		// 		"<left>"
+		// 	]
+		// }
 	],
 	"vim.insertModeKeyBindingsNonRecursive": [
 		{
@@ -512,7 +513,7 @@
 			"commands": [
 				"paredit.selectForwardSexp",
 				"execCopy",
-				"extension.vim_escape"
+				"extension.vim_escape",
 			]
 		},
 		{
@@ -854,11 +855,20 @@
 		{
 			"before": [
 				"<leader>",
+				"<leader>",
+				"k",
+			],
+			"commands": [
+				"bookmarks.list"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
 				"k",
 			],
 			"commands": [
 				"bookmarks.toggle"
-				// "editor.action.openLink"
 			]
 		},
 		{
@@ -1413,6 +1423,32 @@
 		{
 			"before": [
 				"<leader>",
+				"["
+			],
+			"after": [
+				"y",
+				"s",
+				"i",
+				"w",
+				"["
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"]"
+			],
+			"after": [
+				"y",
+				"s",
+				"i",
+				"w",
+				"{"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
 				"/"
 			],
 			"after": [
@@ -1497,7 +1533,7 @@
 				"a"
 			], // insert beginning cursor
 			"after": [
-				"I"
+				"o"
 			]
 		},
 		{
@@ -1598,9 +1634,7 @@
 				"d"
 			],
 			"commands": [
-				"paredit.selectForwardSexp",
-				"editor.action.clipboardCutAction",
-				"extension.vim_escape"
+				"paredit.spliceSexp"
 			]
 		},
 		{

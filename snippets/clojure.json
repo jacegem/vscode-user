@@ -329,6 +329,13 @@
 		],
 		"description": "map-string"
 	},
+	"type-string": {
+		"prefix": "ts",
+		"body": [
+			"{:type String}"
+		],
+		"description": "type-string"
+	},
 	"map-description": {
 		"prefix": "md",
 		"body": [
