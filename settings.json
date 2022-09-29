@@ -156,7 +156,8 @@
 		"plaintext": false,
 		"markdown": true,
 		"clojure": false,
-		"lua": true
+		"lua": true,
+		"css": false
 	},
 	"githubPullRequests.fileListLayout": "tree",
 	"githubIssues.queries": [
@@ -1699,7 +1700,6 @@
 	"editor.unicodeHighlight.ambiguousCharacters": false,
 	"python.analysis.completeFunctionParens": true,
 	"calva.paredit.defaultKeyMap": "original",
-	"editor.formatOnSave": true,
 	"nebulaOni.update.restoreConfiguration": {
 		"themeSettings": {
 			"background": "Grey",
@@ -1723,7 +1723,6 @@
 	"italicc.plugin.enabled": true,
 	"workbench.colorTheme": "Noctis Minimus",
 	"calva.paredit.strictPreventUnmatchedClosingBracket": true,
-	"asciidoc.use_kroki": true,
 	// "calva.highlight.rainbowIndentGuides": true,
 	// "calva.highlight.enableBracketColors": false,
 	"calva.highlight": {
@@ -1745,4 +1744,15 @@
 	"files.insertFinalNewline": true,
 	"hediet.vscode-drawio.codeLinkActivated": false,
 	"hediet.vscode-drawio.theme": "automatic",
+	"[css]": {
+		"editor.defaultFormatter": "vscode.css-language-features"
+	},
+	"files.trimFinalNewlines": true,
+	"calva.fmt.configPath": ".cljfmt.edn",
+	"editor.foldingMaximumRegions": 500,
+	"markdown.preview.breaks": true,
+	"asciidoc.use_kroki": true,
+	"calva.jackInEnv": {},
+	"editor.stickyScroll.enabled": true,
+	"editor.formatOnSave": true,
 }

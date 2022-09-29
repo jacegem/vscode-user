@@ -438,4 +438,10 @@
 		],
 		"description": "defmethod"
 	},
+	"defonce": {
+		"prefix": "o",
+		"body": [
+			"(defonce $0)",
+		],
+	}
 }
