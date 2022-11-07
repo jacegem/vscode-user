@@ -178,7 +178,7 @@
 		"body": [
 			"(comment",
 			"  $0",
-			"#_{})"
+			"  :rcf)"
 		],
 		"description": "comment"
 	},

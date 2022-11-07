@@ -435,13 +435,13 @@
 	// joyride
 	{
 		"key": "cmd+1",
-		"command": "joyride.runWorkspaceScript",
+		"command": "joyride.runUserScript",
 		"args": "ignore_form.cljs"
 	},
 	{
 		"key": "cmd+2",
-		"command": "joyride.runWorkspaceScript",
-		"args": "fontsize.cljs"
+		"command": "joyride.runUserScript",
+		"args": "git_link.cljs"
 	},
 	{
 		"key": "cmd+3",

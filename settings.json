@@ -453,153 +453,6 @@
 		}
 	],
 	"vim.normalModeKeyBindings": [
-		{
-			"before": [
-				"."
-			],
-			"commands": [
-				"editor.action.quickFix"
-			]
-		},
-		{
-			"before": [
-				"c",
-				"n"
-			],
-			"commands": [
-				"clojureLsp.refactor.cleanNs"
-			]
-		},
-		{
-			"before": [
-				"g",
-				"c"
-			],
-			"commands": [
-				"workbench.view.scm"
-			]
-		},
-		{
-			"before": [
-				"g",
-				"m"
-			],
-			"commands": [
-				"magit.status"
-			]
-		},
-		{
-			"before": [
-				"s",
-				"a"
-			],
-			"commands": [
-				"clojureLsp.refactor.addMissingLibspec"
-			]
-		},
-		{
-			"before": [
-				"s",
-				"b"
-			],
-			"commands": [
-				"paredit.barfSexpForward"
-			]
-		},
-		{
-			"before": [
-				"s",
-				"c"
-			],
-			"commands": [
-				"paredit.selectForwardSexp",
-				"execCopy",
-				"extension.vim_escape",
-			]
-		},
-		{
-			"before": [
-				"s",
-				"f"
-			],
-			"commands": [
-				"paredit.slurpSexpForward"
-			]
-		},
-		{
-			"before": [
-				"s",
-				"g"
-			],
-			"commands": [
-				"workbench.view.scm"
-			]
-		},
-		{
-			"before": [
-				"s",
-				"n"
-			],
-			"commands": [
-				"clojureLsp.refactor.cleanNs"
-			]
-		},
-		{
-			"before": [
-				"b"
-			],
-			"commands": [
-				"editor.action.revealDefinition"
-			]
-		},
-		{
-			"before": [
-				"f"
-			],
-			"after": [
-				"<leader>",
-				"<leader>",
-				"<leader>",
-				"b",
-				"d",
-				"w" // Start of word
-			]
-		},
-		{
-			"before": [
-				"F"
-			],
-			"after": [
-				"<leader>",
-				"<leader>",
-				"<leader>",
-				"j" // JumpToAnywhere motion;
-			]
-		},
-		{
-			"before": [
-				"U"
-			],
-			"after": [
-				"<C-r>"
-			] // redo
-		},
-		{
-			"before": [
-				"["
-			],
-			"commands": [
-				"workbench.action.navigateBack"
-			]
-		},
-		{
-			"before": [
-				"]"
-			],
-			"commands": [
-				"workbench.action.navigateForward"
-			]
-		},
 		//* a : action list
 		{
 			"before": [
@@ -1475,6 +1328,171 @@
 		},
 		{
 			"before": [
+				"."
+			],
+			"commands": [
+				"editor.action.quickFix"
+			]
+		},
+		// {
+		// 	"before": [
+		// 		"c",
+		// 		"v"
+		// 	],
+		// 	"commands": [
+		// 		"calva.clearInlineResults"
+		// 	]
+		// },
+		{
+			"before": [
+				"c",
+				"n"
+			],
+			"commands": [
+				"clojureLsp.refactor.cleanNs"
+			]
+		},
+		{
+			"before": [
+				"g",
+				"c"
+			],
+			"commands": [
+				"workbench.view.scm"
+			]
+		},
+		{
+			"before": [
+				"g",
+				"m"
+			],
+			"commands": [
+				"magit.status"
+			]
+		},
+		{
+			"before": [
+				"s",
+				"a"
+			],
+			"commands": [
+				"clojureLsp.refactor.addMissingLibspec"
+			]
+		},
+		{
+			"before": [
+				"s",
+				"b"
+			],
+			"commands": [
+				"paredit.barfSexpForward"
+			]
+		},
+		{
+			"before": [
+				"s",
+				"c"
+			],
+			"commands": [
+				"paredit.selectForwardSexp",
+				"execCopy",
+				"extension.vim_escape",
+			]
+		},
+		{
+			"before": [
+				"s",
+				"k"
+			],
+			"commands": [
+				"paredit.killListForward"
+			]
+		},
+		{
+			"before": [
+				"s",
+				"f"
+			],
+			"commands": [
+				"paredit.slurpSexpForward"
+			]
+		},
+		{
+			"before": [
+				"s",
+				"g"
+			],
+			"commands": [
+				"workbench.view.scm"
+			]
+		},
+		{
+			"before": [
+				"s",
+				"n"
+			],
+			"commands": [
+				"clojureLsp.refactor.cleanNs"
+			]
+		},
+		{
+			"before": [
+				"b"
+			],
+			"commands": [
+				"editor.action.revealDefinition"
+			]
+		},
+		{
+			"before": [
+				"f"
+			],
+			"after": [
+				"<leader>",
+				"<leader>",
+				"<leader>",
+				"b",
+				"d",
+				"w" // Start of word
+			]
+		},
+		{
+			"before": [
+				"F"
+			],
+			"after": [
+				"<leader>",
+				"<leader>",
+				"<leader>",
+				"j" // JumpToAnywhere motion;
+			]
+		},
+		{
+			"before": [
+				"U"
+			],
+			"after": [
+				"<C-r>"
+			] // redo
+		},
+		{
+			"before": [
+				"["
+			],
+			"commands": [
+				"workbench.action.navigateBack"
+			]
+		},
+		{
+			"before": [
+				"]"
+			],
+			"commands": [
+				"workbench.action.navigateForward"
+			]
+		},
+		{
+			"before": [
 				"e",
 			],
 			"after": [
@@ -1755,4 +1773,7 @@
 	"calva.jackInEnv": {},
 	"editor.stickyScroll.enabled": true,
 	"editor.formatOnSave": true,
+	"quarto.mathjax.theme": "dark",
+	"githubPullRequests.pullBranch": "never",
+	"githubPullRequests.terminalLinksHandler": "github",
 }
