@@ -336,15 +336,15 @@
 				"<Esc>"
 			]
 		},
-		{
-			"before": [
-				"k",
-				"k"
-			],
-			"after": [
-				"<Esc>"
-			]
-		}
+		// {
+		// 	"before": [
+		// 		"k",
+		// 		"k"
+		// 	],
+		// 	"after": [
+		// 		"<Esc>"
+		// 	]
+		// },
 	],
 	"vim.visualModeKeyBindingsNonRecursive": [
 		{
@@ -1372,6 +1372,14 @@
 		},
 		{
 			"before": [
+				"<S-r>"
+			],
+			"commands": [
+				"editor.action.rename"
+			]
+		},
+		{
+			"before": [
 				"s",
 				"a"
 			],
@@ -1691,6 +1699,26 @@
 				"<C-w>",
 				"h"
 			]
+		},
+		{
+			"before": [
+				"/"
+			], // left window
+			"commands": [
+				"editor.action.commentLine"
+				// "workbench.action.toggleWindowTabsBar"
+			]
+			// "after": ["<C-w>", "h"]
+		},
+		{
+			"before": [
+				"q"
+			], // left window
+			"commands": [
+				"workbench.action.previousEditorInGroup"
+				// "workbench.action.toggleWindowTabsBar"
+			]
+			// "after": ["<C-w>", "h"]
 		},
 		{
 			"before": [
