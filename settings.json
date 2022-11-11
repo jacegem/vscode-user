@@ -1,33 +1,101 @@
 {
-	"terminal.integrated.fontFamily": "'D2Coding ligature'",
-	"terminal.integrated.fontSize": 13,
-	"terminal.integrated.defaultProfile.osx": "fish",
-	"workbench.editor.highlightModifiedTabs": true,
-	"editor.insertSpaces": true,
-	"editor.fontSize": 14.5,
+	"[clojure]": {
+		"editor.autoClosingBrackets": "always",
+		"editor.autoClosingOvertype": "always",
+		"editor.defaultFormatter": "betterthantomorrow.calva",
+		"editor.formatOnPaste": true
+	},
+	"[css]": {
+		"editor.defaultFormatter": "vscode.css-language-features"
+	},
+	"[dart]": {
+		"editor.formatOnSave": true,
+		"editor.formatOnType": true,
+		"editor.rulers": [
+			80
+		],
+		"editor.selectionHighlight": false,
+		"editor.suggest.snippetsPreventQuickSuggestions": false,
+		"editor.suggestSelection": "first",
+		"editor.tabCompletion": "onlySnippets",
+		"editor.wordBasedSuggestions": false
+	},
+	"[json]": {
+		"editor.defaultFormatter": "vscode.json-language-features"
+	},
+	"[jsonc]": {
+		"editor.defaultFormatter": "vscode.json-language-features"
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "vscode.typescript-language-features"
+	},
+	"asciidoc.enableErrorDiagnostics": false,
+	"asciidoc.preview.breaks": true,
+	"asciidoc.preview.refreshInterval": 1000,
+	"asciidoc.use_kroki": true,
+	"calva.customREPLCommandSnippets": [
+		{
+			"name": "go",
+			"repl": "clj",
+			"snippet": "(user/go)"
+		},
+		{
+			"name": "reset",
+			"repl": "clj",
+			"snippet": "(user/reset)"
+		}
+	],
+	"calva.fmt.configPath": ".cljfmt.edn",
+	// "calva.highlight.rainbowIndentGuides": true,
+	// "calva.highlight.enableBracketColors": false,
+	"calva.highlight": {
+		"commentFormStyle": {
+			"fontStyle": "italic"
+		},
+		"enableBracketColors": false,
+		"matchedBracketStyle": {
+			"backgroundColor": "#18EECE44" // "#777A"
+		},
+		"rainbowIndentGuides": true
+	},
+	"calva.jackInEnv": {},
+	"calva.paredit.defaultKeyMap": "original",
+	"calva.paredit.strictPreventUnmatchedClosingBracket": true,
+	"calva.prettyPrintingOptions": {
+		"enabled": true,
+		"maxLength": 50,
+		"printEngine": "pprint",
+		"width": 120
+	},
+	"codestream.email": "jacegem@gmail.com",
+	"css.validate": false,
+	"dart.debugExternalLibraries": false,
+	"dart.debugSdkLibraries": false,
+	"dart.flutterHotReloadOnSave": "all",
+	"dart.openDevTools": "flutter",
+	"dart.previewFlutterUiGuides": true,
+	"dart.previewFlutterUiGuidesCustomTracking": true,
+	"dart.sdkPath": "~/sdk/flutter/bin/dart",
+	"debug.allowBreakpointsEverywhere": true,
+	// Causes the debug view to automatically appear when a breakpoint is hit. This
+	// setting is global and not configurable per-language.
+	"debug.openDebug": "openOnDebugBreak",
+	"diffEditor.ignoreTrimWhitespace": false,
+	"editor.accessibilitySupport": "off",
+	"editor.bracketPairColorization.enabled": true,
+	"editor.foldingMaximumRegions": 500,
 	// "editor.fontFamily": "'Hack', 'D2Coding', 'SourceCodePro+Powerline+Awesome Regular', 'D2Coding', Menlo, Monaco, 'Courier New', monospace, FiraCode-Retina",
 	"editor.fontFamily": "Fira Code, monospace, 'D2Coding ligature' ",
 	"editor.fontLigatures": true,
-	"editor.accessibilitySupport": "off",
-	"editor.largeFileOptimizations": false,
-	"editor.inlineSuggest.enabled": true,
+	"editor.fontSize": 14.5,
+	"editor.formatOnSave": true,
 	"editor.formatOnType": true,
-	// https://neutrondev.com/vs-code-colored-bracket-pair-guides/
-	"workbench.colorCustomizations": {
-		"editorBracketPairGuide.background1": "#F8B46C",
-		"editorBracketPairGuide.background2": "#FB78B5",
-		"editorBracketPairGuide.background3": "#4AACFB",
-		"editorBracketPairGuide.background4": "#B98BF5",
-		"editorBracketPairGuide.background5": "#DAD8D8",
-		"editorBracketPairGuide.background6": "#18EECE",
-		"editorBracketPairGuide.activeBackground1": "#F8B46C",
-		"editorBracketPairGuide.activeBackground2": "#FB78B5",
-		"editorBracketPairGuide.activeBackground3": "#4AACFB",
-		"editorBracketPairGuide.activeBackground4": "#B98BF5",
-		"editorBracketPairGuide.activeBackground5": "#DAD8D8",
-		"editorBracketPairGuide.activeBackground6": "#18EECE",
-	},
 	"editor.guides.bracketPairs": "active",
+	"editor.inlineSuggest.enabled": true,
+	"editor.insertSpaces": true,
+	"editor.largeFileOptimizations": false,
+	"editor.stickyScroll.enabled": true,
+	"editor.tabSize": 2,
 	"editor.tokenColorCustomizations": {
 		"textMateRules": [
 			{
@@ -139,27 +207,26 @@
 			}
 		]
 	},
-	"workbench.iconTheme": "material-icon-theme",
-	"workbench.editorAssociations": {
-		"*.ipynb": "jupyter-notebook",
-		"*.html": "default"
+	"editor.unicodeHighlight.ambiguousCharacters": false,
+	"files.autoSave": "afterDelay",
+	"files.exclude": {
+		"**/__pycache__": true
 	},
-	"workbench.tree.indent": 12,
-	"typescript.inlayHints.parameterNames.enabled": "all",
+	"files.insertFinalNewline": true,
+	"files.trimFinalNewlines": true,
 	"git.autofetch": true,
+	"git.confirmSync": false,
 	"git.enableSmartCommit": true,
 	"git.ignoreRebaseWarning": true,
-	"git.confirmSync": false,
 	"github.copilot.enable": {
 		"*": true,
-		"yaml": true,
-		"plaintext": false,
-		"markdown": true,
 		"clojure": false,
+		"css": false,
 		"lua": true,
-		"css": false
+		"markdown": true,
+		"plaintext": false,
+		"yaml": true
 	},
-	"githubPullRequests.fileListLayout": "tree",
 	"githubIssues.queries": [
 		{
 			"label": "My Issues",
@@ -170,6 +237,8 @@
 			"query": "author:${user} state:open repo:${owner}/${repository} sort:created-desc"
 		}
 	],
+	"githubPullRequests.fileListLayout": "tree",
+	"githubPullRequests.pullBranch": "never",
 	"githubPullRequests.queries": [
 		{
 			"label": "Waiting For My Review",
@@ -184,43 +253,58 @@
 			"query": "is:open author:${user}"
 		}
 	],
-	"[html]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[json]": {
-		"editor.defaultFormatter": "vscode.json-language-features"
-	},
-	"[javascript]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
+	"githubPullRequests.terminalLinksHandler": "github",
+	"hediet.vscode-drawio.codeLinkActivated": false,
+	"hediet.vscode-drawio.theme": "automatic",
+	"html.format.enable": false,
+	"italicc.plugin.enabled": true,
 	"javascript.format.enable": false,
-	"[jsonc]": {
-		"editor.defaultFormatter": "vscode.json-language-features"
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"jupyter.alwaysTrustNotebooks": true,
+	"markdown.preview.breaks": true,
+	"nebulaOni.update.restoreConfiguration": {
+		"favoriteSettings": {
+			"background": "Glacial Blue",
+			"comments": "Dark Magenta",
+			"favorite": "Nebula Oni (Pegasus)",
+			"focusBorder": "ON",
+			"fontStyle": "Italic",
+			"highlight": "Ultra Violet",
+			"main": "Sakura"
+		},
+		"themeSettings": {
+			"background": "Grey",
+			"comments": "Dark Violet",
+			"favorite": "OFF",
+			"focusBorder": "ON",
+			"fontStyle": "Italic",
+			"highlight": "Ultra Violet",
+			"main": "Bumblebee"
+		}
 	},
-	// Causes the debug view to automatically appear when a breakpoint is hit. This
-	// setting is global and not configurable per-language.
-	"debug.openDebug": "openOnDebugBreak",
-	"dart.debugExternalLibraries": false,
-	"dart.debugSdkLibraries": false,
-	"dart.previewFlutterUiGuidesCustomTracking": true,
-	"[dart]": {
-		"editor.formatOnSave": true,
-		"editor.formatOnType": true,
-		"editor.rulers": [
-			80
-		],
-		"editor.selectionHighlight": false,
-		"editor.suggest.snippetsPreventQuickSuggestions": false,
-		"editor.suggestSelection": "first",
-		"editor.tabCompletion": "onlySnippets",
-		"editor.wordBasedSuggestions": false
+	"notebook.cellToolbarLocation": {
+		"default": "right",
+		"jupyter-notebook": "left"
 	},
-	"dart.previewFlutterUiGuides": true,
-	"files.autoSave": "afterDelay",
-	"todo-tree.tree.showScanModeButton": false,
-	"css.validate": false,
-	"dart.sdkPath": "~/sdk/flutter/bin/dart",
-	"debug.allowBreakpointsEverywhere": true,
+	"prettier.configPath": "~/Library/Application Support/Code/User/.prettierrc",
+	"python.analysis.completeFunctionParens": true,
+	"python.analysis.diagnosticMode": "workspace",
+	"python.analysis.indexing": true,
+	"python.autoComplete.addBrackets": true,
+	"python.languageServer": "Pylance",
+	"python.terminal.activateEnvironment": false,
+	"quarto.mathjax.theme": "dark",
+	"redhat.telemetry.enabled": false,
+	"tabnine.disable_file_regex": [
+		"[.]md$",
+		"[.]html$",
+		"[.]css$",
+		"[.]adoc$"
+	],
+	"tabnine.experimentalAutoImports": true,
+	"terminal.integrated.defaultProfile.osx": "fish",
+	"terminal.integrated.fontFamily": "'D2Coding ligature'",
+	"terminal.integrated.fontSize": 13,
 	"todo-tree.general.tags": [
 		"BUG",
 		"HACK",
@@ -231,89 +315,40 @@
 		"[x]"
 	],
 	"todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
-	"tabnine.experimentalAutoImports": true,
-	"tabnine.disable_file_regex": [
-		"[.]md$",
-		"[.]html$",
-		"[.]css$",
-		"[.]adoc$"
-	],
-	"codestream.email": "jacegem@gmail.com",
-	"jupyter.alwaysTrustNotebooks": true,
-	"python.languageServer": "Pylance",
-	"python.terminal.activateEnvironment": false,
-	"python.autoComplete.addBrackets": true,
-	"python.analysis.diagnosticMode": "workspace",
-	"python.analysis.indexing": true,
-	"notebook.cellToolbarLocation": {
-		"default": "right",
-		"jupyter-notebook": "left"
-	},
-	"[svelte]": {
-		"editor.defaultFormatter": "svelte.svelte-vscode"
-	},
-	"[typescript]": {
-		"editor.defaultFormatter": "vscode.typescript-language-features"
-	},
-	"files.exclude": {
-		"**/__pycache__": true
-	},
-	"dart.openDevTools": "flutter",
-	"calva.prettyPrintingOptions": {
-		"printEngine": "pprint",
-		"enabled": true,
-		"width": 120,
-		"maxLength": 50
-	},
-	"[clojure]": {
-		"editor.autoClosingBrackets": "always",
-		"editor.autoClosingOvertype": "always",
-		"editor.formatOnPaste": true,
-		"editor.defaultFormatter": "betterthantomorrow.calva"
-	},
-	"prettier.configPath": "~/Library/Application Support/Code/User/.prettierrc",
-	"javascript.updateImportsOnFileMove.enabled": "always",
-	"asciidoc.preview.breaks": true,
-	"html.format.enable": false,
-	"asciidoc.enableErrorDiagnostics": false,
-	"asciidoc.preview.refreshInterval": 1000,
-	// https://marketplace.visualstudio.com/items?itemName=vscodevim.vim
-	"vim.enableNeovim": true,
-	// "vim.neovimPath": "/usr/local/bin/nvim",
-	"vim.neovimPath": "/opt/homebrew/bin/nvim",
+	"todo-tree.tree.showScanModeButton": false,
+	"typescript.inlayHints.parameterNames.enabled": "all",
+	"vim.cursorStylePerMode.normal": "block-outline",
 	"vim.disableAnnoyingNeovimMessage": true,
 	"vim.easymotion": true,
 	"vim.easymotionKeys": "hklyuiopnmqwertzxcvbasdgjf",
-	"vim.incsearch": true,
-	"vim.useSystemClipboard": true,
-	"vim.highlightedyank.enable": true, // y로 복사하면 복사한 부분이 잠시 깜빡함.
-	"vim.highlightedyank.duration": 200,
-	"vim.useCtrlKeys": true,
-	"vim.hlsearch": true,
-	"vim.visualstar": true,
-	"vim.leader": "<space>",
+	// https://marketplace.visualstudio.com/items?itemName=vscodevim.vim
+	"vim.enableNeovim": true,
 	"vim.handleKeys": {
 		"<C-a>": false,
 		"<C-f>": false
 	},
+	"vim.highlightedyank.duration": 200,
+	"vim.highlightedyank.enable": true, // y로 복사하면 복사한 부분이 잠시 깜빡함.
+	"vim.hlsearch": true,
+	"vim.incsearch": true,
 	"vim.insertModeKeyBindings": [
 		{
+			"after": [
+				"<Esc>"
+			],
 			"before": [
 				"ㅓ",
 				"ㅓ"
-			],
-			"after": [
-				"<Esc>"
 			]
 		},
 		{
-			"before": [
-				"<Esc>"
-			],
 			"after": [
 				"<Esc>"
+			],
+			"before": [
+				"<Esc>"
 			]
-		},
+		}
 		// {
 		// 	"before": [
 		// 		";",
@@ -328,14 +363,14 @@
 	],
 	"vim.insertModeKeyBindingsNonRecursive": [
 		{
+			"after": [
+				"<Esc>"
+			],
 			"before": [
 				"j",
 				"j"
-			],
-			"after": [
-				"<Esc>"
 			]
-		},
+		}
 		// {
 		// 	"before": [
 		// 		"k",
@@ -346,112 +381,9 @@
 		// 	]
 		// },
 	],
-	"vim.visualModeKeyBindingsNonRecursive": [
-		{
-			"before": [
-				">"
-			],
-			"commands": [
-				"editor.action.indentLines"
-			]
-		},
-		{
-			"before": [
-				"<"
-			],
-			"commands": [
-				"editor.action.outdentLines"
-			]
-		},
-		{
-			"before": [
-				"t"
-			],
-			"after": [
-				"%"
-			]
-		},
-		{
-			"before": [
-				"i"
-			], // up
-			"after": [
-				"k"
-			]
-		},
-		{
-			"before": [
-				"k"
-			], // down
-			"after": [
-				"j"
-			]
-		},
-		{
-			"before": [
-				"j"
-			], // left
-			"after": [
-				"h"
-			]
-		},
-		{
-			"before": [
-				","
-			], // page half down
-			"after": [
-				"<C-d>"
-			]
-		},
-		{
-			"before": [
-				"m"
-			], // page half up
-			"after": [
-				"<C-u>"
-			]
-		},
-		{
-			"before": [
-				"<"
-			], // page down
-			"after": [
-				"<C-f>"
-			]
-		},
-		{
-			"before": [
-				"M"
-			], // page up
-			"after": [
-				"<C-b>"
-			]
-		},
-		{
-			"before": [
-				"h"
-			], // beginning of line
-			"after": [
-				"^"
-			]
-		},
-		{
-			"before": [
-				";"
-			], // end of line
-			"after": [
-				"$"
-			]
-		},
-		{
-			"before": [
-				"s"
-			],
-			"after": [
-				"S"
-			]
-		}
-	],
+	"vim.leader": "<space>",
+	// "vim.neovimPath": "/usr/local/bin/nvim",
+	"vim.neovimPath": "/opt/homebrew/bin/nvim",
 	"vim.normalModeKeyBindings": [
 		//* a : action list
 		{
@@ -538,63 +470,63 @@
 		// 	"before": ["<leader>", "d"],
 		// 	"commands": ["workbench.view.debug"]
 		{
-			"before": [
-				"<leader>",
-				"d",
-				"9"
-			],
 			"after": [
 				"d",
 				"s",
 				"("
-			]
-		},
-		{
+			],
 			"before": [
 				"<leader>",
 				"d",
-				"0"
-			],
+				"9"
+			]
+		},
+		{
 			"after": [
 				"d",
 				"s",
 				")"
-			]
-		},
-		{
+			],
 			"before": [
 				"<leader>",
 				"d",
-				"'"
-			],
+				"0"
+			]
+		},
+		{
 			"after": [
 				"d",
 				"s",
 				"\""
-			]
-		},
-		{
+			],
 			"before": [
 				"<leader>",
 				"d",
-				"["
-			],
+				"'"
+			]
+		},
+		{
 			"after": [
 				"d",
 				"s",
 				"["
-			]
-		},
-		{
+			],
 			"before": [
 				"<leader>",
 				"d",
-				"]"
-			],
+				"["
+			]
+		},
+		{
 			"after": [
 				"d",
 				"s",
 				"{"
+			],
+			"before": [
+				"<leader>",
+				"d",
+				"]"
 			]
 		},
 		{
@@ -720,7 +652,7 @@
 			"before": [
 				"<leader>",
 				"<leader>",
-				"k",
+				"k"
 			],
 			"commands": [
 				"bookmarks.list"
@@ -729,7 +661,7 @@
 		{
 			"before": [
 				"<leader>",
-				"k",
+				"k"
 			],
 			"commands": [
 				"bookmarks.toggle"
@@ -820,7 +752,7 @@
 			"before": [
 				"<leader>",
 				"l",
-				"e",
+				"e"
 			],
 			"commands": [
 				"clojureLsp.refactor.expandLet"
@@ -1259,68 +1191,68 @@
 			]
 		},
 		{
-			"before": [
-				"<leader>",
-				"'"
-			],
 			"after": [
 				"y",
 				"s",
 				"i",
 				"w",
 				"\""
+			],
+			"before": [
+				"<leader>",
+				"'"
 			]
 		},
 		{
-			"before": [
-				"<leader>",
-				"9"
-			],
 			"after": [
 				"y",
 				"s",
 				"i",
 				"w",
 				"("
+			],
+			"before": [
+				"<leader>",
+				"9"
 			]
 		},
 		{
-			"before": [
-				"<leader>",
-				"["
-			],
 			"after": [
 				"y",
 				"s",
 				"i",
 				"w",
 				"["
+			],
+			"before": [
+				"<leader>",
+				"["
 			]
 		},
 		{
-			"before": [
-				"<leader>",
-				"]"
-			],
 			"after": [
 				"y",
 				"s",
 				"i",
 				"w",
 				"{"
+			],
+			"before": [
+				"<leader>",
+				"]"
 			]
 		},
 		{
-			"before": [
-				"<leader>",
-				"/"
-			],
 			"after": [
 				"<leader>",
 				"<leader>",
 				"/"
-			]
+			],
 			// "commands": ["editor.action.commentLine"]
+			"before": [
+				"<leader>",
+				"/"
+			]
 		}
 		// {
 		// 	"before": ["<leader>", "t"],
@@ -1329,11 +1261,11 @@
 	],
 	"vim.normalModeKeyBindingsNonRecursive": [
 		{
-			"before": [
-				"="
-			],
 			"after": [
 				"i"
+			],
+			"before": [
+				"="
 			]
 		},
 		// {
@@ -1422,7 +1354,7 @@
 			"commands": [
 				"paredit.selectForwardSexp",
 				"execCopy",
-				"extension.vim_escape",
+				"extension.vim_escape"
 			]
 		},
 		{
@@ -1470,9 +1402,6 @@
 			]
 		},
 		{
-			"before": [
-				"f"
-			],
 			"after": [
 				"<leader>",
 				"<leader>",
@@ -1480,26 +1409,29 @@
 				"b",
 				"d",
 				"w" // Start of word
+			],
+			"before": [
+				"f"
 			]
 		},
 		{
-			"before": [
-				"F"
-			],
 			"after": [
 				"<leader>",
 				"<leader>",
 				"<leader>",
 				"j" // JumpToAnywhere motion;
+			],
+			"before": [
+				"F"
 			]
 		},
 		{
-			"before": [
-				"U"
-			],
 			"after": [
 				"<C-r>"
-			] // redo
+			], // redo
+			"before": [
+				"U"
+			]
 		},
 		{
 			"before": [
@@ -1518,156 +1450,156 @@
 			]
 		},
 		{
-			"before": [
-				"e",
-			],
 			"after": [
 				"b"
 			],
+			"before": [
+				"e"
+			]
 		},
 		{
-			"before": [
+			"after": [
 				"x"
 			],
-			"after": [
+			"before": [
 				"x"
 			]
 		},
 		{
-			"before": [
-				"t"
-			],
 			"after": [
 				"%"
+			],
+			"before": [
+				"t"
 			]
 		},
 		{
+			"after": [
+				"i"
+			],
 			"before": [
 				"I"
-			], // insert
-			"after": [
-				"i"
-			]
+			] // insert
 		},
 		{
+			"after": [
+				"i"
+			],
 			"before": [
 				"o"
-			], // insert
-			"after": [
-				"i"
-			]
+			] // insert
 		},
 		{
+			"after": [
+				"i"
+			],
 			"before": [
 				"ㅐ"
-			], // insert
-			"after": [
-				"i"
-			]
+			] // insert
 		},
 		{
+			"after": [
+				"o"
+			],
 			"before": [
 				"O"
-			], // insert new line
-			"after": [
-				"o"
-			]
+			] // insert new line
 		},
 		{
+			"after": [
+				"o"
+			],
 			"before": [
 				"a"
-			], // insert beginning cursor
-			"after": [
-				"o"
-			]
+			] // insert beginning cursor
 		},
 		{
-			"before": [
-				";"
-			], // insert end cursor
 			"after": [
 				"<S-a>"
-			]
+			],
+			"before": [
+				";"
+			] // insert end cursor
 		},
 		{
+			"after": [
+				"k"
+			],
 			"before": [
 				"i"
-			], // up
-			"after": [
-				"k"
-			]
+			] // up
 		},
 		{
+			"after": [
+				"k"
+			],
 			"before": [
 				"ㅑ"
-			], // up
-			"after": [
-				"k"
-			]
+			] // up
 		},
 		{
-			"before": [
-				"k"
-			], // down
 			"after": [
 				"j"
-			]
+			],
+			"before": [
+				"k"
+			] // down
 		},
 		{
-			"before": [
-				"j"
-			], // left
 			"after": [
 				"h"
-			]
+			],
+			"before": [
+				"j"
+			] // left
 		},
 		{
-			"before": [
-				","
-			], // page half down
 			"after": [
 				"<C-d>"
-			]
+			],
+			"before": [
+				","
+			] // page half down
 		},
-		{ // n-> m (marker) 
+		{
+			"after": [
+				"m"
+			], // n-> m (marker)
 			"before": [
 				"n"
-			],
-			"after": [
-				"m"
 			]
 		},
 		{
-			"before": [
-				"m"
-			], // page half up
 			"after": [
 				"<C-u>"
-			]
+			],
+			"before": [
+				"m"
+			] // page half up
 		},
 		{
-			"before": [
-				"<"
-			], // page down
 			"after": [
 				"<C-f>"
-			]
+			],
+			"before": [
+				"<"
+			] // page down
 		},
 		{
-			"before": [
-				"M"
-			], // page up
 			"after": [
 				"<C-b>"
-			]
+			],
+			"before": [
+				"M"
+			] // page up
 		},
 		{
-			"before": [
-				"h"
-			], // beginning of line
 			"after": [
 				"^"
-			]
+			],
+			"before": [
+				"h"
+			] // beginning of line
 		},
 		// {
 		// 	"before": [";"], // end of line
@@ -1709,14 +1641,14 @@
 		// 	"after": ["y", "s", "i", "w"]
 		// },
 		{
-			"before": [
-				"<C-w>",
-				"j"
-			], // left window
 			"after": [
 				"<C-w>",
 				"h"
-			]
+			],
+			"before": [
+				"<C-w>",
+				"j"
+			] // left window
 		},
 		{
 			"before": [
@@ -1761,77 +1693,136 @@
 		// 	"after": ["<C-w>", "w"]
 		// }
 	],
-	"editor.unicodeHighlight.ambiguousCharacters": false,
-	"python.analysis.completeFunctionParens": true,
-	"calva.paredit.defaultKeyMap": "original",
-	"nebulaOni.update.restoreConfiguration": {
-		"themeSettings": {
-			"background": "Grey",
-			"main": "Bumblebee",
-			"highlight": "Ultra Violet",
-			"focusBorder": "ON",
-			"fontStyle": "Italic",
-			"comments": "Dark Violet",
-			"favorite": "OFF"
-		},
-		"favoriteSettings": {
-			"background": "Glacial Blue",
-			"main": "Sakura",
-			"highlight": "Ultra Violet",
-			"focusBorder": "ON",
-			"fontStyle": "Italic",
-			"comments": "Dark Magenta",
-			"favorite": "Nebula Oni (Pegasus)"
-		}
-	},
-	"italicc.plugin.enabled": true,
-	"workbench.colorTheme": "Noctis Minimus",
-	"calva.paredit.strictPreventUnmatchedClosingBracket": true,
-	// "calva.highlight.rainbowIndentGuides": true,
-	// "calva.highlight.enableBracketColors": false,
-	"calva.highlight": {
-		"enableBracketColors": false,
-		"rainbowIndentGuides": true,
-		"matchedBracketStyle": {
-			"backgroundColor": "#18EECE44", // "#777A"
-		},
-		"commentFormStyle": {
-			"fontStyle": "italic"
-		}
-	},
-	"editor.bracketPairColorization.enabled": true,
-	"redhat.telemetry.enabled": false,
-	"editor.tabSize": 2,
-	"diffEditor.ignoreTrimWhitespace": false,
-	"dart.flutterHotReloadOnSave": "all",
-	"vim.cursorStylePerMode.normal": "block-outline",
-	"files.insertFinalNewline": true,
-	"hediet.vscode-drawio.codeLinkActivated": false,
-	"hediet.vscode-drawio.theme": "automatic",
-	"[css]": {
-		"editor.defaultFormatter": "vscode.css-language-features"
-	},
-	"files.trimFinalNewlines": true,
-	"calva.fmt.configPath": ".cljfmt.edn",
-	"editor.foldingMaximumRegions": 500,
-	"markdown.preview.breaks": true,
-	"asciidoc.use_kroki": true,
-	"calva.jackInEnv": {},
-	"editor.stickyScroll.enabled": true,
-	"editor.formatOnSave": true,
-	"quarto.mathjax.theme": "dark",
-	"githubPullRequests.pullBranch": "never",
-	"githubPullRequests.terminalLinksHandler": "github",
-	"calva.customREPLCommandSnippets": [
+	"vim.useCtrlKeys": true,
+	"vim.useSystemClipboard": true,
+	"vim.visualModeKeyBindingsNonRecursive": [
 		{
-			"name": "go",
-			"repl": "clj",
-			"snippet": "(user/go)"
+			"before": [
+				">"
+			],
+			"commands": [
+				"editor.action.indentLines"
+			]
 		},
 		{
-			"name": "reset",
-			"repl": "clj",
-			"snippet": "(user/reset)"
+			"before": [
+				"<"
+			],
+			"commands": [
+				"editor.action.outdentLines"
+			]
 		},
+		{
+			"after": [
+				"%"
+			],
+			"before": [
+				"t"
+			]
+		},
+		{
+			"after": [
+				"k"
+			],
+			"before": [
+				"i"
+			] // up
+		},
+		{
+			"after": [
+				"j"
+			],
+			"before": [
+				"k"
+			] // down
+		},
+		{
+			"after": [
+				"h"
+			],
+			"before": [
+				"j"
+			] // left
+		},
+		{
+			"after": [
+				"<C-d>"
+			],
+			"before": [
+				","
+			] // page half down
+		},
+		{
+			"after": [
+				"<C-u>"
+			],
+			"before": [
+				"m"
+			] // page half up
+		},
+		{
+			"after": [
+				"<C-f>"
+			],
+			"before": [
+				"<"
+			] // page down
+		},
+		{
+			"after": [
+				"<C-b>"
+			],
+			"before": [
+				"M"
+			] // page up
+		},
+		{
+			"after": [
+				"^"
+			],
+			"before": [
+				"h"
+			] // beginning of line
+		},
+		{
+			"after": [
+				"$"
+			],
+			"before": [
+				";"
+			] // end of line
+		},
+		{
+			"after": [
+				"S"
+			],
+			"before": [
+				"s"
+			]
+		}
 	],
+	"vim.visualstar": true,
+	// https://neutrondev.com/vs-code-colored-bracket-pair-guides/
+	"workbench.colorCustomizations": {
+		"editorBracketPairGuide.activeBackground1": "#F8B46C",
+		"editorBracketPairGuide.activeBackground2": "#FB78B5",
+		"editorBracketPairGuide.activeBackground3": "#4AACFB",
+		"editorBracketPairGuide.activeBackground4": "#B98BF5",
+		"editorBracketPairGuide.activeBackground5": "#DAD8D8",
+		"editorBracketPairGuide.activeBackground6": "#18EECE",
+		"editorBracketPairGuide.background1": "#F8B46C",
+		"editorBracketPairGuide.background2": "#FB78B5",
+		"editorBracketPairGuide.background3": "#4AACFB",
+		"editorBracketPairGuide.background4": "#B98BF5",
+		"editorBracketPairGuide.background5": "#DAD8D8",
+		"editorBracketPairGuide.background6": "#18EECE"
+	},
+	"workbench.colorTheme": "Noctis Minimus",
+	"workbench.editor.highlightModifiedTabs": true,
+	"workbench.editorAssociations": {
+		"*.html": "default",
+		"*.ipynb": "jupyter-notebook"
+	},
+	"workbench.iconTheme": "material-icon-theme",
+	"workbench.tree.indent": 12
 }
