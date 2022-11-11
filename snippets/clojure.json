@@ -12,14 +12,83 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
-	"user/r": {
-		"prefix": "ur",
+	"a": {
+		"prefix": "a",
 		"body": [
-			"(user/r)"
+			"(atom $0)"
 		],
-		"description": "user/r, integrant 재시작시에 사용하고 있습니다."
+		"description": "atom"
 	},
-	"def": {
+	"ar": {
+		"prefix": "ar",
+		"body": [
+			"(are [x y] (= x y)",
+			"$0",
+			")"
+		],
+		"description": "test are"
+	},
+	"ap": {
+		"prefix": "ap",
+		"body": [
+			"(apply $0)",
+		],
+		"description": "apply"
+	},
+	"c": {
+		"prefix": "c",
+		"body": [
+			"(comment",
+			"  $0",
+			"  :rcf)"
+		],
+		"description": "comment"
+	},
+	"cr": {
+		"prefix": "cr",
+		"body": [
+			"(comment",
+			"  (run-tests)$0",
+			"#_{})"
+		],
+		"description": "comment-run-tests"
+	},
+	"ch": {
+		"prefix": "ch",
+		"body": [
+			"(chan)"
+		],
+		"description": "chan"
+	},
+	"co": {
+		"prefix": "co",
+		"body": [
+			"(<! $0)"
+		],
+		"description": "chan out"
+	},
+	"ci": {
+		"prefix": "ci",
+		"body": [
+			"(>! $0)"
+		],
+		"description": "chan in"
+	},
+	"cn": {
+		"prefix": "cn",
+		"body": [
+			"(count $0)",
+		],
+		"description": "count"
+	},
+	"dm": {
+		"prefix": "dm",
+		"body": [
+			"(defmethod $0)",
+		],
+		"description": "defmethod"
+	},
+	"d": {
 		"prefix": "d",
 		"body": [
 			"(def $0 ",
@@ -27,7 +96,14 @@
 		],
 		"description": "def"
 	},
-	"deftest": {
+	"dc": {
+		"prefix": "dc",
+		"body": [
+			"(defonce $0)",
+		],
+		"description": "defonce"
+	},
+	"dt": {
 		"prefix": "dt",
 		"body": [
 			"(deftest ${1:name}",
@@ -37,7 +113,60 @@
 		],
 		"description": "deftest"
 	},
-	"testing": {
+	"function": {
+		"prefix": "f",
+		"body": [
+			"($0)"
+		],
+		"description": "(fucntion)"
+	},
+	"fn": {
+		"prefix": "fn",
+		"body": [
+			"(fn [${2:param}] ${3:value})"
+		],
+		"description": "fn"
+	},
+	"i": {
+		"prefix": "i",
+		"body": [
+			"(if $0",
+			"    )"
+		],
+		"description": "if"
+	},
+	"if": {
+		"prefix": "if",
+		"body": [
+			"(if $0",
+			"    )"
+		],
+		"description": "if"
+	},
+	"il": {
+		"prefix": "il",
+		"body": [
+			"(if-let [${1:key} ${2:value}] ",
+			"        ${3:true}",
+			"        ${4:false})"
+		],
+		"description": "if-let"
+	},
+	"k": {
+		"prefix": "k",
+		"body": [
+			":$1"
+		],
+		"description": "keyword"
+	},
+	"ur": {
+		"prefix": "ur",
+		"body": [
+			"(user/r)"
+		],
+		"description": "user/r, integrant 재시작시에 사용하고 있습니다."
+	},
+	"tt": {
 		"prefix": "tt",
 		"body": [
 			"(testing $0",
@@ -54,40 +183,12 @@
 		],
 		"description": "defn"
 	},
-	"function": {
-		"prefix": "f",
-		"body": [
-			"($0)"
-		],
-		"description": "(fucntion)"
-	},
-	"S-Expression": {
+	"s": {
 		"prefix": "s",
 		"body": [
 			"($0)"
 		],
 		"description": "(S-Expression)"
-	},
-	"fn": {
-		"prefix": "fn",
-		"body": [
-			"(fn [${2:param}] ${3:value})"
-		],
-		"description": "fn"
-	},
-	"keyword": {
-		"prefix": "k",
-		"body": [
-			":$1"
-		],
-		"description": "keyword"
-	},
-	"vector": {
-		"prefix": "v",
-		"body": [
-			"[$0]"
-		],
-		"description": "vector"
 	},
 	"map": {
 		"prefix": "m",
@@ -96,8 +197,8 @@
 		],
 		"description": "map"
 	},
-	"set": {
-		"prefix": "s",
+	"se": {
+		"prefix": "se",
 		"body": [
 			"#{$0}"
 		],
@@ -109,47 +210,6 @@
 			"{:keys [$0]}"
 		],
 		"description": "keys"
-	},
-	"if-i": {
-		"prefix": "i",
-		"body": [
-			"(if $0",
-			"    )"
-		],
-		"description": "if"
-	},
-	"if": {
-		"prefix": "if",
-		"body": [
-			"(if $0",
-			"    )"
-		],
-		"description": "if"
-	},
-	"if-let": {
-		"prefix": "il",
-		"body": [
-			"(if-let [${1:key} ${2:value}] ",
-			"        ${3:true}",
-			"        ${4:false})"
-		],
-		"description": "if-let"
-	},
-	"when": {
-		"prefix": "w",
-		"body": [
-			"(when ($0) ",
-			"      )"
-		],
-		"description": "when"
-	},
-	"when-let": {
-		"prefix": "wl",
-		"body": [
-			"(when-let [${1:var} ${2:value}] ",
-			"          ${3:true})"
-		],
-		"description": "when-let"
 	},
 	"let": {
 		"prefix": "l",
@@ -173,37 +233,12 @@
 		],
 		"description": "(parentheses)"
 	},
-	"comment": {
-		"prefix": "c",
-		"body": [
-			"(comment",
-			"  $0",
-			"  :rcf)"
-		],
-		"description": "comment"
-	},
-	"comment-run-tests": {
-		"prefix": "cr",
-		"body": [
-			"(comment",
-			"  (run-tests)$0",
-			"#_{})"
-		],
-		"description": "comment-run-tests"
-	},
 	"run-tests": {
 		"prefix": "rt",
 		"body": [
 			"(run-tests)$0",
 		],
 		"description": "run-tests"
-	},
-	"atom": {
-		"prefix": "a",
-		"body": [
-			"(atom $0)"
-		],
-		"description": "atom"
 	},
 	"equal": {
 		"prefix": "e",
@@ -243,20 +278,6 @@
 		],
 		"description": "deref"
 	},
-	"chan out": {
-		"prefix": "co",
-		"body": [
-			"(<! $0)"
-		],
-		"description": "chan out"
-	},
-	"chan in": {
-		"prefix": "ci",
-		"body": [
-			"(>! $0)"
-		],
-		"description": "chan in"
-	},
 	"go loop": {
 		"prefix": "gl",
 		"body": [
@@ -265,13 +286,6 @@
 			"  (recur))"
 		],
 		"description": "go loop"
-	},
-	"chan": {
-		"prefix": "ch",
-		"body": [
-			"(chan)"
-		],
-		"description": "chan"
 	},
 	"go": {
 		"prefix": "g",
@@ -315,42 +329,42 @@
 		],
 		"description": "log/info"
 	},
-	"map-type": {
+	"mt": {
 		"prefix": "mt",
 		"body": [
 			"{:type $0}"
 		],
 		"description": "map-type"
 	},
-	"map-type-string": {
+	"mts": {
 		"prefix": "ms",
 		"body": [
 			"{:type String}"
 		],
-		"description": "map-string"
+		"description": "map-type-string"
 	},
-	"type-boolean": {
+	"tb": {
 		"prefix": "tb",
 		"body": [
 			":type Boolean"
 		],
 		"description": "type-boolean"
 	},
-	"type-int": {
+	"ti": {
 		"prefix": "ti",
 		"body": [
 			":type Int"
 		],
 		"description": "type-int"
 	},
-	"type-string": {
+	"ts": {
 		"prefix": "ts",
 		"body": [
 			":type String"
 		],
 		"description": "type-string"
 	},
-	"map-description": {
+	"md": {
 		"prefix": "md",
 		"body": [
 			"{:description \"$0\"}"
@@ -371,21 +385,21 @@
 		],
 		"description": "map function"
 	},
-	"discard macro": {
+	"ds": {
 		"prefix": "ds",
 		"body": [
 			"#_$0"
 		],
 		"description": "discard macro"
 	},
-	"discard macro 2": {
+	"dss": {
 		"prefix": "dss",
 		"body": [
 			"#_#_$0"
 		],
 		"description": "discard macro"
 	},
-	"lacinia resolver": {
+	"lr": {
 		"prefix": "lr",
 		"body": [
 			"(defn $0 [ctx args value]",
@@ -394,8 +408,8 @@
 		],
 		"description": "lacinia resolver"
 	},
-	"or": {
-		"prefix": "or",
+	"o": {
+		"prefix": "o",
 		"body": [
 			"(or $0)"
 		],
@@ -407,22 +421,6 @@
 			"(map $0)",
 		],
 		"description": "ma->map"
-	},
-	"are": {
-		"prefix": "ar",
-		"body": [
-			"(are [x y] (= x y)",
-			"$0",
-			")"
-		],
-		"description": "test are"
-	},
-	"apply": {
-		"prefix": "ap",
-		"body": [
-			"(apply $0)",
-		],
-		"description": "apply"
 	},
 	"merge": {
 		"prefix": "me",
@@ -438,24 +436,27 @@
 		],
 		"description": "update"
 	},
-	"count": {
-		"prefix": "cou",
+	"vector": {
+		"prefix": "v",
 		"body": [
-			"(count $0)",
+			"[$0]"
 		],
-		"description": "count"
+		"description": "vector"
 	},
-	"defmethod": {
-		"prefix": "dm",
+	"when": {
+		"prefix": "w",
 		"body": [
-			"(defmethod $0)",
+			"(when ($0) ",
+			"      )"
 		],
-		"description": "defmethod"
+		"description": "when"
 	},
-	"defonce": {
-		"prefix": "o",
+	"when-let": {
+		"prefix": "wl",
 		"body": [
-			"(defonce $0)",
+			"(when-let [${1:var} ${2:value}] ",
+			"          ${3:true})"
 		],
-	}
+		"description": "when-let"
+	},
 }
