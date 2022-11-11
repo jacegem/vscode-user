@@ -329,17 +329,31 @@
 		],
 		"description": "map-string"
 	},
+	"type-boolean": {
+		"prefix": "tb",
+		"body": [
+			":type Boolean"
+		],
+		"description": "type-boolean"
+	},
+	"type-int": {
+		"prefix": "ti",
+		"body": [
+			":type Int"
+		],
+		"description": "type-int"
+	},
 	"type-string": {
 		"prefix": "ts",
 		"body": [
-			"{:type String}"
+			":type String"
 		],
 		"description": "type-string"
 	},
 	"map-description": {
 		"prefix": "md",
 		"body": [
-			"{:description $0}"
+			"{:description \"$0\"}"
 		],
 		"description": "map-description"
 	},

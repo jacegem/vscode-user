@@ -671,6 +671,16 @@
 			"before": [
 				"<leader>",
 				"f",
+				"m"
+			],
+			"commands": [
+				"calva-fmt.alignCurrentForm"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"f",
 				"n"
 			],
 			"commands": [
@@ -1326,6 +1336,14 @@
 				"i"
 			]
 		},
+		// {
+		// 	"before": [
+		// 		"="
+		// 	],
+		// 	"commands": [
+		// 		"calva.runCustomREPLCommand"
+		// 	]
+		// },
 		{
 			"before": [
 				"."
@@ -1804,4 +1822,16 @@
 	"quarto.mathjax.theme": "dark",
 	"githubPullRequests.pullBranch": "never",
 	"githubPullRequests.terminalLinksHandler": "github",
+	"calva.customREPLCommandSnippets": [
+		{
+			"name": "go",
+			"repl": "clj",
+			"snippet": "(user/go)"
+		},
+		{
+			"name": "reset",
+			"repl": "clj",
+			"snippet": "(user/reset)"
+		},
+	],
 }

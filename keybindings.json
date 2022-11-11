@@ -281,6 +281,16 @@
 		"command": "calva.evaluateCurrentTopLevelForm",
 		"when": "calva:connected && calva:keybindingsEnabled && editorTextFocus && editorLangId == 'clojure' && vim.mode == 'Insert'"
 	},
+	{
+		"key": "cmd+shift+j",
+		"command": "calva.jackIn",
+		"when": "calva:keybindingsEnabled && editorTextFocus && editorLangId == 'clojure'"
+	},
+	{
+		"key": "cmd+shift+h",
+		"command": "calva.runCustomREPLCommand",
+		"when": "calva:connected && calva:keybindingsEnabled && editorTextFocus && editorLangId == 'clojure'"
+	},
 	//edamagit
 	{
 		"key": "g g",
@@ -479,6 +489,24 @@
 		"key": "alt+cmd+j",
 		"command": "-liveshare.join",
 		"when": "liveshare:state != 'Joined' && liveshare:state != 'Shared'"
+	},
+	{
+		"key": "ctrl+alt+cmd+c",
+		"command": "calva.runCustomREPLCommand",
+		"when": "calva:connected && calva:keybindingsEnabled && editorLangId == 'clojure'"
+	},
+	{
+		"key": "ctrl+alt+space enter",
+		"command": "-calva.runCustomREPLCommand",
+		"when": "calva:connected && calva:keybindingsEnabled && editorLangId == 'clojure'"
+	},
+	{
+		"key": "shift+alt+cmd+h",
+		"command": "workbench.action.replaceInFiles"
+	},
+	{
+		"key": "shift+cmd+h",
+		"command": "-workbench.action.replaceInFiles"
 	},
 	// {
 	// 	"key": "cmd+alt+.",
