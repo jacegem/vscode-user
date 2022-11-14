@@ -88,7 +88,6 @@
 	"editor.fontFamily": "Fira Code, monospace, 'D2Coding ligature' ",
 	"editor.fontLigatures": true,
 	"editor.fontSize": 14.5,
-	"editor.formatOnSave": true,
 	"editor.formatOnType": true,
 	"editor.guides.bracketPairs": "active",
 	"editor.inlineSuggest.enabled": true,
@@ -202,11 +201,54 @@
 					"variable.parameter"
 				],
 				"settings": {
-					"fontStyle": ""
+					// "fontStyle": ""
 				}
-			}
-		]
+			},
+		],
+		"[Noctis Minimus]": {
+			//https://github.com/microsoft/vscode-textmate/blob/main/test-cases/themes/syntaxes/Clojure.tmLanguage
+			"textMateRules": [
+				{
+					"name": "italic",
+					"scope": [
+						"constant.keyword.clojure", // keyword
+						"storage.control.clojure",  // ns, defn, def, let
+					],
+					"settings": {
+						// "foreground": "#FF0000",
+						"fontStyle": "italic",
+					}
+				},
+				{
+					"name": "bold",
+					"scope": [
+						"entity.global.clojure", // clojurre function name
+					],
+					"settings": {
+						// "foreground": "#FF0000",
+						"fontStyle": "bold",
+					}
+				},
+				{
+					"name": "red",
+					"scope": [
+						// "entity.name",
+						// "meta.object-literal.key",
+						// "meta.object-literal.key entity.name.function",
+						// "meta.selector",
+						// "meta.preprocessor",
+						// "meta.symbol.clojure",					
+					],
+					"settings": {
+						"foreground": "#FF0000",
+						"fontStyle": "italic bold"
+					}
+				},
+			
+			]
+		}
 	},
+	"editor.matchBrackets": "never",
 	"editor.unicodeHighlight.ambiguousCharacters": false,
 	"files.autoSave": "afterDelay",
 	"files.exclude": {
@@ -220,12 +262,13 @@
 	"git.ignoreRebaseWarning": true,
 	"github.copilot.enable": {
 		"*": true,
-		"clojure": false,
-		"css": false,
-		"lua": true,
-		"markdown": true,
+		"yaml": true,
 		"plaintext": false,
-		"yaml": true
+		"markdown": true,
+		"clojure": false,
+		"lua": true,
+		"css": false,
+		"jsonc": false
 	},
 	"githubIssues.queries": [
 		{
@@ -736,6 +779,15 @@
 			], // Kill List Backward
 			"commands": [
 				"paredit.killListBackward"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"l",
+			],
+			"commands": [
+				"bookmarks.jumpToNext"
 			]
 		},
 		{

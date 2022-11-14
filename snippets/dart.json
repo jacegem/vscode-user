@@ -12,11 +12,24 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
-	"import Material": {
+	"im": {
 		"prefix": "im",
 		"body": [
 			"import 'package:flutter/material.dart';"
 		],
 		"description": "import material"
+	},
+	"gv": {
+		"prefix": "gv",
+		"body": [
+			"class $1Page extends GetView<$2Controller> {",
+			"  const $1({super.key});",
+			"  @override",
+			"  Widget build(BuildContext context) {",
+			"    return $3",
+			"  }",
+			"}",
+		],
+		"description": "GetView"
 	}
 }
