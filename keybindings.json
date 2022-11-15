@@ -251,6 +251,11 @@
 		"when": "calva:connected && calva:keybindingsEnabled && editorTextFocus && editorLangId == 'clojure' && vim.mode != 'Insert'"
 	},
 	{
+		"key": "e",
+		"command": "calva.evaluateCurrentTopLevelForm",
+		"when": "calva:connected && calva:keybindingsEnabled && editorTextFocus && editorLangId == 'clojure' && vim.mode != 'Insert'"
+	},
+	{
 		"key": "cmd+enter",
 		"command": "calva.evaluateEnclosingForm",
 		"when": "calva:connected && calva:keybindingsEnabled && editorTextFocus && editorLangId == 'clojure' && vim.mode == 'Insert'"

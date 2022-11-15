@@ -1,5 +1,6 @@
 {
 	"[clojure]": {
+		
 		"editor.autoClosingBrackets": "always",
 		"editor.autoClosingOvertype": "always",
 		"editor.defaultFormatter": "betterthantomorrow.calva",
@@ -85,7 +86,7 @@
 	"editor.bracketPairColorization.enabled": true,
 	"editor.foldingMaximumRegions": 500,
 	// "editor.fontFamily": "'Hack', 'D2Coding', 'SourceCodePro+Powerline+Awesome Regular', 'D2Coding', Menlo, Monaco, 'Courier New', monospace, FiraCode-Retina",
-	"editor.fontFamily": "Fira Code, monospace, 'D2Coding ligature' ",
+	"editor.fontFamily": "'Fira Code', 'Fira Code iScript',monospace, 'D2Coding ligature' ",
 	"editor.fontLigatures": true,
 	"editor.fontSize": 14.5,
 	"editor.formatOnType": true,
@@ -208,11 +209,37 @@
 		"[Noctis Minimus]": {
 			//https://github.com/microsoft/vscode-textmate/blob/main/test-cases/themes/syntaxes/Clojure.tmLanguage
 			"textMateRules": [
+			
+				{
+					"name": "map keyword",
+					"scope": [
+						"meta.map.clojure constant.keyword.clojure", // keyword
+						"meta.map.clojure meta.map.clojure meta.map.clojure constant.keyword.clojure", // keyword
+						"meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure constant.keyword.clojure", // keyword
+						"meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure constant.keyword.clojure", // keyword
+					],
+					"settings": {
+						"foreground": "#DAD8D8" // "#F8B46C" //"#18EECE" // "#3dd645",
+						// "fontStyle": "italic",
+					}
+				},
+				{
+					"name": "map keyword second",
+					"scope": [
+						"meta.map.clojure meta.map.clojure constant.keyword.clojure", // keyword
+						"meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure constant.keyword.clojure", // keyword
+						"meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure constant.keyword.clojure", // keyword
+						"meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure constant.keyword.clojure", // keyword
+					],
+					"settings": {
+						"foreground": "#FB78B5" // "#DAD8D8" // "#ced423",
+						// "fontStyle": "italic",
+					}
+				},
 				{
 					"name": "italic",
 					"scope": [
-						"constant.keyword.clojure", // keyword
-						"storage.control.clojure",  // ns, defn, def, let
+						"meta.definition.global.clojure storage.control.clojure",  // ns, defn, def, let
 					],
 					"settings": {
 						// "foreground": "#FF0000",
@@ -225,23 +252,17 @@
 						"entity.global.clojure", // clojurre function name
 					],
 					"settings": {
-						// "foreground": "#FF0000",
+						// "foreground": "#44cb3a",
 						"fontStyle": "bold",
 					}
 				},
 				{
 					"name": "red",
 					"scope": [
-						// "entity.name",
-						// "meta.object-literal.key",
-						// "meta.object-literal.key entity.name.function",
-						// "meta.selector",
-						// "meta.preprocessor",
-						// "meta.symbol.clojure",					
+						"entity.name.namespace.clojure"		
 					],
 					"settings": {
-						"foreground": "#FF0000",
-						"fontStyle": "italic bold"
+						"fontStyle": "italic"
 					}
 				},
 			
@@ -1506,7 +1527,7 @@
 				"b"
 			],
 			"before": [
-				"e"
+				"q"
 			]
 		},
 		{
@@ -1712,16 +1733,16 @@
 			]
 			// "after": ["<C-w>", "h"]
 		},
-		{
-			"before": [
-				"q"
-			], // left window
-			"commands": [
-				"workbench.action.previousEditorInGroup"
-				// "workbench.action.toggleWindowTabsBar"
-			]
-			// "after": ["<C-w>", "h"]
-		},
+		// {
+		// 	"before": [
+		// 		"q"
+		// 	], // left window
+		// 	"commands": [
+		// 		"workbench.action.previousEditorInGroup"
+		// 		// "workbench.action.toggleWindowTabsBar"
+		// 	]
+		// 	// "after": ["<C-w>", "h"]
+		// },
 		{
 			"before": [
 				"<S-j>"
