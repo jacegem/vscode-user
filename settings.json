@@ -99,108 +99,7 @@
 	"editor.tokenColorCustomizations": {
 		"textMateRules": [
 			{
-				"scope": [
-					"comment",
-					"comment.block",
-					"comment.block.documentation",
-					"comment.line",
-					"constant",
-					"constant.character",
-					"constant.character.escape",
-					"constant.numeric",
-					"constant.numeric.integer",
-					"constant.numeric.float",
-					"constant.numeric.hex",
-					"constant.numeric.octal",
-					"constant.other",
-					"constant.regexp",
-					"constant.rgb-value",
-					"emphasis",
-					"entity",
-					"entity.name",
-					"entity.name.class",
-					"entity.name.function",
-					"entity.name.method",
-					"entity.name.section",
-					"entity.name.selector",
-					"entity.name.tag",
-					"entity.name.type",
-					"entity.other",
-					"entity.other.attribute-name",
-					"entity.other.inherited-class",
-					"invalid",
-					"invalid.deprecated",
-					"invalid.illegal",
-					"keyword",
-					"keyword.control",
-					"keyword.operator",
-					"keyword.operator.new",
-					"keyword.operator.assignment",
-					"keyword.operator.arithmetic",
-					"keyword.operator.logical",
-					"keyword.other",
-					"markup",
-					"markup.bold",
-					"markup.changed",
-					"markup.deleted",
-					"markup.heading",
-					"markup.inline.raw",
-					"markup.inserted",
-					"markup.italic",
-					"markup.list",
-					"markup.list.numbered",
-					"markup.list.unnumbered",
-					"markup.other",
-					"markup.quote",
-					"markup.raw",
-					"markup.underline",
-					"markup.underline.link",
-					"meta",
-					"meta.block",
-					"meta.cast",
-					"meta.class",
-					"meta.function",
-					"meta.function-call",
-					"meta.preprocessor",
-					"meta.return-type",
-					"meta.selector",
-					"meta.tag",
-					"meta.type.annotation",
-					"meta.type",
-					"punctuation.definition.string.begin",
-					"punctuation.definition.string.end",
-					"punctuation.separator",
-					"punctuation.separator.continuation",
-					"punctuation.terminator",
-					"storage",
-					"storage.modifier",
-					"storage.type",
-					"string",
-					"string.interpolated",
-					"string.other",
-					"string.quoted",
-					"string.quoted.double",
-					"string.quoted.other",
-					"string.quoted.single",
-					"string.quoted.triple",
-					"string.regexp",
-					"string.unquoted",
-					"strong",
-					"support",
-					"support.class",
-					"support.constant",
-					"support.function",
-					"support.other",
-					"support.type",
-					"support.type.property-name",
-					"support.variable",
-					"variable",
-					"variable.language",
-					"variable.name",
-					"variable.other",
-					"variable.other.readwrite",
-					"variable.parameter"
-				],
+				"scope": [],
 				"settings": {
 					// "fontStyle": ""
 				}
@@ -209,9 +108,27 @@
 		"[Noctis Minimus]": {
 			//https://github.com/microsoft/vscode-textmate/blob/main/test-cases/themes/syntaxes/Clojure.tmLanguage
 			"textMateRules": [
-			
 				{
-					"name": "map keyword",
+					"name": "markdown list - not italic",
+					"scope": [
+						"markup.list.numbered.markdown meta.paragraph.markdown",
+						"markup.list.unnumbered.markdown meta.paragraph.markdown"												
+					],
+					"settings": {						
+						"fontStyle": ""
+					}
+				},
+				{
+					"name": "keyword meta",
+					"scope": [
+						 "constant.keyword.clojure",
+					],
+					"settings": {
+						"foreground": "#3cc75a" //"#e282d2"
+					}
+				},
+				{
+					"name": "map keyword type 1",
 					"scope": [
 						"meta.map.clojure constant.keyword.clojure", // keyword
 						"meta.map.clojure meta.map.clojure meta.map.clojure constant.keyword.clojure", // keyword
@@ -224,8 +141,9 @@
 					}
 				},
 				{
-					"name": "map keyword second",
+					"name": "map keyword type 2",
 					"scope": [
+						// "meta.expression.clojure meta.vector.clojure constant.keyword.clojure",
 						"meta.map.clojure meta.map.clojure constant.keyword.clojure", // keyword
 						"meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure constant.keyword.clojure", // keyword
 						"meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure constant.keyword.clojure", // keyword
@@ -1897,5 +1815,6 @@
 		"*.ipynb": "jupyter-notebook"
 	},
 	"workbench.iconTheme": "material-icon-theme",
-	"workbench.tree.indent": 12
+	"workbench.tree.indent": 12,
+	"editor.formatOnSave": true
 }
