@@ -119,7 +119,7 @@
 					}
 				},
 				{
-					"name": "keyword meta",
+					"name": "all keywords",
 					"scope": [
 						 "constant.keyword.clojure",
 					],
@@ -128,7 +128,7 @@
 					}
 				},
 				{
-					"name": "map keyword type 1",
+					"name": "Odd-numbered keywords in map",
 					"scope": [
 						"meta.map.clojure constant.keyword.clojure", // keyword
 						"meta.map.clojure meta.map.clojure meta.map.clojure constant.keyword.clojure", // keyword
@@ -141,9 +141,8 @@
 					}
 				},
 				{
-					"name": "map keyword type 2",
-					"scope": [
-						// "meta.expression.clojure meta.vector.clojure constant.keyword.clojure",
+					"name": "Even-numbered keywords in map",
+					"scope": [						
 						"meta.map.clojure meta.map.clojure constant.keyword.clojure", // keyword
 						"meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure constant.keyword.clojure", // keyword
 						"meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure constant.keyword.clojure", // keyword
@@ -155,9 +154,9 @@
 					}
 				},
 				{
-					"name": "italic",
+					"name": "ns, defn, def, let ...",
 					"scope": [
-						"meta.definition.global.clojure storage.control.clojure",  // ns, defn, def, let
+						"meta.definition.global.clojure storage.control.clojure", 
 					],
 					"settings": {
 						// "foreground": "#FF0000",
@@ -165,25 +164,15 @@
 					}
 				},
 				{
-					"name": "bold",
+					"name": "clojure function name",
 					"scope": [
-						"entity.global.clojure", // clojurre function name
+						"entity.global.clojure",
 					],
 					"settings": {
 						// "foreground": "#44cb3a",
 						"fontStyle": "bold",
 					}
 				},
-				{
-					"name": "red",
-					"scope": [
-						"entity.name.namespace.clojure"		
-					],
-					"settings": {
-						"fontStyle": "italic"
-					}
-				},
-			
 			]
 		}
 	},
