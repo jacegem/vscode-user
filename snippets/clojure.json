@@ -44,6 +44,15 @@
 		"description": "comment",
 		"prefix": "c"
 	},
+	"cd": {
+		"body": [
+			"(cond",
+			"  $0",
+			"  )"
+		],
+		"description": "cond",
+		"prefix": "cd"
+	},
 	"ch": {
 		"body": [
 			"(chan)"
