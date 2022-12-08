@@ -1,6 +1,5 @@
 {
 	"[clojure]": {
-		
 		"editor.autoClosingBrackets": "always",
 		"editor.autoClosingOvertype": "always",
 		"editor.defaultFormatter": "betterthantomorrow.calva",
@@ -112,16 +111,16 @@
 					"name": "markdown list - not italic",
 					"scope": [
 						"markup.list.numbered.markdown meta.paragraph.markdown",
-						"markup.list.unnumbered.markdown meta.paragraph.markdown"												
+						"markup.list.unnumbered.markdown meta.paragraph.markdown"
 					],
-					"settings": {						
+					"settings": {
 						"fontStyle": ""
 					}
 				},
 				{
 					"name": "all keywords",
 					"scope": [
-						 "constant.keyword.clojure",
+						"constant.keyword.clojure",
 					],
 					"settings": {
 						"foreground": "#3cc75a" //"#e282d2"
@@ -142,7 +141,7 @@
 				},
 				{
 					"name": "Even-numbered keywords in map",
-					"scope": [						
+					"scope": [
 						"meta.map.clojure meta.map.clojure constant.keyword.clojure", // keyword
 						"meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure constant.keyword.clojure", // keyword
 						"meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure constant.keyword.clojure", // keyword
@@ -156,10 +155,18 @@
 				{
 					"name": "ns, defn, def, let ...",
 					"scope": [
-						"meta.definition.global.clojure storage.control.clojure", 
+						"meta.definition.global.clojure storage.control.clojure",
 					],
 					"settings": {
-						// "foreground": "#FF0000",
+						"fontStyle": "italic",
+					}
+				},
+				{
+					"name": "namespace italic",
+					"scope": [
+						"entity.name.namespace.clojure"
+					],
+					"settings": {
 						"fontStyle": "italic",
 					}
 				},
@@ -169,7 +176,6 @@
 						"entity.global.clojure",
 					],
 					"settings": {
-						// "foreground": "#44cb3a",
 						"fontStyle": "bold",
 					}
 				},
@@ -193,7 +199,7 @@
 		"yaml": true,
 		"plaintext": false,
 		"markdown": true,
-		"clojure": false,
+		"clojure": true,
 		"lua": true,
 		"css": false,
 		"jsonc": false
@@ -441,6 +447,16 @@
 		// 	"before": ["<leader>", "d"],
 		// 	"commands": ["workbench.view.debug"]
 		{
+			"before": [
+				"<leader>",
+				"d",
+				"l"
+			],
+			"commands": [
+				"paredit.killListForward"
+			]
+		},
+		{
 			"after": [
 				"d",
 				"s",
@@ -564,16 +580,6 @@
 			"before": [
 				"<leader>",
 				"f",
-				"s"
-			],
-			"commands": [
-				"gitflow.feature.start"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"f",
 				"m"
 			],
 			"commands": [
@@ -584,10 +590,10 @@
 			"before": [
 				"<leader>",
 				"f",
-				"n"
+				"l"
 			],
 			"commands": [
-				"gitflow.featureFinish"
+				"calva.loadFile"
 			]
 		},
 		{
@@ -1234,10 +1240,6 @@
 				"/"
 			]
 		}
-		// {
-		// 	"before": ["<leader>", "t"],
-		// 	"commands": ["workbench.action.quickOpenNavigateNextInEditorPicker"]
-		// },
 	],
 	"vim.normalModeKeyBindingsNonRecursive": [
 		{
@@ -1248,14 +1250,6 @@
 				"="
 			]
 		},
-		// {
-		// 	"before": [
-		// 		"="
-		// 	],
-		// 	"commands": [
-		// 		"calva.runCustomREPLCommand"
-		// 	]
-		// },
 		{
 			"before": [
 				"."
@@ -1264,15 +1258,6 @@
 				"editor.action.quickFix"
 			]
 		},
-		// {
-		// 	"before": [
-		// 		"c",
-		// 		"v"
-		// 	],
-		// 	"commands": [
-		// 		"calva.clearInlineResults"
-		// 	]
-		// },
 		{
 			"before": [
 				"c",
@@ -1633,12 +1618,10 @@
 		{
 			"before": [
 				"/"
-			], // left window
-			"commands": [
-				"editor.action.commentLine"
-				// "workbench.action.toggleWindowTabsBar"
+			],
+			"after": [
+				"."
 			]
-			// "after": ["<C-w>", "h"]
 		},
 		// {
 		// 	"before": [
@@ -1779,7 +1762,15 @@
 			"before": [
 				"s"
 			]
-		}
+		},
+		{
+			"before": [
+				"/"
+			],
+			"commands": [
+				"editor.action.commentLine"
+			]
+		},
 	],
 	"vim.visualstar": true,
 	// https://neutrondev.com/vs-code-colored-bracket-pair-guides/
@@ -1795,7 +1786,20 @@
 		"editorBracketPairGuide.background3": "#4AACFB",
 		"editorBracketPairGuide.background4": "#B98BF5",
 		"editorBracketPairGuide.background5": "#DAD8D8",
-		"editorBracketPairGuide.background6": "#18EECE"
+		"editorBracketPairGuide.background6": "#18EECE",
+		// "calva.inlineErrorForegroundColor": "#ff0000",
+		// "calva.inlineForegroundColor": "#ff9000",
+		// "titleBar.activeBackground": "#71bb1e",
+		// "titleBar.activeForeground": "#131722",
+		// "titleBar.inactiveBackground": "#2a6e14d5",
+		// "titleBar.inactiveForeground": "#ffffff99",
+		// "activityBar.activeBackground": "#e0f3e0c0",
+		// "activityBar.activeFocusBorder": "#ff0000",
+		// "activityBar.activeBorder": "#ff0000",
+		// "activityBar.background": "#01194eea",
+		"tab.activeBorderTop": "#23a6c76c",
+		"tab.activeBorder": "#39eff8",
+		"tab.activeBackground": "#21618f55",
 	},
 	"workbench.colorTheme": "Noctis Minimus",
 	"workbench.editor.highlightModifiedTabs": true,

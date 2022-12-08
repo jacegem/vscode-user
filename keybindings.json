@@ -253,7 +253,7 @@
 	{
 		"key": "e",
 		"command": "calva.evaluateCurrentTopLevelForm",
-		"when": "calva:connected && calva:keybindingsEnabled && editorTextFocus && editorLangId == 'clojure' && vim.mode != 'Insert'"
+		"when": "calva:connected && calva:keybindingsEnabled && editorTextFocus && editorLangId == 'clojure' && vim.mode != 'Insert' && vim.mode != 'EasyMotionMode' && vim.mode != 'EasyMotionInputMode'"
 	},
 	{
 		"key": "cmd+enter",
@@ -295,6 +295,15 @@
 		"key": "cmd+shift+h",
 		"command": "calva.runCustomREPLCommand",
 		"when": "calva:connected && calva:keybindingsEnabled && editorTextFocus && editorLangId == 'clojure'"
+	},
+	{
+		"key": "cmd+shift+m",
+		"command": "calva.runCustomREPLCommand",
+		"when": "calva:keybindingsEnabled && editorTextFocus && editorLangId == 'clojure'",
+		"args": {
+			"repl": "clj",
+			"snippet": "(require '[malli.provider :as mp]) (mp/provide $current-form)"
+		}
 	},
 	//edamagit
 	{
@@ -512,6 +521,14 @@
 	{
 		"key": "shift+cmd+h",
 		"command": "-workbench.action.replaceInFiles"
+	},
+	{
+		"key": "alt+cmd+q",
+		"command": "workbench.action.quit"
+	},
+	{
+		"key": "cmd+q",
+		"command": "-workbench.action.quit"
 	},
 	// {
 	// 	"key": "cmd+alt+.",

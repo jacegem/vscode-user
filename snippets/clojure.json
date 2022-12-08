@@ -155,6 +155,13 @@
 		"description": "(fucntion)",
 		"prefix": "f"
 	},
+	"ff": {
+		"body": [
+			"(-> $0)"
+		],
+		"description": "thread-first macro",
+		"prefix": "ff"
+	},
 	"fn": {
 		"body": [
 			"(fn [${2:param}] ${3:value})"
@@ -262,6 +269,13 @@
 		],
 		"description": "let",
 		"prefix": "l"
+	},
+	"ll": {
+		"body": [
+			"(->> $0)",
+		],
+		"description": "thread-last macro",
+		"prefix": "ll"
 	},
 	"li": {
 		"body": [
