@@ -469,8 +469,10 @@
 	},
 	{
 		"key": "cmd+3",
-		"command": "joyride.runWorkspaceScript",
-		"args": "example.cljs"
+		"command": "calva.runCustomREPLCommand",
+		"args": {
+			"snippet": "(tap> (let [v (read-string (clojure.string/replace (read-line) \"*v\" \"@dev/*v\"))] (eval v)))",
+		}
 	},
 	{
 		"key": "shift+cmd+e",

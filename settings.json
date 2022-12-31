@@ -95,15 +95,28 @@
 	"editor.largeFileOptimizations": false,
 	"editor.stickyScroll.enabled": true,
 	"editor.tabSize": 2,
+	"editor.semanticHighlighting.enabled": false,
+	"editor.semanticTokenColorCustomizations": {
+		// "enabled": false,
+		"rules": {
+			// "keyword": {
+			// 	"foreground": "#3cc75a",
+			// 	"bold": false,
+			// 	"italic": false
+			// },
+			// "constant.keyword.clojure": {
+			// 	"foreground": "#3cc75a"
+			// },
+			// "macro": {
+			// 	"foreground": "#C88DA2",
+			// 	"italic": true
+			// },
+			// "function": {
+			// 	"foreground": "#27a69a",
+			// },
+		},
+	},
 	"editor.tokenColorCustomizations": {
-		"textMateRules": [
-			{
-				"scope": [],
-				"settings": {
-					// "fontStyle": ""
-				}
-			},
-		],
 		"[Noctis Minimus]": {
 			//https://github.com/microsoft/vscode-textmate/blob/main/test-cases/themes/syntaxes/Clojure.tmLanguage
 			"textMateRules": [
@@ -177,6 +190,7 @@
 					],
 					"settings": {
 						"fontStyle": "bold",
+						"foreground": "#27a69a",
 					}
 				},
 			]
@@ -186,7 +200,19 @@
 	"editor.unicodeHighlight.ambiguousCharacters": false,
 	"files.autoSave": "afterDelay",
 	"files.exclude": {
-		"**/__pycache__": true
+		"**/__pycache__": true,
+		"**/.classpath": true,
+		"**/.clj-kondo/.cache": true,
+		"**/.cpcache": true,
+		"**/.lsp/.cache": true,
+		"**/.project": true,
+		"**/.settings": true,
+		"**/.factorypath": true
+	},
+	"files.watcherExclude": {
+		"**/.clj-kondo/.cache/**": true,
+		"**/.lsp/.cache/**": true,
+		"**/target/classes/**": true
 	},
 	"files.insertFinalNewline": true,
 	"files.trimFinalNewlines": true,
@@ -988,36 +1014,36 @@
 				"extension.vim_escape"
 			]
 		},
-		{
-			"before": [
-				"<leader>",
-				"t",
-				"f"
-			],
-			"commands": [
-				"clojureLsp.refactor.threadFirst"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"t",
-				"l"
-			],
-			"commands": [
-				"clojureLsp.refactor.threadLast"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"t",
-				"p"
-			],
-			"commands": [
-				"clojureLsp.refactor.cyclePrivacy"
-			]
-		},
+		// {
+		// 	"before": [
+		// 		"<leader>",
+		// 		"t",
+		// 		"f"
+		// 	],
+		// 	"commands": [
+		// 		"clojureLsp.refactor.threadFirst"
+		// 	]
+		// },
+		// {
+		// 	"before": [
+		// 		"<leader>",
+		// 		"t",
+		// 		"l"
+		// 	],
+		// 	"commands": [
+		// 		"clojureLsp.refactor.threadLast"
+		// 	]
+		// },
+		// {
+		// 	"before": [
+		// 		"<leader>",
+		// 		"t",
+		// 		"p"
+		// 	],
+		// 	"commands": [
+		// 		"clojureLsp.refactor.cyclePrivacy"
+		// 	]
+		// },
 		{
 			"before": [
 				"<leader>",
@@ -1600,11 +1626,76 @@
 				"calva.jackIn"
 			]
 		},
-		// not work -> use hammersppon
-		// {
-		// "before": ["<S-w>"], // surround a word
-		// 	"after": ["y", "s", "i", "w"]
-		// },
+		{
+			"before": [
+				"<leader>",
+				"c",
+				"i"
+			],
+			"commands": [
+				"calva.clearInlineResults"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"t",
+				"t"
+			],
+			"commands": [
+				{
+					"command": "calva.runCustomREPLCommand",
+					"args": {
+						"snippet": "(tap> (Throwable->map *e))"
+					}
+				}
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"t",
+				"c"
+			],
+			"commands": [
+				{
+					"command": "calva.runCustomREPLCommand",
+					"args": {
+						"snippet": "(tap> (with-out-str (binding [clojure.test/*test-out* *out*] (clojure.test/test-vars [#'$top-level-defined-symbol]))))"
+					}
+				}
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"t",
+				"i"
+			],
+			"commands": [
+				{
+					"command": "calva.runCustomREPLCommand",
+					"args": {
+						"snippet": "(tap> (let [v (read-string (clojure.string/replace (read-line) \"*v\" \"@dev/*v\"))] (eval v)))"
+					}
+				}
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"p",
+				"o"
+			],
+			"commands": [
+				{
+					"command": "calva.runCustomREPLCommand",
+					"args": {
+						"snippet": "(require '[portal.api :as p]) (def p (p/open)) (add-tap #'p/submit)"
+					}
+				}
+			]
+		},
 		{
 			"after": [
 				"<C-w>",
@@ -1809,6 +1900,17 @@
 	},
 	"workbench.iconTheme": "simple-icons",
 	"workbench.tree.indent": 12,
-	"calva.fmt.newIndentEngine": false,
-	"editor.formatOnSave": true
+	"diffEditor.maxComputationTime": 0,
+	"markdown-preview-enhanced.liveUpdate": true,
+	"markdown-preview-enhanced.previewTheme": "github-light.css",
+	"calva.myCljAliases": [
+		":portal",
+		":add-libs",
+		":reflect",
+		":jedi-time"
+	],
+	"search.exclude": {
+		"**/.calva/output-window/output.calva-repl": true
+	},
+	"editor.formatOnSave": true,
 }
