@@ -325,7 +325,7 @@
 	"vim.easymotion": true,
 	"vim.easymotionKeys": "hklyuiopnmqwertzxcvbasdgjf",
 	// https://marketplace.visualstudio.com/items?itemName=vscodevim.vim
-	"vim.enableNeovim": true,
+	// "vim.enableNeovim": true,
 	"vim.handleKeys": {
 		"<C-a>": false,
 		"<C-f>": false
@@ -386,7 +386,7 @@
 	],
 	"vim.leader": "<space>",
 	// "vim.neovimPath": "/usr/local/bin/nvim",
-	"vim.neovimPath": "/opt/homebrew/bin/nvim",
+	// "vim.neovimPath": "/opt/homebrew/bin/nvim",
 	"vim.normalModeKeyBindings": [
 		//* a : action list
 		{
@@ -1913,7 +1913,7 @@
 		"*.html": "default",
 		"*.ipynb": "jupyter-notebook"
 	},
-	"workbench.iconTheme": "material-icon-theme",
+	"workbench.iconTheme": "simple-icons",
 	"workbench.tree.indent": 12,
 	"diffEditor.maxComputationTime": 0,
 	"markdown-preview-enhanced.liveUpdate": true,
