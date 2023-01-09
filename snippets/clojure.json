@@ -286,11 +286,18 @@
 		"description": "thread-last macro",
 		"prefix": "ll"
 	},
+	"le": {
+		"body": [
+			"(logging/error $0)"
+		],
+		"description": "logging/error",
+		"prefix": "le"
+	},
 	"li": {
 		"body": [
-			"(log/info $0)"
+			"(logging/info $0)"
 		],
-		"description": "log/info",
+		"description": "logging/info",
 		"prefix": "li"
 	},
 	"lr": {

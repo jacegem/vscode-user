@@ -1640,7 +1640,7 @@
 			"before": [
 				"<leader>",
 				"t",
-				"t"
+				"c"
 			],
 			"commands": [
 				{
@@ -1655,7 +1655,7 @@
 			"before": [
 				"<leader>",
 				"t",
-				"c"
+				"t"
 			],
 			"commands": [
 				{
@@ -1677,6 +1677,21 @@
 					"command": "calva.runCustomREPLCommand",
 					"args": {
 						"snippet": "(tap> (let [v (read-string (clojure.string/replace (read-line) \"*v\" \"@dev/*v\"))] (eval v)))"
+					}
+				}
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"t",
+				"l"
+			],
+			"commands": [
+				{
+					"command": "calva.runCustomREPLCommand",
+					"args": {
+						"snippet": "(tap> *1)"
 					}
 				}
 			]
@@ -1913,4 +1928,76 @@
 		"**/.calva/output-window/output.calva-repl": true
 	},
 	"editor.formatOnSave": true,
+	"terminal.integrated.env.osx": {
+		"FIG_NEW_SESSION": "1"
+	},
+	"cSpell.userWords": [
+		"cond",
+		"defn",
+		"defresolver",
+		"dissoc",
+		"doall",
+		"doseq",
+		"farmmorning",
+		"fnil",
+		"gosura",
+		"greenlabs",
+		"hato",
+		"honeysql",
+		"jdbc",
+		"kondo",
+		"lacinia",
+		"pmap",
+		"sectime",
+		"sinsun",
+		"sinsunhi",
+		"upcc",
+		"upsert",
+		"vals",
+		"varchar",
+		"walmartlabs"
+	],
+	"cSpell.enabledLanguageIds": [
+		"asciidoc",
+		"c",
+		"cpp",
+		"csharp",
+		"css",
+		"elixir",
+		"erlang",
+		"git-commit",
+		"go",
+		"graphql",
+		"handlebars",
+		"haskell",
+		"html",
+		"jade",
+		"java",
+		"javascript",
+		"javascriptreact",
+		"json",
+		"jsonc",
+		"jupyter",
+		"latex",
+		"less",
+		"markdown",
+		"php",
+		"plaintext",
+		"python",
+		"pug",
+		"restructuredtext",
+		"rust",
+		"scala",
+		"scss",
+		"scminput",
+		"swift",
+		"text",
+		"typescript",
+		"typescriptreact",
+		"vue",
+		"yaml",
+		"yml",
+		"clojure",
+		"edn"
+	],
 }
