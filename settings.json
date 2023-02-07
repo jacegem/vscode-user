@@ -43,9 +43,14 @@
 			"name": "reset",
 			"repl": "clj",
 			"snippet": "(user/reset)"
+		},
+		{
+			"name": "reset-all",
+			"repl": "clj",
+			"snippet": "(user/reset-all)"
 		}
 	],
-	"calva.fmt.configPath": ".cljfmt.edn",
+	"calva.fmt.configPath": "XX/.cljfmt.edn",
 	// "calva.highlight.rainbowIndentGuides": true,
 	// "calva.highlight.enableBracketColors": false,
 	"calva.highlight": {
@@ -62,10 +67,10 @@
 	"calva.paredit.defaultKeyMap": "original",
 	"calva.paredit.strictPreventUnmatchedClosingBracket": true,
 	"calva.prettyPrintingOptions": {
-		"enabled": true,
-		"maxLength": 50,
 		"printEngine": "pprint",
-		"width": 120
+		"enabled": true,
+		"width": 120,
+		"maxLength": 50
 	},
 	"codestream.email": "jacegem@gmail.com",
 	"css.validate": false,
@@ -1386,6 +1391,15 @@
 		},
 		{
 			"before": [
+				"s",
+				"r"
+			],
+			"commands": [
+				"paredit.raiseSexp"
+			]
+		},
+		{
+			"before": [
 				"b"
 			],
 			"commands": [
@@ -1596,6 +1610,21 @@
 		// 	"before": [";"], // end of line
 		// 	"after": ["$"]
 		// },
+		{
+			"before": [
+				"<leader>",
+				"r",
+				"t"
+			],
+			"commands": [
+				{
+					"command": "calva.runCustomREPLCommand",
+					"args": {
+						"snippet": "(run-tests)"
+					}
+				}
+			]
+		},
 		{
 			"before": [
 				"s",
@@ -1913,7 +1942,7 @@
 		"*.html": "default",
 		"*.ipynb": "jupyter-notebook"
 	},
-	"workbench.iconTheme": "simple-icons",
+	"workbench.iconTheme": "material-icon-theme",
 	"workbench.tree.indent": 12,
 	"diffEditor.maxComputationTime": 0,
 	"markdown-preview-enhanced.liveUpdate": true,
@@ -2001,4 +2030,28 @@
 		"edn"
 	],
 	"git.pullBeforeCheckout": true,
+	"[lua]": {
+		"editor.defaultFormatter": "sumneko.lua"
+	},
+	"searchEverywhere.exclude": [
+		"**/.git",
+		"**/.svn",
+		"**/.hg",
+		"**/.CVS",
+		"**/.DS_Store",
+		"**/package-lock.json",
+		"**/yarn.lock",
+		"**/node_modules/**",
+		"**/bower_components/**",
+		"**/coverage/**",
+		"**/.vscode/**",
+		"**/.vscode-test/**",
+		"**/.history/**",
+		"**/.cache/**",
+		"**/.cache-loader/**",
+		"**/out/**",
+		"**/dist/**",
+		"**/altair/**"
+	],
+	"searchEverywhere.include": "**/*.{js,jsx,ts,tsx,clj,cljs,cljd,edn}",
 }
