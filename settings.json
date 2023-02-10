@@ -1612,21 +1612,6 @@
 		// },
 		{
 			"before": [
-				"<leader>",
-				"r",
-				"t"
-			],
-			"commands": [
-				{
-					"command": "calva.runCustomREPLCommand",
-					"args": {
-						"snippet": "(run-tests)"
-					}
-				}
-			]
-		},
-		{
-			"before": [
 				"s",
 				"d"
 			],
@@ -1684,13 +1669,35 @@
 			"before": [
 				"<leader>",
 				"t",
+				"s"
+			],
+			"commands": [
+				{
+					"command": "calva.loadFile"
+				},
+				{
+					"command": "calva.runCustomREPLCommand",
+					"args": {
+						// "snippet": "(tap> (with-out-str (binding [clojure.test/*test-out* *out*] (clojure.test/test-vars [#'$top-level-defined-symbol]))))"
+						"snippet": "(clojure.test/test-vars [#'$top-level-defined-symbol])"
+					}
+				}
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"t",
 				"t"
 			],
 			"commands": [
 				{
+					"command": "calva.loadFile"
+				},
+				{
 					"command": "calva.runCustomREPLCommand",
 					"args": {
-						"snippet": "(tap> (with-out-str (binding [clojure.test/*test-out* *out*] (clojure.test/test-vars [#'$top-level-defined-symbol]))))"
+						"snippet": "(run-tests)"
 					}
 				}
 			]
@@ -1849,6 +1856,8 @@
 			"before": [
 				","
 			] // page half down
+			// paredit.forwardSexpOrUp 
+			// paredit.backwardSexpOrUp
 		},
 		{
 			"after": [
@@ -2054,4 +2063,6 @@
 		"**/altair/**"
 	],
 	"searchEverywhere.include": "**/*.{js,jsx,ts,tsx,clj,cljs,cljd,edn}",
+	"git.openRepositoryInParentFolders": "never",
+	"calva.enableClojureLspOnStart": "never",
 }
