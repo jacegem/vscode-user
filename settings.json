@@ -98,7 +98,6 @@
 	"editor.inlineSuggest.enabled": true,
 	"editor.insertSpaces": true,
 	"editor.largeFileOptimizations": false,
-	"editor.stickyScroll.enabled": true,
 	"editor.tabSize": 2,
 	"editor.semanticHighlighting.enabled": false,
 	"editor.semanticTokenColorCustomizations": {
@@ -1678,6 +1677,16 @@
 		{
 			"before": [
 				"<leader>",
+				"c",
+				"o"
+			],
+			"commands": [
+				"workbench.action.closeEditorsInOtherGroups"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
 				"t",
 				"c"
 			],
@@ -2091,5 +2100,6 @@
 	],
 	"searchEverywhere.include": "**/*.{js,jsx,ts,tsx,clj,cljs,cljd,edn}",
 	"git.openRepositoryInParentFolders": "never",
-	"calva.enableClojureLspOnStart": "never"
+	"calva.enableClojureLspOnStart": "never",
+	"editor.stickyScroll.enabled": true
 }
