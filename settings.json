@@ -388,7 +388,32 @@
 	// "vim.neovimPath": "/usr/local/bin/nvim",
 	// "vim.neovimPath": "/opt/homebrew/bin/nvim",
 	"vim.normalModeKeyBindings": [
-		//* a : action list
+		{
+			"before": [
+				"u"
+			],
+			"after": [],
+			"commands": [
+				{
+					"command": "undo",
+					"args": []
+				}
+			]
+		},
+		{
+			"before": [
+				"<C-r>"
+			],
+			"after": [],
+			"commands": [
+				{
+					"command": "redo",
+					"args": []
+				}
+			]
+		},
+		//* With Leader Key
+		//*w a : action list
 		{
 			"before": [
 				"<leader>",
@@ -2001,4 +2026,6 @@
 		"edn"
 	],
 	"git.pullBeforeCheckout": true,
+	"githubPullRequests.pushBranch": "always",
+	"dart.showTodos": false,
 }
