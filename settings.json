@@ -1324,6 +1324,15 @@
 		},
 		{
 			"before": [
+				"c",
+				"o"
+			],
+			"commands": [
+				"workbench.action.closeEditorsInOtherGroups"
+			]
+		},
+		{
+			"before": [
 				"g",
 				"c"
 			],
