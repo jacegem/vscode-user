@@ -377,21 +377,24 @@
 				"j",
 				"j"
 			]
-		}
-		// {
-		// 	"before": [
-		// 		"k",
-		// 		"k"
-		// 	],
-		// 	"after": [
-		// 		"<Esc>"
-		// 	]
-		// },
+		},
 	],
 	"vim.leader": "<space>",
 	// "vim.neovimPath": "/usr/local/bin/nvim",
 	// "vim.neovimPath": "/opt/homebrew/bin/nvim",
 	"vim.normalModeKeyBindings": [
+		{
+			"before": [
+				"n"
+			],
+			"after": [],
+			"commands": [
+				{
+					"command": "workbench.action.toggleSidebarVisibility",
+					"args": []
+				}
+			]
+		},
 		{
 			"before": [
 				"u"
@@ -1433,6 +1436,14 @@
 		},
 		{
 			"before": [
+				"p",
+			],
+			"after": [
+				"<S-p>"
+			]
+		},
+		{
+			"before": [
 				"b"
 			],
 			"commands": [
@@ -2084,9 +2095,6 @@
 	"git.pullBeforeCheckout": true,
 	"githubPullRequests.pushBranch": "always",
 	"dart.showTodos": false,
-	"[lua]": {
-		"editor.defaultFormatter": "sumneko.lua"
-	},
 	"searchEverywhere.exclude": [
 		"**/.git",
 		"**/.svn",
@@ -2110,5 +2118,11 @@
 	"searchEverywhere.include": "**/*.{js,jsx,ts,tsx,clj,cljs,cljd,edn}",
 	"git.openRepositoryInParentFolders": "never",
 	"calva.enableClojureLspOnStart": "never",
-	"editor.stickyScroll.enabled": true
+	"editor.stickyScroll.enabled": true,
+	"luahelper.format.continuation_indent_width": 2,
+	"luahelper.format.indent_width": 2,
+	"luahelper.format.tab_width": 2,
+	"[lua]": {
+		"editor.defaultFormatter": "yinfei.luahelper"
+	},
 }
