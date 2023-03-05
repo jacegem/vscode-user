@@ -50,7 +50,7 @@
 			"snippet": "(user/reset-all)"
 		}
 	],
-	"calva.fmt.configPath": "XX/.cljfmt.edn",
+	"calva.fmt.configPath": ".cljfmt.edn",
 	// "calva.highlight.rainbowIndentGuides": true,
 	// "calva.highlight.enableBracketColors": false,
 	"calva.highlight": {
