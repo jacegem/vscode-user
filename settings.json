@@ -11,9 +11,7 @@
 	"[dart]": {
 		"editor.formatOnSave": true,
 		"editor.formatOnType": true,
-		"editor.rulers": [
-			80
-		],
+		"editor.rulers": [120], //[80],
 		"editor.selectionHighlight": false,
 		"editor.suggest.snippetsPreventQuickSuggestions": false,
 		"editor.suggestSelection": "first",
@@ -24,7 +22,7 @@
 		"editor.defaultFormatter": "vscode.json-language-features"
 	},
 	"[jsonc]": {
-		"editor.defaultFormatter": "vscode.json-language-features"
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
 	"[typescript]": {
 		"editor.defaultFormatter": "vscode.typescript-language-features"
@@ -118,7 +116,7 @@
 			// "function": {
 			// 	"foreground": "#27a69a",
 			// },
-		},
+		}
 	},
 	"editor.tokenColorCustomizations": {
 		"[Noctis Minimus]": {
@@ -136,9 +134,7 @@
 				},
 				{
 					"name": "all keywords",
-					"scope": [
-						"constant.keyword.clojure",
-					],
+					"scope": ["constant.keyword.clojure"],
 					"settings": {
 						"foreground": "#3cc75a" //"#e282d2"
 					}
@@ -149,7 +145,7 @@
 						"meta.map.clojure constant.keyword.clojure", // keyword
 						"meta.map.clojure meta.map.clojure meta.map.clojure constant.keyword.clojure", // keyword
 						"meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure constant.keyword.clojure", // keyword
-						"meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure constant.keyword.clojure", // keyword
+						"meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure constant.keyword.clojure" // keyword
 					],
 					"settings": {
 						"foreground": "#DAD8D8" // "#F8B46C" //"#18EECE" // "#3dd645",
@@ -162,7 +158,7 @@
 						"meta.map.clojure meta.map.clojure constant.keyword.clojure", // keyword
 						"meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure constant.keyword.clojure", // keyword
 						"meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure constant.keyword.clojure", // keyword
-						"meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure constant.keyword.clojure", // keyword
+						"meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure constant.keyword.clojure" // keyword
 					],
 					"settings": {
 						"foreground": "#FB78B5" // "#DAD8D8" // "#ced423",
@@ -171,32 +167,26 @@
 				},
 				{
 					"name": "ns, defn, def, let ...",
-					"scope": [
-						"meta.definition.global.clojure storage.control.clojure",
-					],
+					"scope": ["meta.definition.global.clojure storage.control.clojure"],
 					"settings": {
-						"fontStyle": "italic",
+						"fontStyle": "italic"
 					}
 				},
 				{
 					"name": "namespace italic",
-					"scope": [
-						"entity.name.namespace.clojure"
-					],
+					"scope": ["entity.name.namespace.clojure"],
 					"settings": {
-						"fontStyle": "italic",
+						"fontStyle": "italic"
 					}
 				},
 				{
 					"name": "clojure function name",
-					"scope": [
-						"entity.global.clojure",
-					],
+					"scope": ["entity.global.clojure"],
 					"settings": {
 						"fontStyle": "bold",
-						"foreground": "#27a69a",
+						"foreground": "#27a69a"
 					}
-				},
+				}
 			]
 		}
 	},
@@ -302,12 +292,7 @@
 	"python.terminal.activateEnvironment": false,
 	"quarto.mathjax.theme": "dark",
 	"redhat.telemetry.enabled": false,
-	"tabnine.disable_file_regex": [
-		"[.]md$",
-		"[.]html$",
-		"[.]css$",
-		"[.]adoc$"
-	],
+	"tabnine.disable_file_regex": ["[.]md$", "[.]html$", "[.]css$", "[.]adoc$"],
 	"tabnine.experimentalAutoImports": true,
 	"terminal.integrated.defaultProfile.osx": "fish",
 	"terminal.integrated.fontFamily": "'D2Coding ligature'",
@@ -340,21 +325,12 @@
 	"vim.incsearch": true,
 	"vim.insertModeKeyBindings": [
 		{
-			"after": [
-				"<Esc>"
-			],
-			"before": [
-				"ㅓ",
-				"ㅓ"
-			]
+			"after": ["<Esc>"],
+			"before": ["ㅓ", "ㅓ"]
 		},
 		{
-			"after": [
-				"<Esc>"
-			],
-			"before": [
-				"<Esc>"
-			]
+			"after": ["<Esc>"],
+			"before": ["<Esc>"]
 		}
 		// {
 		// 	"before": [
@@ -370,23 +346,16 @@
 	],
 	"vim.insertModeKeyBindingsNonRecursive": [
 		{
-			"after": [
-				"<Esc>"
-			],
-			"before": [
-				"j",
-				"j"
-			]
-		},
+			"after": ["<Esc>"],
+			"before": ["j", "j"]
+		}
 	],
 	"vim.leader": "<space>",
 	// "vim.neovimPath": "/usr/local/bin/nvim",
 	// "vim.neovimPath": "/opt/homebrew/bin/nvim",
 	"vim.normalModeKeyBindings": [
 		{
-			"before": [
-				"n"
-			],
+			"before": ["n"],
 			"after": [],
 			"commands": [
 				{
@@ -396,9 +365,7 @@
 			]
 		},
 		{
-			"before": [
-				"u"
-			],
+			"before": ["u"],
 			"after": [],
 			"commands": [
 				{
@@ -408,9 +375,7 @@
 			]
 		},
 		{
-			"before": [
-				"<C-r>"
-			],
+			"before": ["<C-r>"],
 			"after": [],
 			"commands": [
 				{
@@ -422,560 +387,235 @@
 		//* With Leader Key
 		//*w a : action list
 		{
-			"before": [
-				"<leader>",
-				"a",
-				"e"
-			],
-			"commands": [
-				"workbench.view.explorer"
-			]
+			"before": ["<leader>", "a", "e"],
+			"commands": ["workbench.view.explorer"]
 		},
 		{
-			"before": [
-				"<leader>",
-				"a",
-				"f"
-			],
-			"commands": [
-				"workbench.action.findInFiles"
-			]
+			"before": ["<leader>", "a", "f"],
+			"commands": ["workbench.action.findInFiles"]
 		},
 		{
-			"before": [
-				"<leader>",
-				"a",
-				"r"
-			],
-			"commands": [
-				"clojureLsp.refactor.addMissingLibspec"
-			]
+			"before": ["<leader>", "a", "r"],
+			"commands": ["clojureLsp.refactor.addMissingLibspec"]
 		},
 		{
-			"before": [
-				"<leader>",
-				"a",
-				"m"
-			],
-			"commands": [
-				"clojureLsp.refactor.addMissingLibspec"
-			]
+			"before": ["<leader>", "a", "m"],
+			"commands": ["clojureLsp.refactor.addMissingLibspec"]
 		},
 		{
-			"before": [
-				"<leader>",
-				"a",
-				"x"
-			],
-			"commands": [
-				"workbench.view.extensions"
-			]
+			"before": ["<leader>", "a", "x"],
+			"commands": ["workbench.view.extensions"]
 		},
 		{
-			"before": [
-				"<leader>",
-				"b"
-			],
-			"commands": [
-				"workbench.action.toggleSidebarVisibility"
-			]
+			"before": ["<leader>", "b"],
+			"commands": ["workbench.action.toggleSidebarVisibility"]
 		},
 		// calva
 		{
-			"before": [
-				"<leader>",
-				"c",
-				"e"
-			],
-			"commands": [
-				"calva.evaluateSelection"
-			]
+			"before": ["<leader>", "c", "e"],
+			"commands": ["calva.evaluateSelection"]
 		},
 		{
-			"before": [
-				"<leader>",
-				"c",
-				"h"
-			],
-			"commands": [
-				"calva.clearReplHistory"
-			]
+			"before": ["<leader>", "c", "h"],
+			"commands": ["calva.clearReplHistory"]
 		},
 		// {
 		// 	"before": ["<leader>", "d"],
 		// 	"commands": ["workbench.view.debug"]
 		{
-			"before": [
-				"<leader>",
-				"d",
-				"l"
-			],
-			"commands": [
-				"paredit.killListForward"
-			]
+			"before": ["<leader>", "d", "l"],
+			"commands": ["paredit.killListForward"]
 		},
 		{
-			"after": [
-				"d",
-				"s",
-				"("
-			],
-			"before": [
-				"<leader>",
-				"d",
-				"9"
-			]
+			"after": ["d", "s", "("],
+			"before": ["<leader>", "d", "9"]
 		},
 		{
-			"after": [
-				"d",
-				"s",
-				")"
-			],
-			"before": [
-				"<leader>",
-				"d",
-				"0"
-			]
+			"after": ["d", "s", ")"],
+			"before": ["<leader>", "d", "0"]
 		},
 		{
-			"after": [
-				"d",
-				"s",
-				"\""
-			],
-			"before": [
-				"<leader>",
-				"d",
-				"'"
-			]
+			"after": ["d", "s", "\""],
+			"before": ["<leader>", "d", "'"]
 		},
 		{
-			"after": [
-				"d",
-				"s",
-				"["
-			],
-			"before": [
-				"<leader>",
-				"d",
-				"["
-			]
+			"after": ["d", "s", "["],
+			"before": ["<leader>", "d", "["]
 		},
 		{
-			"after": [
-				"d",
-				"s",
-				"{"
-			],
-			"before": [
-				"<leader>",
-				"d",
-				"]"
-			]
+			"after": ["d", "s", "{"],
+			"before": ["<leader>", "d", "]"]
 		},
 		{
-			"before": [
-				"<leader>",
-				"d",
-				"s"
-			],
-			"commands": [
-				"paredit.spliceSexp"
-			]
+			"before": ["<leader>", "d", "s"],
+			"commands": ["paredit.spliceSexp"]
 		},
 		{
-			"before": [
-				"<leader>",
-				"d",
-				"f"
-			],
-			"commands": [
-				"paredit.killSexpForward"
-			]
+			"before": ["<leader>", "d", "f"],
+			"commands": ["paredit.killSexpForward"]
 		},
 		{
-			"before": [
-				"<leader>",
-				"d",
-				"j"
-			],
-			"commands": [
-				"paredit.splitSexp"
-			]
+			"before": ["<leader>", "d", "j"],
+			"commands": ["paredit.splitSexp"]
 		},
 		{
-			"before": [
-				"<leader>",
-				"e",
-				"f"
-			],
-			"commands": [
-				"clojureLsp.refactor.extractFunction"
-			]
+			"before": ["<leader>", "e", "f"],
+			"commands": ["clojureLsp.refactor.extractFunction"]
 		},
 		{
-			"before": [
-				"<leader>",
-				"f",
-				"a"
-			],
-			"commands": [
-				"clojureLsp.refactor.threadFirstAll"
-			]
+			"before": ["<leader>", "f", "a"],
+			"commands": ["clojureLsp.refactor.threadFirstAll"]
 		},
 		{
-			"before": [
-				"<leader>",
-				"f",
-				"f"
-			],
-			"commands": [
-				"actions.find"
-			]
+			"before": ["<leader>", "f", "f"],
+			"commands": ["actions.find"]
 		},
 		{
-			"before": [
-				"<leader>",
-				"f",
-				"m"
-			],
-			"commands": [
-				"calva-fmt.alignCurrentForm"
-			]
+			"before": ["<leader>", "f", "m"],
+			"commands": ["calva-fmt.alignCurrentForm"]
 		},
 		{
-			"before": [
-				"<leader>",
-				"f",
-				"l"
-			],
-			"commands": [
-				"calva.loadFile"
-			]
+			"before": ["<leader>", "f", "l"],
+			"commands": ["calva.loadFile"]
 		},
 		{
-			"before": [
-				"<leader>",
-				"f",
-				"t"
-			],
-			"commands": [
-				"calva-fmt.trimCurrentFormWhiteSpace"
-			]
+			"before": ["<leader>", "f", "t"],
+			"commands": ["calva-fmt.trimCurrentFormWhiteSpace"]
 		},
 		{
-			"before": [
-				"<leader>",
-				"h"
-			],
-			"commands": [
-				"workbench.action.moveEditorToLeftGroup"
-			]
+			"before": ["<leader>", "h"],
+			"commands": ["workbench.action.moveEditorToLeftGroup"]
 		},
 		{
-			"before": [
-				"<leader>",
-				"i",
-				"s"
-			],
-			"commands": [
-				"clojureLsp.refactor.inlineSymbol"
-			]
+			"before": ["<leader>", "i", "s"],
+			"commands": ["clojureLsp.refactor.inlineSymbol"]
 		},
 		{
-			"before": [
-				"<leader>",
-				"<leader>",
-				"k"
-			],
-			"commands": [
-				"bookmarks.list"
-			]
+			"before": ["<leader>", "<leader>", "k"],
+			"commands": ["bookmarks.list"]
 		},
 		{
-			"before": [
-				"<leader>",
-				"k"
-			],
-			"commands": [
-				"bookmarks.toggle"
-			]
+			"before": ["<leader>", "k"],
+			"commands": ["bookmarks.toggle"]
 		},
 		{
-			"before": [
-				"<leader>",
-				"j"
-			],
-			"commands": [
-				"bookmarks.jumpToPrevious"
-			]
+			"before": ["<leader>", "j"],
+			"commands": ["bookmarks.jumpToPrevious"]
 		},
 		{
-			"before": [
-				"<leader>",
-				"k",
-				"l"
-			],
-			"commands": [
-				"bookmarks.jumpToNext"
-			]
+			"before": ["<leader>", "k", "l"],
+			"commands": ["bookmarks.jumpToNext"]
 		},
 		{
-			"before": [
-				"<leader>",
-				"k",
-				"r"
-			], // Kill Right
-			"commands": [
-				"paredit.killRight"
-			]
+			"before": ["<leader>", "k", "r"], // Kill Right
+			"commands": ["paredit.killRight"]
 		},
 		{
-			"before": [
-				"<leader>",
-				"k",
-				"f"
-			], // Kill Sexp Forward
-			"commands": [
-				"paredit.killSexpForward"
-			]
+			"before": ["<leader>", "k", "f"], // Kill Sexp Forward
+			"commands": ["paredit.killSexpForward"]
 		},
 		{
-			"before": [
-				"<leader>",
-				"k",
-				"b"
-			], // Kill Sexp Backward
-			"commands": [
-				"paredit.killSexpBackward"
-			]
+			"before": ["<leader>", "k", "b"], // Kill Sexp Backward
+			"commands": ["paredit.killSexpBackward"]
 		},
 		{
-			"before": [
-				"<leader>",
-				"k",
-				"l",
-				"f"
-			], // Kill List Forward
-			"commands": [
-				"paredit.killListForward"
-			]
+			"before": ["<leader>", "k", "l", "f"], // Kill List Forward
+			"commands": ["paredit.killListForward"]
 		},
 		{
-			"before": [
-				"<leader>",
-				"k",
-				"l",
-				"b"
-			], // Kill List Backward
-			"commands": [
-				"paredit.killListBackward"
-			]
+			"before": ["<leader>", "k", "l", "b"], // Kill List Backward
+			"commands": ["paredit.killListBackward"]
 		},
 		{
-			"before": [
-				"<leader>",
-				"l",
-			],
-			"commands": [
-				"bookmarks.jumpToNext"
-			]
+			"before": ["<leader>", "l"],
+			"commands": ["bookmarks.jumpToNext"]
 		},
 		{
-			"before": [
-				"<leader>",
-				"l",
-				"a"
-			],
-			"commands": [
-				"clojureLsp.refactor.threadLastAll"
-			]
+			"before": ["<leader>", "l", "a"],
+			"commands": ["clojureLsp.refactor.threadLastAll"]
 		},
 		{
-			"before": [
-				"<leader>",
-				"l",
-				"e"
-			],
-			"commands": [
-				"clojureLsp.refactor.expandLet"
-			]
+			"before": ["<leader>", "l", "e"],
+			"commands": ["clojureLsp.refactor.expandLet"]
 		},
 		{
-			"before": [
-				"<leader>",
-				"l",
-				"f"
-			],
-			"commands": [
-				"calva.loadFile"
-			]
+			"before": ["<leader>", "l", "f"],
+			"commands": ["calva.loadFile"]
 		},
 		{
-			"before": [
-				"<leader>",
-				"l",
-				"i"
-			],
-			"commands": [
-				"clojureLsp.refactor.introduceLet"
-			]
+			"before": ["<leader>", "l", "i"],
+			"commands": ["clojureLsp.refactor.introduceLet"]
 		},
 		{
-			"before": [
-				"<leader>",
-				"l",
-				"p"
-			],
-			"commands": [
-				"clojureLsp.refactor.moveToLet"
-			]
+			"before": ["<leader>", "l", "p"],
+			"commands": ["clojureLsp.refactor.moveToLet"]
 		},
 		{
-			"before": [
-				"<leader>",
-				"l",
-				"s"
-			],
-			"commands": [
-				"paredit.splitSexp"
-			]
+			"before": ["<leader>", "l", "s"],
+			"commands": ["paredit.splitSexp"]
 		},
 		{
-			"before": [
-				"<leader>",
-				"l",
-				"j"
-			],
-			"commands": [
-				"paredit.joinSexp"
-			]
+			"before": ["<leader>", "l", "j"],
+			"commands": ["paredit.joinSexp"]
 		},
 		{
-			"before": [
-				"<leader>",
-				"m"
-			],
-			"commands": [
-				"editor.action.toggleMinimap"
-			]
+			"before": ["<leader>", "m"],
+			"commands": ["editor.action.toggleMinimap"]
 		},
 		{
-			"before": [
-				"<leader>",
-				"m"
-			],
-			"commands": [
-				"workbench.action.focusPreviousGroup"
-			]
+			"before": ["<leader>", "m"],
+			"commands": ["workbench.action.focusPreviousGroup"]
 		},
 		{
-			"before": [
-				"<leader>",
-				"n"
-			],
-			"commands": [
-				"extension.advancedNewFile"
-			] // needs advancedNewFile extension / (opt + cmd + n)
+			"before": ["<leader>", "n"],
+			"commands": ["extension.advancedNewFile"] // needs advancedNewFile extension / (opt + cmd + n)
 		},
 		{
-			"before": [
-				"<leader>",
-				"o"
-			],
-			"commands": [
-				"workbench.action.quickOpen"
-			]
+			"before": ["<leader>", "o"],
+			"commands": ["workbench.action.quickOpen"]
 		},
 		{
-			"before": [
-				"<leader>",
-				"p"
-			],
-			"commands": [
-				"workbench.action.showCommands"
-			]
+			"before": ["<leader>", "p"],
+			"commands": ["workbench.action.showCommands"]
 		},
 		{
-			"before": [
-				"<leader>",
-				"q"
-			],
-			"commands": [
-				"workbench.action.closeActiveEditor"
-			]
+			"before": ["<leader>", "q"],
+			"commands": ["workbench.action.closeActiveEditor"]
 		},
 		{
-			"before": [
-				"<leader>",
-				"r",
-				"c"
-			],
-			"commands": [
-				"paredit.rewrapCurly"
-			]
+			"before": ["<leader>", "r", "a"],
+			"commands": ["paredit.raiseSexp"]
 		},
 		{
-			"before": [
-				"<leader>",
-				"r",
-				"q"
-			],
-			"commands": [
-				"paredit.rewrapQuote"
-			]
+			"before": ["<leader>", "r", "c"],
+			"commands": ["paredit.rewrapCurly"]
 		},
 		{
-			"before": [
-				"<leader>",
-				"r",
-				"p"
-			],
-			"commands": [
-				"paredit.rewrapParens"
-			]
+			"before": ["<leader>", "r", "q"],
+			"commands": ["paredit.rewrapQuote"]
 		},
 		{
-			"before": [
-				"<leader>",
-				"r",
-				"s"
-			],
-			"commands": [
-				"paredit.rewrapSquare"
-			]
+			"before": ["<leader>", "r", "p"],
+			"commands": ["paredit.rewrapParens"]
 		},
 		{
-			"before": [
-				"<leader>",
-				"r",
-				"t"
-			],
-			"commands": [
-				"calva.runAllTests"
-			]
+			"before": ["<leader>", "r", "s"],
+			"commands": ["paredit.rewrapSquare"]
+		},
+		{
+			"before": ["<leader>", "r", "t"],
+			"commands": ["calva.runAllTests"]
 		},
 		// {
 		// 	"before": ["<leader>", "s"],
 		// 	"commands": ["workbench.view.scm"]
 		// },
 		{
-			"before": [
-				"<leader>",
-				"s",
-				"e"
-			],
-			"commands": [
-				"paredit.sexpRangeExpansion"
-			]
+			"before": ["<leader>", "s", "e"],
+			"commands": ["paredit.sexpRangeExpansion"]
 		},
 		{
-			"before": [
-				"<leader>",
-				"s",
-				"f"
-			],
+			"before": ["<leader>", "s", "f"],
 			"commands": [
 				"paredit.selectForwardSexp",
 				"execCopy",
@@ -983,63 +623,27 @@
 			]
 		},
 		{
-			"before": [
-				"<leader>",
-				"s",
-				"s"
-			],
-			"commands": [
-				"paredit.sexpRangeContraction"
-			]
+			"before": ["<leader>", "s", "s"],
+			"commands": ["paredit.sexpRangeContraction"]
 		},
 		{
-			"before": [
-				"<leader>",
-				"s",
-				"t"
-			],
-			"commands": [
-				"paredit.rangeForDefun"
-			]
+			"before": ["<leader>", "s", "t"],
+			"commands": ["paredit.rangeForDefun"]
 		},
 		{
-			"before": [
-				"<leader>",
-				"s",
-				"r"
-			],
-			"commands": [
-				"paredit.selectRight"
-			]
+			"before": ["<leader>", "s", "r"],
+			"commands": ["paredit.selectRight"]
 		},
 		{
-			"before": [
-				"<leader>",
-				"s",
-				"k",
-				"f"
-			],
-			"commands": [
-				"paredit.spliceSexpKillForward"
-			]
+			"before": ["<leader>", "s", "k", "f"],
+			"commands": ["paredit.spliceSexpKillForward"]
 		},
 		{
-			"before": [
-				"<leader>",
-				"s",
-				"k",
-				"b"
-			],
-			"commands": [
-				"paredit.spliceSexpKillBackward"
-			]
+			"before": ["<leader>", "s", "k", "b"],
+			"commands": ["paredit.spliceSexpKillBackward"]
 		},
 		{
-			"before": [
-				"<leader>",
-				"s",
-				"x"
-			],
+			"before": ["<leader>", "s", "x"],
 			"commands": [
 				"paredit.selectForwardSexp",
 				"editor.action.clipboardCutAction",
@@ -1077,312 +681,133 @@
 		// 	]
 		// },
 		{
-			"before": [
-				"<leader>",
-				"u",
-				"a"
-			],
-			"commands": [
-				"clojureLsp.refactor.unwindAll"
-			]
+			"before": ["<leader>", "u", "a"],
+			"commands": ["clojureLsp.refactor.unwindAll"]
 		},
 		{
-			"before": [
-				"<leader>",
-				"u",
-				"t"
-			],
-			"commands": [
-				"clojureLsp.refactor.unwindThread"
-			]
+			"before": ["<leader>", "u", "t"],
+			"commands": ["clojureLsp.refactor.unwindThread"]
 		},
 		{
-			"before": [
-				"<leader>",
-				"u",
-				"t"
-			],
-			"commands": [
-				"clojureLsp.refactor.unwindThread"
-			]
+			"before": ["<leader>", "u", "t"],
+			"commands": ["clojureLsp.refactor.unwindThread"]
 		},
 		{
-			"before": [
-				"<leader>",
-				"w",
-				"e"
-			],
-			"commands": [
-				"workbench.view.explorer"
-			]
+			"before": ["<leader>", "w", "e"],
+			"commands": ["workbench.view.explorer"]
 		},
 		{
-			"before": [
-				"<leader>",
-				"w",
-				"j"
-			],
-			"commands": [
-				"workbench.action.moveActiveEditorGroupLeft"
-			]
+			"before": ["<leader>", "w", "j"],
+			"commands": ["workbench.action.moveActiveEditorGroupLeft"]
 		},
 		{
-			"before": [
-				"<leader>",
-				"w",
-				"l"
-			],
-			"commands": [
-				"workbench.action.moveActiveEditorGroupRight"
-			]
+			"before": ["<leader>", "w", "l"],
+			"commands": ["workbench.action.moveActiveEditorGroupRight"]
 		},
 		{
-			"before": [
-				"<leader>",
-				"w",
-				"s"
-			],
-			"commands": [
-				"workbench.action.splitEditor"
-			]
+			"before": ["<leader>", "w", "s"],
+			"commands": ["workbench.action.splitEditor"]
 		},
 		{
-			"before": [
-				"<leader>",
-				"w",
-				"p"
-			],
-			"commands": [
-				"paredit.wrapAroundParens"
-			]
+			"before": ["<leader>", "w", "p"],
+			"commands": ["paredit.wrapAroundParens"]
 		},
 		{
-			"before": [
-				"<leader>",
-				"w",
-				"s"
-			],
-			"commands": [
-				"paredit.wrapAroundSquare"
-			]
+			"before": ["<leader>", "w", "s"],
+			"commands": ["paredit.wrapAroundSquare"]
 		},
 		{
-			"before": [
-				"<leader>",
-				"w",
-				"c"
-			],
-			"commands": [
-				"paredit.wrapAroundCurly"
-			]
+			"before": ["<leader>", "w", "c"],
+			"commands": ["paredit.wrapAroundCurly"]
 		},
 		{
-			"before": [
-				"<leader>",
-				"w",
-				"q"
-			],
-			"commands": [
-				"paredit.wrapAroundQuote"
-			]
+			"before": ["<leader>", "w", "q"],
+			"commands": ["paredit.wrapAroundQuote"]
 		},
 		{
-			"before": [
-				"<leader>",
-				"x"
-			],
-			"commands": [
-				"workbench.action.closeActiveEditor"
-			]
+			"before": ["<leader>", "x"],
+			"commands": ["workbench.action.closeActiveEditor"]
 		},
 		{
-			"before": [
-				"<leader>",
-				"z"
-			],
-			"commands": [
-				"workbench.action.toggleZenMode"
-			]
+			"before": ["<leader>", "z"],
+			"commands": ["workbench.action.toggleZenMode"]
 		},
 		// 	"before": ["<leader>", "s"],
 		// 	"commands": ["magit.status"]
 		// },
 		{
-			"before": [
-				"<leader>",
-				"."
-			],
-			"commands": [
-				"workbench.action.quickFix"
-			]
+			"before": ["<leader>", "."],
+			"commands": ["workbench.action.quickFix"]
 		},
 		{
-			"before": [
-				"<leader>",
-				";"
-			],
-			"commands": [
-				"workbench.action.moveEditorToRightGroup"
-			]
+			"before": ["<leader>", ";"],
+			"commands": ["workbench.action.moveEditorToRightGroup"]
 		},
 		{
-			"before": [
-				"<leader>",
-				","
-			],
-			"commands": [
-				"workbench.action.focusNextGroup"
-			]
+			"before": ["<leader>", ","],
+			"commands": ["workbench.action.focusNextGroup"]
 		},
 		{
-			"after": [
-				"y",
-				"s",
-				"i",
-				"w",
-				"\""
-			],
-			"before": [
-				"<leader>",
-				"'"
-			]
+			"after": ["y", "s", "i", "w", "\""],
+			"before": ["<leader>", "'"]
 		},
 		{
-			"after": [
-				"y",
-				"s",
-				"i",
-				"w",
-				"("
-			],
-			"before": [
-				"<leader>",
-				"9"
-			]
+			"after": ["y", "s", "i", "w", "("],
+			"before": ["<leader>", "9"]
 		},
 		{
-			"after": [
-				"y",
-				"s",
-				"i",
-				"w",
-				"["
-			],
-			"before": [
-				"<leader>",
-				"["
-			]
+			"after": ["y", "s", "i", "w", "["],
+			"before": ["<leader>", "["]
 		},
 		{
-			"after": [
-				"y",
-				"s",
-				"i",
-				"w",
-				"{"
-			],
-			"before": [
-				"<leader>",
-				"]"
-			]
+			"after": ["y", "s", "i", "w", "{"],
+			"before": ["<leader>", "]"]
 		},
 		{
-			"after": [
-				"<leader>",
-				"<leader>",
-				"/"
-			],
+			"after": ["<leader>", "<leader>", "/"],
 			// "commands": ["editor.action.commentLine"]
-			"before": [
-				"<leader>",
-				"/"
-			]
+			"before": ["<leader>", "/"]
 		}
 	],
 	"vim.normalModeKeyBindingsNonRecursive": [
 		{
-			"after": [
-				"i"
-			],
-			"before": [
-				"="
-			]
+			"after": ["i"],
+			"before": ["="]
 		},
 		{
-			"before": [
-				"."
-			],
-			"commands": [
-				"editor.action.quickFix"
-			]
+			"before": ["."],
+			"commands": ["editor.action.quickFix"]
 		},
 		{
-			"before": [
-				"c",
-				"n"
-			],
-			"commands": [
-				"clojureLsp.refactor.cleanNs"
-			]
+			"before": ["c", "n"],
+			"commands": ["clojureLsp.refactor.cleanNs"]
 		},
 		{
-			"before": [
-				"c",
-				"o"
-			],
-			"commands": [
-				"workbench.action.closeEditorsInOtherGroups"
-			]
+			"before": ["c", "o"],
+			"commands": ["workbench.action.closeEditorsInOtherGroups"]
 		},
 		{
-			"before": [
-				"g",
-				"c"
-			],
-			"commands": [
-				"workbench.view.scm"
-			]
+			"before": ["g", "c"],
+			"commands": ["workbench.view.scm"]
 		},
 		{
-			"before": [
-				"g",
-				"m"
-			],
-			"commands": [
-				"magit.status"
-			]
+			"before": ["g", "m"],
+			"commands": ["magit.status"]
 		},
 		{
-			"before": [
-				"<S-r>"
-			],
-			"commands": [
-				"editor.action.rename"
-			]
+			"before": ["<S-r>"],
+			"commands": ["editor.action.rename"]
 		},
 		{
-			"before": [
-				"s",
-				"a"
-			],
-			"commands": [
-				"clojureLsp.refactor.addMissingLibspec"
-			]
+			"before": ["s", "a"],
+			"commands": ["clojureLsp.refactor.addMissingLibspec"]
 		},
 		{
-			"before": [
-				"s",
-				"b"
-			],
-			"commands": [
-				"paredit.barfSexpForward"
-			]
+			"before": ["s", "b"],
+			"commands": ["paredit.barfSexpForward"]
 		},
 		{
-			"before": [
-				"s",
-				"c"
-			],
+			"before": ["s", "c"],
 			"commands": [
 				"paredit.selectForwardSexp",
 				"execCopy",
@@ -1390,65 +815,32 @@
 			]
 		},
 		{
-			"before": [
-				"s",
-				"k"
-			],
-			"commands": [
-				"paredit.killListForward"
-			]
+			"before": ["s", "k"],
+			"commands": ["paredit.killListForward"]
 		},
 		{
-			"before": [
-				"s",
-				"f"
-			],
-			"commands": [
-				"paredit.slurpSexpForward"
-			]
+			"before": ["s", "f"],
+			"commands": ["paredit.slurpSexpForward"]
 		},
 		{
-			"before": [
-				"s",
-				"g"
-			],
-			"commands": [
-				"workbench.view.scm"
-			]
+			"before": ["s", "g"],
+			"commands": ["workbench.view.scm"]
 		},
 		{
-			"before": [
-				"s",
-				"n"
-			],
-			"commands": [
-				"clojureLsp.refactor.cleanNs"
-			]
+			"before": ["s", "n"],
+			"commands": ["clojureLsp.refactor.cleanNs"]
 		},
 		{
-			"before": [
-				"s",
-				"r"
-			],
-			"commands": [
-				"paredit.raiseSexp"
-			]
+			"before": ["s", "r"],
+			"commands": ["paredit.raiseSexp"]
 		},
 		{
-			"before": [
-				"p",
-			],
-			"after": [
-				"<S-p>"
-			]
+			"before": ["p"],
+			"after": ["<S-p>"]
 		},
 		{
-			"before": [
-				"b"
-			],
-			"commands": [
-				"editor.action.revealDefinition"
-			]
+			"before": ["b"],
+			"commands": ["editor.action.revealDefinition"]
 		},
 		{
 			"after": [
@@ -1459,9 +851,7 @@
 				"d",
 				"w" // Start of word
 			],
-			"before": [
-				"f"
-			]
+			"before": ["f"]
 		},
 		{
 			"after": [
@@ -1470,204 +860,106 @@
 				"<leader>",
 				"j" // JumpToAnywhere motion;
 			],
-			"before": [
-				"F"
-			]
+			"before": ["F"]
 		},
 		{
-			"after": [
-				"<C-r>"
-			], // redo
-			"before": [
-				"U"
-			]
+			"after": ["<C-r>"], // redo
+			"before": ["U"]
 		},
 		{
-			"before": [
-				"["
-			],
-			"commands": [
-				"workbench.action.navigateBack"
-			]
+			"before": ["["],
+			"commands": ["workbench.action.navigateBack"]
 		},
 		{
-			"before": [
-				"]"
-			],
-			"commands": [
-				"workbench.action.navigateForward"
-			]
+			"before": ["]"],
+			"commands": ["workbench.action.navigateForward"]
 		},
 		{
-			"after": [
-				"b"
-			],
-			"before": [
-				"q"
-			]
+			"after": ["b"],
+			"before": ["q"]
 		},
 		{
-			"after": [
-				"x"
-			],
-			"before": [
-				"x"
-			]
+			"after": ["x"],
+			"before": ["x"]
 		},
 		{
-			"after": [
-				"%"
-			],
-			"before": [
-				"t"
-			]
+			"after": ["%"],
+			"before": ["t"]
 		},
 		{
-			"after": [
-				"i"
-			],
-			"before": [
-				"I"
-			] // insert
+			"after": ["i"],
+			"before": ["I"] // insert
 		},
 		{
-			"after": [
-				"i"
-			],
-			"before": [
-				"o"
-			] // insert
+			"after": ["i"],
+			"before": ["o"] // insert
 		},
 		{
-			"after": [
-				"i"
-			],
-			"before": [
-				"ㅐ"
-			] // insert
+			"after": ["i"],
+			"before": ["ㅐ"] // insert
 		},
 		{
-			"after": [
-				"o"
-			],
-			"before": [
-				"O"
-			] // insert new line
+			"after": ["o"],
+			"before": ["O"] // insert new line
 		},
 		{
-			"after": [
-				"o"
-			],
-			"before": [
-				"a"
-			] // insert beginning cursor
+			"after": ["o"],
+			"before": ["a"] // insert beginning cursor
 		},
 		{
-			"after": [
-				"<S-a>"
-			],
-			"before": [
-				";"
-			] // insert end cursor
+			"after": ["<S-a>"],
+			"before": [";"] // insert end cursor
 		},
 		{
-			"after": [
-				"k"
-			],
-			"before": [
-				"i"
-			] // up
+			"after": ["k"],
+			"before": ["i"] // up
 		},
 		{
-			"after": [
-				"k"
-			],
-			"before": [
-				"ㅑ"
-			] // up
+			"after": ["k"],
+			"before": ["ㅑ"] // up
 		},
 		{
-			"after": [
-				"j"
-			],
-			"before": [
-				"k"
-			] // down
+			"after": ["j"],
+			"before": ["k"] // down
 		},
 		{
-			"after": [
-				"h"
-			],
-			"before": [
-				"j"
-			] // left
+			"after": ["h"],
+			"before": ["j"] // left
 		},
 		{
-			"after": [
-				"<C-d>"
-			],
-			"before": [
-				","
-			] // page half down
+			"after": ["<C-d>"],
+			"before": [","] // page half down
 		},
 		{
-			"after": [
-				"m"
-			], // n-> m (marker)
-			"before": [
-				"n"
-			]
+			"after": ["m"], // n-> m (marker)
+			"before": ["n"]
 		},
 		{
-			"after": [
-				"<C-u>"
-			],
-			"before": [
-				"m"
-			] // page half up
+			"after": ["<C-u>"],
+			"before": ["m"] // page half up
 		},
 		{
-			"after": [
-				"<C-f>"
-			],
-			"before": [
-				"<"
-			] // page down
+			"after": ["<C-f>"],
+			"before": ["<"] // page down
 		},
 		{
-			"after": [
-				"<C-b>"
-			],
-			"before": [
-				"M"
-			] // page up
+			"after": ["<C-b>"],
+			"before": ["M"] // page up
 		},
 		{
-			"after": [
-				"^"
-			],
-			"before": [
-				"h"
-			] // beginning of line
+			"after": ["^"],
+			"before": ["h"] // beginning of line
 		},
 		// {
 		// 	"before": [";"], // end of line
 		// 	"after": ["$"]
 		// },
 		{
-			"before": [
-				"s",
-				"d"
-			],
-			"commands": [
-				"paredit.spliceSexp"
-			]
+			"before": ["s", "d"],
+			"commands": ["paredit.spliceSexp"]
 		},
 		{
-			"before": [
-				"s",
-				"x"
-			],
+			"before": ["s", "x"],
 			"commands": [
 				"paredit.selectForwardSexp",
 				"editor.action.clipboardCutAction",
@@ -1675,41 +967,19 @@
 			]
 		},
 		{
-			"before": [
-				"<leader>",
-				"c",
-				"j"
-			],
-			"commands": [
-				"calva.jackIn"
-			]
+			"before": ["<leader>", "c", "j"],
+			"commands": ["calva.jackIn"]
 		},
 		{
-			"before": [
-				"<leader>",
-				"c",
-				"i"
-			],
-			"commands": [
-				"calva.clearInlineResults"
-			]
+			"before": ["<leader>", "c", "i"],
+			"commands": ["calva.clearInlineResults"]
 		},
 		{
-			"before": [
-				"<leader>",
-				"c",
-				"o"
-			],
-			"commands": [
-				"workbench.action.closeEditorsInOtherGroups"
-			]
+			"before": ["<leader>", "c", "o"],
+			"commands": ["workbench.action.closeEditorsInOtherGroups"]
 		},
 		{
-			"before": [
-				"<leader>",
-				"t",
-				"c"
-			],
+			"before": ["<leader>", "t", "c"],
 			"commands": [
 				{
 					"command": "calva.runCustomREPLCommand",
@@ -1720,11 +990,7 @@
 			]
 		},
 		{
-			"before": [
-				"<leader>",
-				"t",
-				"s"
-			],
+			"before": ["<leader>", "t", "s"],
 			"commands": [
 				{
 					"command": "calva.loadFile"
@@ -1739,11 +1005,7 @@
 			]
 		},
 		{
-			"before": [
-				"<leader>",
-				"t",
-				"t"
-			],
+			"before": ["<leader>", "t", "t"],
 			"commands": [
 				{
 					"command": "calva.loadFile"
@@ -1757,11 +1019,7 @@
 			]
 		},
 		{
-			"before": [
-				"<leader>",
-				"t",
-				"i"
-			],
+			"before": ["<leader>", "t", "i"],
 			"commands": [
 				{
 					"command": "calva.runCustomREPLCommand",
@@ -1772,11 +1030,7 @@
 			]
 		},
 		{
-			"before": [
-				"<leader>",
-				"t",
-				"l"
-			],
+			"before": ["<leader>", "t", "l"],
 			"commands": [
 				{
 					"command": "calva.runCustomREPLCommand",
@@ -1787,11 +1041,7 @@
 			]
 		},
 		{
-			"before": [
-				"<leader>",
-				"p",
-				"o"
-			],
+			"before": ["<leader>", "p", "o"],
 			"commands": [
 				{
 					"command": "calva.runCustomREPLCommand",
@@ -1802,22 +1052,12 @@
 			]
 		},
 		{
-			"after": [
-				"<C-w>",
-				"h"
-			],
-			"before": [
-				"<C-w>",
-				"j"
-			] // left window
+			"after": ["<C-w>", "h"],
+			"before": ["<C-w>", "j"] // left window
 		},
 		{
-			"before": [
-				"/"
-			],
-			"after": [
-				"."
-			]
+			"before": ["/"],
+			"after": ["."]
 		},
 		// {
 		// 	"before": [
@@ -1830,21 +1070,13 @@
 		// 	// "after": ["<C-w>", "h"]
 		// },
 		{
-			"before": [
-				"<S-j>"
-			], // left window
-			"commands": [
-				"workbench.action.previousEditorInGroup"
-			]
+			"before": ["<S-j>"], // left window
+			"commands": ["workbench.action.previousEditorInGroup"]
 			// "after": ["<C-w>", "h"]
 		},
 		{
-			"before": [
-				"<S-l>"
-			], // right window
-			"commands": [
-				"workbench.action.nextEditorInGroup"
-			]
+			"before": ["<S-l>"], // right window
+			"commands": ["workbench.action.nextEditorInGroup"]
 			// "after": ["<C-w>", "l"],
 		}
 		// {
@@ -1856,119 +1088,63 @@
 	"vim.useSystemClipboard": true,
 	"vim.visualModeKeyBindingsNonRecursive": [
 		{
-			"before": [
-				">"
-			],
-			"commands": [
-				"editor.action.indentLines"
-			]
+			"before": [">"],
+			"commands": ["editor.action.indentLines"]
 		},
 		{
-			"before": [
-				"<"
-			],
-			"commands": [
-				"editor.action.outdentLines"
-			]
+			"before": ["<"],
+			"commands": ["editor.action.outdentLines"]
 		},
 		{
-			"after": [
-				"%"
-			],
-			"before": [
-				"t"
-			]
+			"after": ["%"],
+			"before": ["t"]
 		},
 		{
-			"after": [
-				"k"
-			],
-			"before": [
-				"i"
-			] // up
+			"after": ["k"],
+			"before": ["i"] // up
 		},
 		{
-			"after": [
-				"j"
-			],
-			"before": [
-				"k"
-			] // down
+			"after": ["j"],
+			"before": ["k"] // down
 		},
 		{
-			"after": [
-				"h"
-			],
-			"before": [
-				"j"
-			] // left
+			"after": ["h"],
+			"before": ["j"] // left
 		},
 		{
-			"after": [
-				"<C-d>"
-			],
-			"before": [
-				","
-			] // page half down
-			// paredit.forwardSexpOrUp 
+			"after": ["<C-d>"],
+			"before": [","] // page half down
+			// paredit.forwardSexpOrUp
 			// paredit.backwardSexpOrUp
 		},
 		{
-			"after": [
-				"<C-u>"
-			],
-			"before": [
-				"m"
-			] // page half up
+			"after": ["<C-u>"],
+			"before": ["m"] // page half up
 		},
 		{
-			"after": [
-				"<C-f>"
-			],
-			"before": [
-				"<"
-			] // page down
+			"after": ["<C-f>"],
+			"before": ["<"] // page down
 		},
 		{
-			"after": [
-				"<C-b>"
-			],
-			"before": [
-				"M"
-			] // page up
+			"after": ["<C-b>"],
+			"before": ["M"] // page up
 		},
 		{
-			"after": [
-				"^"
-			],
-			"before": [
-				"h"
-			] // beginning of line
+			"after": ["^"],
+			"before": ["h"] // beginning of line
 		},
 		{
-			"after": [
-				"$"
-			],
-			"before": [
-				";"
-			] // end of line
+			"after": ["$"],
+			"before": [";"] // end of line
 		},
 		{
-			"after": [
-				"S"
-			],
-			"before": [
-				"s"
-			]
+			"after": ["S"],
+			"before": ["s"]
 		},
 		{
-			"before": [
-				"/"
-			],
-			"commands": [
-				"editor.action.commentLine"
-			]
-		},
+			"before": ["/"],
+			"commands": ["editor.action.commentLine"]
+		}
 	],
 	"vim.visualstar": true,
 	// https://neutrondev.com/vs-code-colored-bracket-pair-guides/
@@ -1997,7 +1173,7 @@
 		// "activityBar.background": "#01194eea",
 		"tab.activeBorderTop": "#23a6c76c",
 		"tab.activeBorder": "#39eff8",
-		"tab.activeBackground": "#21618f55",
+		"tab.activeBackground": "#21618f55"
 	},
 	"workbench.colorTheme": "Noctis Minimus",
 	"workbench.editor.highlightModifiedTabs": true,
@@ -2010,12 +1186,7 @@
 	"diffEditor.maxComputationTime": 0,
 	"markdown-preview-enhanced.liveUpdate": true,
 	"markdown-preview-enhanced.previewTheme": "github-light.css",
-	"calva.myCljAliases": [
-		":portal",
-		":add-libs",
-		":reflect",
-		":jedi-time"
-	],
+	"calva.myCljAliases": [":portal", ":add-libs", ":reflect", ":jedi-time"],
 	"search.exclude": {
 		"**/.calva/output-window/output.calva-repl": true
 	},
@@ -2125,4 +1296,6 @@
 	"[lua]": {
 		"editor.defaultFormatter": "yinfei.luahelper"
 	},
+	"dart.debugExternalPackageLibraries": false,
+	"dart.lineLength": 120
 }

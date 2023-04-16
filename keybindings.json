@@ -18,7 +18,8 @@
 	},
 	{
 		"key": "n",
-		"command": "fileutils.newFile",
+		// "command": "fileutils.newFile",
+		"command": "extension.advancedNewFile",
 		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
 	},
 	{
@@ -253,7 +254,7 @@
 	{
 		"key": "e",
 		"command": "calva.evaluateCurrentTopLevelForm",
-		"when": "calva:connected && calva:keybindingsEnabled && editorTextFocus && editorLangId == 'clojure' && vim.mode != 'Insert' && vim.mode != 'EasyMotionMode' && vim.mode != 'EasyMotionInputMode'"
+		"when": "calva:connected && calva:keybindingsEnabled && editorTextFocus && editorLangId == 'clojure' && vim.mode != 'Insert' && vim.mode != 'Visual' && vim.mode != 'EasyMotionMode' && vim.mode != 'EasyMotionInputMode'"
 	},
 	{
 		"key": "cmd+enter",
@@ -471,7 +472,7 @@
 		"key": "cmd+3",
 		"command": "calva.runCustomREPLCommand",
 		"args": {
-			"snippet": "(tap> (let [v (read-string (clojure.string/replace (read-line) \"*v\" \"@dev/*v\"))] (eval v)))",
+			"snippet": "(tap> (let [v (read-string (clojure.string/replace (read-line) \"*v\" \"@dev/*v\"))] (eval v)))"
 		}
 	},
 	{
@@ -532,6 +533,36 @@
 		"key": "cmd+q",
 		"command": "-workbench.action.quit"
 	},
+	// Toggle between terminal and editor focus
+	{
+		"key": "cmd+k",
+		"command": "workbench.action.terminal.focus",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "cmd+k",
+		"command": "workbench.action.focusActiveEditorGroup",
+		"when": "terminalFocus"
+	},
+	{
+		"key": "cmd+r",
+		"command": "editor.action.rename",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "alt+cmd+i",
+		"command": "extension.toimagelink",
+		"when": "editorTextFocus && editorLangId == 'markdown'"
+	},
+	{
+		"key": "alt+i",
+		"command": "-extension.toimagelink",
+		"when": "editorTextFocus && editorLangId == 'markdown'"
+	},
+	{
+		"key": "alt+cmd+i",
+		"command": "workingmemory.insert"
+	}
 	// {
 	// 	"key": "cmd+alt+.",
 	// 	"command": "joyride.runWorkspaceScript"
