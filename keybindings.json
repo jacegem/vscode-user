@@ -466,8 +466,13 @@
 	{
 		"key": "cmd+2",
 		"command": "joyride.runUserScript",
-		"args": "git_link.cljs"
+		"args": "unity.cljs"
 	},
+	// {
+	// 	"key": "cmd+2",
+	// 	"command": "joyride.runUserScript",
+	// 	"args": "git_link.cljs"
+	// },
 	{
 		"key": "cmd+3",
 		"command": "calva.runCustomREPLCommand",

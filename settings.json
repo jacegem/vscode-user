@@ -31,6 +31,7 @@
 	"asciidoc.preview.breaks": true,
 	"asciidoc.preview.refreshInterval": 1000,
 	"asciidoc.use_kroki": true,
+	// "calva.clojureLspPath": "/opt/homebrew/bin/clojure-lsp",
 	"calva.customREPLCommandSnippets": [
 		{
 			"name": "go",
@@ -93,7 +94,6 @@
 	"editor.fontSize": 14.5,
 	"editor.formatOnType": true,
 	"editor.guides.bracketPairs": "active",
-	"editor.inlineSuggest.enabled": true,
 	"editor.insertSpaces": true,
 	"editor.largeFileOptimizations": false,
 	"editor.tabSize": 2,
@@ -868,11 +868,11 @@
 		},
 		{
 			"before": ["["],
-			"commands": ["workbench.action.navigateBack"]
+			"commands": ["workbench.action.navigateBackInNavigationLocations"]
 		},
 		{
 			"before": ["]"],
-			"commands": ["workbench.action.navigateForward"]
+			"commands": ["workbench.action.navigateForwardInNavigationLocations"]
 		},
 		{
 			"after": ["b"],
@@ -979,7 +979,18 @@
 			"commands": ["workbench.action.closeEditorsInOtherGroups"]
 		},
 		{
-			"before": ["<leader>", "t", "c"],
+			"before": ["<leader>", "y"],
+			"commands": [
+				{
+					"command": "calva.runCustomREPLCommand",
+					"args": {
+						"snippet": "(tap> $top-level-form)"
+					}
+				}
+			]
+		},
+		{
+			"before": ["<leader>", "t", "e"],
 			"commands": [
 				{
 					"command": "calva.runCustomREPLCommand",
@@ -1004,20 +1015,20 @@
 				}
 			]
 		},
-		{
-			"before": ["<leader>", "t", "t"],
-			"commands": [
-				{
-					"command": "calva.loadFile"
-				},
-				{
-					"command": "calva.runCustomREPLCommand",
-					"args": {
-						"snippet": "(run-tests)"
-					}
-				}
-			]
-		},
+		// {
+		// 	"before": ["<leader>", "t", "t"],
+		// 	"commands": [
+		// 		{
+		// 			"command": "calva.loadFile"
+		// 		},
+		// 		{
+		// 			"command": "calva.runCustomREPLCommand",
+		// 			"args": {
+		// 				"snippet": "(run-tests)"
+		// 			}
+		// 		}
+		// 	]
+		// },
 		{
 			"before": ["<leader>", "t", "i"],
 			"commands": [
@@ -1041,6 +1052,7 @@
 			]
 		},
 		{
+			// portal open
 			"before": ["<leader>", "p", "o"],
 			"commands": [
 				{
@@ -1181,7 +1193,7 @@
 		"*.html": "default",
 		"*.ipynb": "jupyter-notebook"
 	},
-	"workbench.iconTheme": "material-icon-theme",
+	"workbench.iconTheme": "vscode-great-icons",
 	"workbench.tree.indent": 12,
 	"diffEditor.maxComputationTime": 0,
 	"markdown-preview-enhanced.liveUpdate": true,
@@ -1288,14 +1300,28 @@
 	],
 	"searchEverywhere.include": "**/*.{js,jsx,ts,tsx,clj,cljs,cljd,edn}",
 	"git.openRepositoryInParentFolders": "never",
-	"calva.enableClojureLspOnStart": "never",
 	"editor.stickyScroll.enabled": true,
 	"luahelper.format.continuation_indent_width": 2,
 	"luahelper.format.indent_width": 2,
 	"luahelper.format.tab_width": 2,
 	"[lua]": {
-		"editor.defaultFormatter": "yinfei.luahelper"
+		"editor.defaultFormatter": "sumneko.lua"
 	},
 	"dart.debugExternalPackageLibraries": false,
-	"dart.lineLength": 120
+	"dart.lineLength": 120,
+	"clojure.trace.server": "verbose",
+	"calva.enableClojureLspOnStart": "when-file-opened-use-furthest-project",
+	"gitflow.views.feature.showRemoteBranches": false,
+	"editor.unicodeHighlight.invisibleCharacters": false,
+	"java.import.gradle.java.home": "/opt/homebrew/Cellar/openjdk@11/11.0.20/libexec/openjdk.jdk/Contents/Home",
+	"indentRainbow.excludedLanguages": [
+	
+		"clojure",
+		"plaintext",
+	],
+	"vim.autoSwitchInputMethod.defaultIM": "com.apple.keylayout.ABC",
+	"vim.autoSwitchInputMethod.enable": true,
+	"vim.autoSwitchInputMethod.obtainIMCmd": "/opt/homebrew/bin/im-select",
+	"vim.autoSwitchInputMethod.switchIMCmd": "/opt/homebrew/bin/im-select {im}",
+	"window.commandCenter": false
 }
