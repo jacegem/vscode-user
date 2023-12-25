@@ -41,3 +41,7 @@ defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 
 - 이름변경 : r
 - 삭제, 이동, 
+
+
+
+"ab" hello world!

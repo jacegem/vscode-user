@@ -61,7 +61,7 @@
 	// moveFileToTrash, when: explorerResourceMoveableToTrash && explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus,
 	{
 		"key": "enter",
-		"command": "-renameFile",
+		"command": "explorer.openAndPassFocus",
 		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
 	},
 	// {
@@ -567,6 +567,10 @@
 	{
 		"key": "alt+cmd+i",
 		"command": "workingmemory.insert"
+	},
+	{
+		"key": "ctrl+shift+alt+cmd+r",
+		"command": "joyride.runCode"
 	}
 	// {
 	// 	"key": "cmd+alt+.",
