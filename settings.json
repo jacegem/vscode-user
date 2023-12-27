@@ -1,2110 +1,2233 @@
 {
-	"calva.myCljAliases": [
-		":portal",
-		":add-libs",
-		":reflect",
-		":jedi-time"
-	],
-	"dart.debugExternalPackageLibraries": false,
-	"[dart]": {
-		"editor.formatOnSave": true,
-		"editor.formatOnType": true,
-		"editor.rulers": [
-			120
-		],
-		"editor.selectionHighlight": false,
-		"editor.suggest.snippetsPreventQuickSuggestions": false,
-		"editor.suggestSelection": "first",
-		"editor.tabCompletion": "onlySnippets",
-		"editor.wordBasedSuggestions": "off"
-	},
-	"editor.unicodeHighlight.invisibleCharacters": false,
-	"calva.prettyPrintingOptions": {
-		"printEngine": "pprint",
-		"enabled": true,
-		"width": 120,
-		"maxLength": 50
-	},
-	"asciidoc.preview.refreshInterval": 1000,
-	"files.exclude": {
-		"**/__pycache__": true,
-		"**/.classpath": true,
-		"**/.clj-kondo/.cache": true,
-		"**/.cpcache": true,
-		"**/.lsp/.cache": true,
-		"**/.project": true,
-		"**/.settings": true,
-		"**/.factorypath": true
-	},
-	"terminal.integrated.env.osx": {
-		"FIG_NEW_SESSION": "1"
-	},
-	"terminal.integrated.defaultProfile.osx": "fish",
-	"calva.fmt.configPath": ".cljfmt.edn",
-	"vim.disableAnnoyingNeovimMessage": true,
-	"extensions.experimental.affinity": {
-		"vscodevim.vim": 1
-	},
-	"todo-tree.general.tags": [
-		"BUG",
-		"HACK",
-		"FIXME",
-		"TODO",
-		"XXX",
-		"[ ]",
-		"[x]",
-		"fixme",
-		"new"
-	],
-	"githubPullRequests.queries": [
-		{
-			"label": "Waiting For My Review",
-			"query": "is:open review-requested:${user}"
-		},
-		{
-			"label": "Assigned To Me",
-			"query": "is:open assignee:${user}"
-		},
-		{
-			"label": "Created By Me",
-			"query": "is:open author:${user}"
-		}
-	],
-	"vim.hlsearch": true,
-	"cSpell.enabledLanguageIds": [
-		"asciidoc",
-		"c",
-		"cpp",
-		"csharp",
-		"css",
-		"elixir",
-		"erlang",
-		"git-commit",
-		"go",
-		"graphql",
-		"handlebars",
-		"haskell",
-		"html",
-		"jade",
-		"java",
-		"javascript",
-		"javascriptreact",
-		"json",
-		"jsonc",
-		"jupyter",
-		"latex",
-		"less",
-		"markdown",
-		"php",
-		"plaintext",
-		"python",
-		"pug",
-		"restructuredtext",
-		"rust",
-		"scala",
-		"scss",
-		"scminput",
-		"swift",
-		"text",
-		"typescript",
-		"typescriptreact",
-		"vue",
-		"yaml",
-		"yml",
-		"clojure",
-		"edn"
-	],
-	"indentRainbow.excludedLanguages": [
-		"clojure",
-		"plaintext"
-	],
-	"dart.sdkPath": "~/sdk/flutter/bin/dart",
-	"workbench.iconTheme": "vscode-great-icons",
-	"search.exclude": {
-		"**/.calva/output-window/output.calva-repl": true
-	},
-	"editor.largeFileOptimizations": false,
-	"files.watcherExclude": {
-		"**/.clj-kondo/.cache/**": true,
-		"**/.lsp/.cache/**": true,
-		"**/target/classes/**": true
-	},
-	"calva.paredit.defaultKeyMap": "original",
-	"git.pullBeforeCheckout": true,
-	"luahelper.format.indent_width": 2,
-	"vim.incsearch": true,
-	"terminal.integrated.fontFamily": "'D2Coding ligature'",
-	"vim.statusBarColors.surroundinputmode": "#007ACC",
-	"luahelper.format.continuation_indent_width": 2,
-	"vim.statusBarColors.normal": [
-		"#304149",
-		"#EEEEEE"
-	],
-	"git.autofetch": true,
-	"python.languageServer": "Pylance",
-	"codestream.email": "jacegem@gmail.com",
-	"editor.fontFamily": "'Fira Code', 'Fira Code iScript',monospace, 'D2Coding ligature' ",
-	"files.autoSave": "afterDelay",
-	"window.commandCenter": false,
-	"calva.referencesCodeLens.enabled": true,
-	"editor.foldingMaximumRegions": 500,
-	"vim.easymotion": true,
-	"workbench.tree.indent": 12,
-	"vim.autoSwitchInputMethod.switchIMCmd": "/opt/homebrew/bin/im-select {im}",
-	"terminal.integrated.fontSize": 13,
-	"jupyter.alwaysTrustNotebooks": true,
-	"dart.flutterHotReloadOnSave": "all",
-	"vim.statusBarColors.replace": "#D08770",
-	"debug.openDebug": "openOnDebugBreak",
-	"git.openRepositoryInParentFolders": "never",
-	"python.analysis.diagnosticMode": "workspace",
-	"git.confirmSync": false,
-	"vim.statusBarColors.visualblock": "#A3BE8C",
-	"vim.handleKeys": {
-		"<C-a>": false,
-		"<C-f>": false,
-		"<D-v>": false
-	},
-	"dart.previewFlutterUiGuides": true,
-	"explorer.fileNesting.enabled": true,
-	"vim.autoSwitchInputMethod.obtainIMCmd": "/opt/homebrew/bin/im-select",
-	"luahelper.format.tab_width": 2,
-	"dart.showTodos": false,
-	"vim.statusBarColors.insert": "#BF616A",
-	"calva.paredit.strictPreventUnmatchedClosingBracket": true,
-	"vim.normalModeKeyBindingsNonRecursive": [
-		{
-			"before": [
-				"q"
-			],
-			"after": [
-				"b"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"9"
-			],
-			"after": [
-				"y",
-				"s",
-				"i",
-				"w",
-				"("
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"'"
-			],
-			"after": [
-				"y",
-				"s",
-				"i",
-				"w",
-				"\""
-			]
-		},
-		{
-			"before": [
-				"="
-			],
-			"after": [
-				"i"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"d",
-				"9"
-			],
-			"after": [
-				"d",
-				"s",
-				"("
-			]
-		},
-		{
-			"before": [
-				"I"
-			],
-			"after": [
-				"i"
-			]
-		},
-		{
-			"before": [
-				"o"
-			],
-			"after": [
-				"i"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"/"
-			],
-			"after": [
-				"<leader>",
-				"<leader>",
-				"/"
-			]
-		},
-		{
-			"before": [
-				"O"
-			],
-			"after": [
-				"o"
-			]
-		},
-		{
-			"before": [
-				"F"
-			],
-			"after": [
-				"<leader>",
-				"<leader>",
-				"<leader>",
-				"j"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"d",
-				"'"
-			],
-			"after": [
-				"d",
-				"s",
-				"\\"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"]"
-			],
-			"after": [
-				"y",
-				"s",
-				"i",
-				"w",
-				"{"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"d",
-				"0"
-			],
-			"after": [
-				"d",
-				"s",
-				")"
-			]
-		},
-		{
-			"before": [
-				"k"
-			],
-			"after": [
-				"j"
-			]
-		},
-		{
-			"before": [
-				"d",
-				"d"
-			],
-			"after": [
-				"\"",
-				"_",
-				"d",
-				"d"
-			]
-		},
-		{
-			"before": [
-				"c",
-				"i",
-				"\""
-			],
-			"after": [
-				"\"",
-				"_",
-				"c",
-				"i",
-				"\""
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"["
-			],
-			"after": [
-				"y",
-				"s",
-				"i",
-				"w",
-				"["
-			]
-		},
-		{
-			"before": [
-				"j"
-			],
-			"after": [
-				"h"
-			]
-		},
-		{
-			"before": [
-				"<C-w>",
-				"j"
-			],
-			"after": [
-				"<C-w>",
-				"h"
-			]
-		},
-		{
-			"before": [
-				"h"
-			],
-			"after": [
-				"^"
-			]
-		},
-		{
-			"before": [
-				"f"
-			],
-			"after": [
-				"<leader>",
-				"<leader>",
-				"<leader>",
-				"b",
-				"d",
-				"w"
-			]
-		},
-		{
-			"before": [
-				"t"
-			],
-			"after": [
-				"%"
-			]
-		},
-		{
-			"before": [
-				"x"
-			],
-			"after": [
-				"\"",
-				"_",
-				"x"
-			]
-		},
-		{
-			"before": [
-				"\u3150"
-			],
-			"after": [
-				"i"
-			]
-		},
-		{
-			"before": [
-				"U"
-			],
-			"after": [
-				"<C-r>"
-			]
-		},
-		{
-			"before": [
-				"\u3151"
-			],
-			"after": [
-				"k"
-			]
-		},
-		{
-			"before": [
-				"p"
-			],
-			"after": [
-				"<S-p>"
-			]
-		},
-		{
-			"before": [
-				"i"
-			],
-			"after": [
-				"k"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"d",
-				"]"
-			],
-			"after": [
-				"d",
-				"s",
-				"{"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"d",
-				"["
-			],
-			"after": [
-				"d",
-				"s",
-				"["
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"g",
-				"g"
-			],
-			"commands": [
-				"magit.status"
-			]
-		},
-		{
-			"before": [
-				"]"
-			],
-			"commands": [
-				"workbench.action.navigateForwardInNavigationLocations"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"c",
-				"h"
-			],
-			"commands": [
-				"calva.clearReplHistory"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"q"
-			],
-			"commands": [
-				"workbench.action.closeActiveEditor"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"c",
-				"e"
-			],
-			"commands": [
-				"calva.evaluateSelection"
-			]
-		},
-		{
-			"before": [
-				"<S-l>"
-			],
-			"commands": [
-				"workbench.action.nextEditorInGroup"
-			]
-		},
-		{
-			"before": [
-				"s",
-				"f"
-			],
-			"commands": [
-				"paredit.slurpSexpForward"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"f",
-				"m"
-			],
-			"commands": [
-				"calva-fmt.alignCurrentForm"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"a",
-				"x"
-			],
-			"commands": [
-				"workbench.view.extensions"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"o"
-			],
-			"commands": [
-				"workbench.action.quickOpen"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				","
-			],
-			"commands": [
-				"workbench.action.focusNextGroup"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"s",
-				"w"
-			],
-			"commands": [
-				"paredit.sexpRangeExpansion"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"k",
-				"r"
-			],
-			"commands": [
-				"paredit.killRight"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"l",
-				"p"
-			],
-			"commands": [
-				"clojureLsp.refactor.moveToLet"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"r",
-				"o"
-			],
-			"commands": [
-				{
-					"command": "calva.runCustomREPLCommand",
-					"args": {
-						"snippet": "(require '[portal.api :as p]) (def p (p/open)) (add-tap #'p/submit)"
-					}
-				}
-			]
-		},
-		{
-			"before": [
-				"s",
-				"g"
-			],
-			"commands": [
-				"workbench.view.scm"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"a",
-				"f"
-			],
-			"commands": [
-				"workbench.action.findInFiles"
-			]
-		},
-		{
-			"before": [
-				"s",
-				"c"
-			],
-			"commands": [
-				"paredit.selectForwardSexp",
-				"execCopy",
-				"extension.vim_escape"
-			]
-		},
-		{
-			"before": [
-				"b"
-			],
-			"commands": [
-				"editor.action.revealDefinition"
-			]
-		},
-		{
-			"before": [
-				"<S-j>"
-			],
-			"commands": [
-				"workbench.action.previousEditorInGroup"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"t",
-				"l"
-			],
-			"commands": [
-				{
-					"command": "calva.runCustomREPLCommand",
-					"args": {
-						"snippet": "(tap> *1)"
-					}
-				}
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"w",
-				"q"
-			],
-			"commands": [
-				"paredit.wrapAroundQuote"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"c",
-				"o"
-			],
-			"commands": [
-				"workbench.action.closeEditorsInOtherGroups"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"t",
-				"i"
-			],
-			"commands": [
-				{
-					"command": "calva.runCustomREPLCommand",
-					"args": {
-						"snippet": "(tap> (let [v (read-string (clojure.string/replace (read-line) \"*v\" \"@dev/*v\"))] (eval v)))"
-					}
-				}
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"d",
-				"l"
-			],
-			"commands": [
-				"paredit.killListForward"
-			]
-		},
-		{
-			"before": [
-				"g",
-				"s"
-			],
-			"commands": [
-				"workbench.action.gotoSymbol"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"n"
-			],
-			"commands": [
-				"extension.advancedNewFile"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"u",
-				"a"
-			],
-			"commands": [
-				"clojureLsp.refactor.unwindAll"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"a",
-				"m"
-			],
-			"commands": [
-				"clojureLsp.refactor.addMissingLibspec"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"l",
-				"i"
-			],
-			"commands": [
-				"clojureLsp.refactor.introduceLet"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"d",
-				"s"
-			],
-			"commands": [
-				"paredit.spliceSexp"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"l",
-				"s"
-			],
-			"commands": [
-				"paredit.splitSexp"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"s",
-				"r"
-			],
-			"commands": [
-				"paredit.selectRight",
-				"editor.action.clipboardCopyAction",
-				"vim_escape"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"."
-			],
-			"commands": [
-				"workbench.action.quickFix"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"f",
-				"t"
-			],
-			"commands": [
-				"calva-fmt.trimCurrentFormWhiteSpace"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"w",
-				"j"
-			],
-			"commands": [
-				"workbench.action.moveActiveEditorGroupLeft"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"t",
-				"t"
-			],
-			"commands": [
-				{
-					"command": "calva.loadFile"
-				},
-				{
-					"command": "calva.runCustomREPLCommand",
-					"args": {
-						"snippet": "(run-tests)"
-					}
-				}
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"f",
-				"l"
-			],
-			"commands": [
-				"calva.loadFile"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"l",
-				"f"
-			],
-			"commands": [
-				"calva.loadFile"
-			]
-		},
-		{
-			"before": [
-				"s",
-				"n"
-			],
-			"commands": [
-				"clojureLsp.refactor.cleanNs"
-			]
-		},
-		{
-			"before": [
-				"s",
-				"k"
-			],
-			"commands": [
-				"paredit.killListForward"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"y"
-			],
-			"commands": [
-				{
-					"command": "calva.runCustomREPLCommand",
-					"args": {
-						"snippet": "(tap> $top-level-form)"
-					}
-				}
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"i",
-				"s"
-			],
-			"commands": [
-				"clojureLsp.refactor.inlineSymbol"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"w",
-				"p"
-			],
-			"commands": [
-				"paredit.wrapAroundParens"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"r",
-				"c"
-			],
-			"commands": [
-				"paredit.rewrapCurly"
-			]
-		},
-		{
-			"before": [
-				"s",
-				"x"
-			],
-			"commands": [
-				"paredit.selectForwardSexp",
-				"editor.action.clipboardCutAction",
-				"extension.vim_escape"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"w",
-				"l"
-			],
-			"commands": [
-				"workbench.action.moveActiveEditorGroupRight"
-			]
-		},
-		{
-			"before": [
-				"c",
-				"o"
-			],
-			"commands": [
-				"workbench.action.closeEditorsInOtherGroups"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"s",
-				"k",
-				"f"
-			],
-			"commands": [
-				"paredit.spliceSexpKillForward"
-			]
-		},
-		{
-			"before": [
-				"c",
-				"n"
-			],
-			"commands": [
-				"clojureLsp.refactor.cleanNs"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"<leader>",
-				"k"
-			],
-			"commands": [
-				"bookmarks.list"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"r",
-				"q"
-			],
-			"commands": [
-				"paredit.rewrapQuote"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"s",
-				"s"
-			],
-			"commands": [
-				"paredit.sexpRangeContraction"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"d",
-				"f"
-			],
-			"commands": [
-				"paredit.killSexpForward"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"k"
-			],
-			"commands": [
-				"bookmarks.toggle"
-			]
-		},
-		{
-			"before": [
-				"g",
-				"m"
-			],
-			"commands": [
-				"magit.status"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"h"
-			],
-			"commands": [
-				"workbench.action.moveEditorToLeftGroup"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"w",
-				"c"
-			],
-			"commands": [
-				"paredit.wrapAroundCurly"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"m"
-			],
-			"commands": [
-				"bookmarks.toggle"
-			]
-		},
-		{
-			"before": [
-				"<S-r>"
-			],
-			"commands": [
-				"editor.action.rename"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"l"
-			],
-			"commands": [
-				"bookmarks.jumpToNext"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"f",
-				"f"
-			],
-			"commands": [
-				"actions.find"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"r",
-				"s"
-			],
-			"commands": [
-				"paredit.rewrapSquare"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"c",
-				"j"
-			],
-			"commands": [
-				"calva.jackIn"
-			]
-		},
-		{
-			"before": [
-				":"
-			],
-			"commands": [
-				"workbench.action.showCommands"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"k",
-				"l",
-				"f"
-			],
-			"commands": [
-				"paredit.killListForward"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"w",
-				"s"
-			],
-			"commands": [
-				"workbench.action.splitEditor"
-			]
-		},
-		{
-			"before": [
-				"."
-			],
-			"commands": [
-				"editor.action.quickFix"
-			]
-		},
-		{
-			"before": [
-				";"
-			],
-			"commands": [
-				"S-a"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"k",
-				"f"
-			],
-			"commands": [
-				"paredit.killSexpForward"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"k",
-				"l",
-				"b"
-			],
-			"commands": [
-				"paredit.killListBackward"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"c",
-				"i"
-			],
-			"commands": [
-				"calva.clearInlineResults"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"d",
-				"j"
-			],
-			"commands": [
-				"paredit.splitSexp"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"r",
-				"t"
-			],
-			"commands": [
-				"calva.runAllTests"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"s",
-				"x"
-			],
-			"commands": [
-				"paredit.selectForwardSexp",
-				"editor.action.clipboardCutAction",
-				"extension.vim_escape"
-			]
-		},
-		{
-			"before": [
-				"s",
-				"d"
-			],
-			"commands": [
-				"paredit.spliceSexp"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"u",
-				"t"
-			],
-			"commands": [
-				"clojureLsp.refactor.unwindThread"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"t",
-				"e"
-			],
-			"commands": [
-				{
-					"command": "calva.runCustomREPLCommand",
-					"args": {
-						"snippet": "(tap> (Throwable->map *e))"
-					}
-				}
-			]
-		},
-		{
-			"before": [
-				"["
-			],
-			"commands": [
-				"workbench.action.navigateBackInNavigationLocations"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"e",
-				"e"
-			],
-			"commands": [
-				"workbench.files.action.showActiveFileInExplorer"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"p"
-			],
-			"commands": [
-				"workbench.action.showCommands"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"x"
-			],
-			"commands": [
-				"workbench.action.closeActiveEditor"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"b"
-			],
-			"commands": [
-				"bookmarks.listFromAllFiles"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"r",
-				"p"
-			],
-			"commands": [
-				"paredit.rewrapParens"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				";"
-			],
-			"commands": [
-				"workbench.action.moveEditorToRightGroup"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"r",
-				"a"
-			],
-			"commands": [
-				"paredit.raiseSexp"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"k",
-				"b"
-			],
-			"commands": [
-				"paredit.killSexpBackward"
-			]
-		},
-		{
-			"before": [
-				"s",
-				"b"
-			],
-			"commands": [
-				"paredit.barfSexpForward"
-			]
-		},
-		{
-			"before": [
-				"s",
-				"r"
-			],
-			"commands": [
-				"paredit.raiseSexp"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"a",
-				"e"
-			],
-			"commands": [
-				"workbench.view.explorer"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"z"
-			],
-			"commands": [
-				"workbench.action.toggleZenMode"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"s",
-				"f"
-			],
-			"commands": [
-				"paredit.selectForwardSexp",
-				"execCopy",
-				"extension.vim_escape"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"s",
-				"k",
-				"b"
-			],
-			"commands": [
-				"paredit.spliceSexpKillBackward"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"e",
-				"f"
-			],
-			"commands": [
-				"clojureLsp.refactor.extractFunction"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"s",
-				"t"
-			],
-			"commands": [
-				"paredit.rangeForDefun"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"s",
-				"v"
-			],
-			"commands": [
-				"workbench.action.toggleSidebarVisibility"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"t",
-				"s"
-			],
-			"commands": [
-				{
-					"command": "calva.loadFile"
-				},
-				{
-					"command": "calva.runCustomREPLCommand",
-					"args": {
-						"snippet": "(clojure.test/test-vars [#'$top-level-defined-symbol])"
-					}
-				}
-			]
-		},
-		{
-			"before": [
-				"s",
-				"a"
-			],
-			"commands": [
-				"clojureLsp.refactor.addMissingLibspec"
-			]
-		},
-		{
-			"before": [
-				"a"
-			],
-			"commands": [
-				"o"
-			]
-		},
-		{
-			"before": [
-				"K"
-			],
-			"commands": [
-				"editor.action.insertLineAfter"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"l",
-				"j"
-			],
-			"commands": [
-				"paredit.joinSexp"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"f",
-				"a"
-			],
-			"commands": [
-				"clojureLsp.refactor.threadFirstAll"
-			]
-		},
-		{
-			"before": [
-				"g",
-				"w"
-			],
-			"commands": [
-				"workbench.action.showAllSymbols"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"j"
-			],
-			"commands": [
-				"bookmarks.jumpToPrevious"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"w",
-				"e"
-			],
-			"commands": [
-				"workbench.view.explorer"
-			]
-		}
-	],
-	"vim.leader": "<space>",
-	"html.format.enable": false,
-	"editor.unicodeHighlight.ambiguousCharacters": false,
-	"dart.openDevTools": "flutter",
-	"markdown-preview-enhanced.liveUpdate": true,
-	"dart.debugSdkLibraries": false,
-	"javascript.updateImportsOnFileMove.enabled": "always",
-	"hediet.vscode-drawio.codeLinkActivated": false,
-	"vim.cursorStylePerMode.normal": "block-outline",
-	"githubPullRequests.fileListLayout": "tree",
-	"vim.statusBarColors.searchinprogressmode": "#007ACC",
-	"explorer.fileNesting.patterns": {
-		"*.dart": "$(capture).g.dart, $(capture).freezed.dart"
-	},
-	"quarto.mathjax.theme": "dark",
-	"editor.formatOnSave": true,
-	"calva.enableClojureLspOnStart": "when-file-opened-use-furthest-project",
-	"vim.statusBarColors.easymotioninputmode": "#007ACC",
-	"searchEverywhere.exclude": [
-		"**/.git",
-		"**/.svn",
-		"**/.hg",
-		"**/.CVS",
-		"**/.DS_Store",
-		"**/package-lock.json",
-		"**/yarn.lock",
-		"**/node_modules/**",
-		"**/bower_components/**",
-		"**/coverage/**",
-		"**/.vscode/**",
-		"**/.vscode-test/**",
-		"**/.history/**",
-		"**/.cache/**",
-		"**/.cache-loader/**",
-		"**/out/**",
-		"**/dist/**",
-		"**/altair/**"
-	],
-	"editor.fontSize": 14.5,
-	"vim.autoSwitchInputMethod.enable": true,
-	"asciidoc.preview.breaks": true,
-	"vim.statusBarColors.easymotionmode": "#007ACC",
-	"vim.easymotionKeys": "hklyuiopnmqwertzxcvbasdgjf",
-	"editor.bracketPairColorization.enabled": true,
-	"editor.matchBrackets": "never",
-	"typescript.inlayHints.parameterNames.enabled": "all",
-	"italicc.plugin.enabled": true,
-	"python.terminal.activateEnvironment": false,
-	"githubPullRequests.pullBranch": "never",
-	"githubIssues.queries": [
-		{
-			"label": "My Issues",
-			"query": "default"
-		},
-		{
-			"label": "Created Issues",
-			"query": "author:${user} state:open repo:${owner}/${repository} sort:created-desc"
-		}
-	],
-	"asciidoc.enableErrorDiagnostics": false,
-	"workbench.colorCustomizations": {
-		"editorBracketPairGuide.background5": "#DAD8D8",
-		"editorBracketPairGuide.activeBackground5": "#DAD8D8",
-		"editorBracketPairGuide.background1": "#F8B46C",
-		"tab.activeBorder": "#39eff8",
-		"statusBar.foreground": "#EEEEEE",
-		"editorBracketPairGuide.background3": "#4AACFB",
-		"statusBar.background": "#304149",
-		"statusBar.debuggingBackground": "#304149",
-		"editorBracketPairGuide.activeBackground1": "#F8B46C",
-		"tab.activeBackground": "#21618f55",
-		"editorBracketPairGuide.background2": "#FB78B5",
-		"statusBar.noFolderBackground": "#304149",
-		"editorBracketPairGuide.activeBackground3": "#4AACFB",
-		"editorBracketPairGuide.background6": "#18EECE",
-		"editorBracketPairGuide.activeBackground2": "#FB78B5",
-		"statusBar.debuggingForeground": "#EEEEEE",
-		"editorBracketPairGuide.activeBackground6": "#18EECE",
-		"tab.activeBorderTop": "#23a6c76c",
-		"editorBracketPairGuide.background4": "#B98BF5",
-		"editorBracketPairGuide.activeBackground4": "#B98BF5"
-	},
-	"files.insertFinalNewline": true,
-	"vim.useCtrlKeys": true,
-	"[lua]": {
-		"editor.defaultFormatter": "sumneko.lua"
-	},
-	"editor.semanticTokenColorCustomizations": {
-		"rules": {}
-	},
-	"editor.fontLigatures": true,
-	"markdown.preview.breaks": true,
-	"dart.previewFlutterUiGuidesCustomTracking": true,
-	"editor.formatOnType": true,
-	"calva.customREPLCommandSnippets": [
-		{
-			"name": "go",
-			"repl": "clj",
-			"snippet": "(user/go)"
-		},
-		{
-			"name": "reset",
-			"repl": "clj",
-			"snippet": "(user/reset)"
-		},
-		{
-			"name": "reset-all",
-			"repl": "clj",
-			"snippet": "(user/reset-all)"
-		}
-	],
-	"[jsonc]": {
-		"editor.defaultFormatter": "vscode.json-language-features"
-	},
-	"editor.insertSpaces": true,
-	"vim.autoSwitchInputMethod.defaultIM": "com.apple.keylayout.ABC",
-	"[css]": {
-		"editor.defaultFormatter": "vscode.css-language-features"
-	},
-	"clojure.trace.server": "verbose",
-	"todo-tree.tree.showScanModeButton": false,
-	"git.enableSmartCommit": true,
-	"editor.tokenColorCustomizations": {
-		"textMateRules": [
-			{
-				"name": "markdown list - not italic",
-				"scope": [
-					"markup.list.numbered.markdown meta.paragraph.markdown",
-					"markup.list.unnumbered.markdown meta.paragraph.markdown"
-				],
-				"settings": {
-					"fontStyle": ""
-				}
-			},
-			{
-				"name": "all keywords",
-				"scope": [
-					"constant.keyword.clojure"
-				],
-				"settings": {
-					"foreground": "#3cc75a"
-				}
-			},
-			{
-				"name": "Odd-numbered keywords in map",
-				"scope": [
-					"meta.map.clojure constant.keyword.clojure",
-					"meta.map.clojure meta.map.clojure meta.map.clojure constant.keyword.clojure",
-					"meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure constant.keyword.clojure",
-					"meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure constant.keyword.clojure"
-				],
-				"settings": {
-					"foreground": "#DAD8D8"
-				}
-			},
-			{
-				"name": "Even-numbered keywords in map",
-				"scope": [
-					"meta.map.clojure meta.map.clojure constant.keyword.clojure",
-					"meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure constant.keyword.clojure",
-					"meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure constant.keyword.clojure",
-					"meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure constant.keyword.clojure"
-				],
-				"settings": {
-					"foreground": "#FB78B5"
-				}
-			},
-			{
-				"name": "ns, defn, def, let ...",
-				"scope": [
-					"meta.definition.global.clojure storage.control.clojure"
-				],
-				"settings": {
-					"fontStyle": "italic"
-				}
-			},
-			{
-				"name": "namespace italic",
-				"scope": [
-					"entity.name.namespace.clojure"
-				],
-				"settings": {
-					"fontStyle": "italic"
-				}
-			},
-			{
-				"name": "clojure function name",
-				"scope": [
-					"entity.global.clojure"
-				],
-				"settings": {
-					"fontStyle": "bold",
-					"foreground": "#27a69a"
-				}
-			}
-		],
-		"[Noctis Minimus]": {
-			"textMateRules": [
-				{
-					"name": "markdown list - not italic",
-					"scope": [
-						"markup.list.numbered.markdown meta.paragraph.markdown",
-						"markup.list.unnumbered.markdown meta.paragraph.markdown"
-					],
-					"settings": {
-						"fontStyle": ""
-					}
-				},
-				{
-					"name": "all keywords",
-					"scope": [
-						"constant.keyword.clojure"
-					],
-					"settings": {
-						"foreground": "#3cc75a"
-					}
-				},
-				{
-					"name": "Odd-numbered keywords in map",
-					"scope": [
-						"meta.map.clojure constant.keyword.clojure",
-						"meta.map.clojure meta.map.clojure meta.map.clojure constant.keyword.clojure",
-						"meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure constant.keyword.clojure",
-						"meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure constant.keyword.clojure"
-					],
-					"settings": {
-						"foreground": "#DAD8D8"
-					}
-				},
-				{
-					"name": "Even-numbered keywords in map",
-					"scope": [
-						"meta.map.clojure meta.map.clojure constant.keyword.clojure",
-						"meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure constant.keyword.clojure",
-						"meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure constant.keyword.clojure",
-						"meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure constant.keyword.clojure"
-					],
-					"settings": {
-						"foreground": "#FB78B5"
-					}
-				},
-				{
-					"name": "ns, defn, def, let ...",
-					"scope": [
-						"meta.definition.global.clojure storage.control.clojure"
-					],
-					"settings": {
-						"fontStyle": "italic"
-					}
-				},
-				{
-					"name": "namespace italic",
-					"scope": [
-						"entity.name.namespace.clojure"
-					],
-					"settings": {
-						"fontStyle": "italic"
-					}
-				},
-				{
-					"name": "clojure function name",
-					"scope": [
-						"entity.global.clojure"
-					],
-					"settings": {
-						"fontStyle": "bold",
-						"foreground": "#27a69a"
-					}
-				}
-			]
-		}
-	},
-	"vim.statusBarColors.visual": "#B48EAD",
-	"[typescript]": {
-		"editor.defaultFormatter": "vscode.typescript-language-features"
-	},
-	"githubPullRequests.terminalLinksHandler": "github",
-	"tabnine.experimentalAutoImports": true,
-	"vim.enableNeovim": true,
-	"diffEditor.ignoreTrimWhitespace": false,
-	"dart.debugExternalLibraries": false,
-	"files.trimFinalNewlines": true,
-	"todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
-	"tabnine.disable_file_regex": [
-		"[.]md$",
-		"[.]html$",
-		"[.]css$",
-		"[.]adoc$"
-	],
-	"editor.semanticHighlighting.enabled": false,
-	"vim.highlightedyank.enable": true,
-	"vim.neovimPath": "/opt/homebrew/bin/nvim",
-	"javascript.format.enable": false,
-	"python.analysis.indexing": true,
-	"vim.statusBarColorControl": true,
-	"[clojure]": {
-		"editor.autoClosingBrackets": "always",
-		"editor.autoClosingOvertype": "always",
-		"editor.defaultFormatter": "betterthantomorrow.calva",
-		"editor.formatOnPaste": true
-	},
-	"editor.stickyScroll.enabled": true,
-	"vim.insertModeKeyBindings": [
-		{
-			"after": [
-				"<Esc>"
-			],
-			"before": [
-				"\u3153",
-				"\u3153"
-			]
-		},
-		{
-			"after": [
-				"<Esc>"
-			],
-			"before": [
-				"<Esc>"
-			]
-		}
-	],
-	"editor.tabSize": 2,
-	"vim.statusBarColors.visualline": "#B48EAD",
-	"css.validate": false,
-	"python.analysis.completeFunctionParens": true,
-	"redhat.telemetry.enabled": false,
-	"gitflow.views.feature.showRemoteBranches": false,
-	"[json]": {
-		"editor.defaultFormatter": "vscode.json-language-features"
-	},
-	"cSpell.userWords": [
-		"cond",
-		"defn",
-		"defresolver",
-		"dissoc",
-		"doall",
-		"doseq",
-		"farmmorning",
-		"fnil",
-		"gosura",
-		"greenlabs",
-		"hato",
-		"honeysql",
-		"jdbc",
-		"kondo",
-		"lacinia",
-		"pmap",
-		"sectime",
-		"sinsun",
-		"sinsunhi",
-		"upcc",
-		"upsert",
-		"vals",
-		"varchar",
-		"walmartlabs"
-	],
-	"asciidoc.use_kroki": true,
-	"debug.allowBreakpointsEverywhere": true,
-	"java.import.gradle.java.home": "/opt/homebrew/Cellar/openjdk@11/11.0.20/libexec/openjdk.jdk/Contents/Home",
-	"prettier.configPath": "~/Library/Application Support/Code/User/.prettierrc",
-	"vim.operatorPendingModeKeyBindingsNonRecursive": [
-		{
-			"before": [
-				"("
-			],
-			"after": [
-				"i("
-			]
-		}
-	],
-	"editor.guides.bracketPairs": "active",
-	"githubPullRequests.pushBranch": "always",
-	"vim.highlightedyank.duration": 200,
-	"markdown-preview-enhanced.previewTheme": "github-light.css",
-	"calva.highlight": {
-		"commentFormStyle": {
-			"fontStyle": "italic"
-		},
-		"enableBracketColors": false,
-		"matchedBracketStyle": {
-			"backgroundColor": "#18EECE44"
-		},
-		"rainbowIndentGuides": true
-	},
-	"vim.statusBarColors.commandlineinprogress": "#007ACC",
-	"nebulaOni.update.restoreConfiguration": {
-		"favoriteSettings": {
-			"background": "Glacial Blue",
-			"comments": "Dark Magenta",
-			"favorite": "Nebula Oni (Pegasus)",
-			"focusBorder": "ON",
-			"fontStyle": "Italic",
-			"highlight": "Ultra Violet",
-			"main": "Sakura"
-		},
-		"themeSettings": {
-			"background": "Grey",
-			"comments": "Dark Violet",
-			"favorite": "OFF",
-			"focusBorder": "ON",
-			"fontStyle": "Italic",
-			"highlight": "Ultra Violet",
-			"main": "Bumblebee"
-		}
-	},
-	"explorer.fileNesting.expand": false,
-	"vim.visualModeKeyBindingsNonRecursive": [
-		{
-			"before": [
-				">"
-			],
-			"commands": [
-				"editor.action.indentLines"
-			]
-		},
-		{
-			"before": [
-				"<"
-			],
-			"commands": [
-				"editor.action.outdentLines"
-			]
-		},
-		{
-			"before": [
-				"p"
-			],
-			"after": [
-				"p",
-				"g",
-				"v",
-				"y"
-			]
-		},
-		{
-			"after": [
-				"%"
-			],
-			"before": [
-				"t"
-			]
-		},
-		{
-			"before": [
-				"d",
-				"d"
-			],
-			"after": [
-				"\"",
-				"_",
-				"d",
-				"d"
-			]
-		},
-		{
-			"after": [
-				"k"
-			],
-			"before": [
-				"i"
-			]
-		},
-		{
-			"after": [
-				"j"
-			],
-			"before": [
-				"k"
-			]
-		},
-		{
-			"after": [
-				"h"
-			],
-			"before": [
-				"j"
-			]
-		},
-		{
-			"after": [
-				"<C-d>"
-			],
-			"before": [
-				","
-			]
-		},
-		{
-			"after": [
-				"<C-b>"
-			],
-			"before": [
-				"M"
-			]
-		},
-		{
-			"after": [
-				"^"
-			],
-			"before": [
-				"h"
-			]
-		},
-		{
-			"after": [
-				"$"
-			],
-			"before": [
-				";"
-			]
-		},
-		{
-			"after": [
-				"S"
-			],
-			"before": [
-				"s"
-			]
-		},
-		{
-			"before": [
-				"w"
-			],
-			"commands": [
-				"paredit.sexpRangeExpansion"
-			]
-		}
-	],
-	"notebook.cellToolbarLocation": {
-		"default": "right",
-		"jupyter-notebook": "left"
-	},
-	"vim.useSystemClipboard": true,
-	"workbench.editorAssociations": {
-		"*.html": "default",
-		"*.ipynb": "jupyter-notebook"
-	},
-	"workbench.editor.highlightModifiedTabs": true,
-	"python.autoComplete.addBrackets": true,
-	"hediet.vscode-drawio.theme": "automatic",
-	"vim.insertModeKeyBindingsNonRecursive": [
-		{
-			"before": [
-				"j",
-				"j"
-			],
-			"after": [
-				"<esc>"
-			]
-		},
-		{
-			"before": [
-				"\u3153",
-				"\u3153"
-			],
-			"after": [
-				"<esc>"
-			]
-		}
-	],
-	"dart.lineLength": 120,
-	"editor.accessibilitySupport": "off",
-	"github.copilot.enable": {
-		"*": true,
-		"yaml": true,
-		"plaintext": false,
-		"markdown": true,
-		"clojure": true,
-		"lua": true,
-		"css": false,
-		"jsonc": false
-	},
-	"calva.jackInEnv": {},
-	"workbench.colorTheme": "Noctis Minimus",
-	"searchEverywhere.include": "**/*.{js,jsx,ts,tsx,clj,cljs,cljd,edn}",
-	"git.ignoreRebaseWarning": true,
-	"diffEditor.maxComputationTime": 0
+  "calva.myCljAliases": [
+    ":portal",
+    ":add-libs",
+    ":reflect",
+    ":jedi-time"
+  ],
+  "dart.debugExternalPackageLibraries": false,
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [
+      120
+    ],
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": "off"
+  },
+  "editor.unicodeHighlight.invisibleCharacters": false,
+  "calva.prettyPrintingOptions": {
+    "printEngine": "pprint",
+    "enabled": true,
+    "width": 120,
+    "maxLength": 50
+  },
+  "asciidoc.preview.refreshInterval": 1000,
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/.classpath": true,
+    "**/.clj-kondo/.cache": true,
+    "**/.cpcache": true,
+    "**/.lsp/.cache": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
+  },
+  "terminal.integrated.defaultProfile.osx": "fish",
+  "calva.fmt.configPath": ".cljfmt.edn",
+  "vim.disableAnnoyingNeovimMessage": true,
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  },
+  "todo-tree.general.tags": [
+    "BUG",
+    "HACK",
+    "FIXME",
+    "TODO",
+    "XXX",
+    "[ ]",
+    "[x]",
+    "fixme",
+    "new"
+  ],
+  "githubPullRequests.queries": [
+    {
+      "label": "Waiting For My Review",
+      "query": "is:open review-requested:${user}"
+    },
+    {
+      "label": "Assigned To Me",
+      "query": "is:open assignee:${user}"
+    },
+    {
+      "label": "Created By Me",
+      "query": "is:open author:${user}"
+    }
+  ],
+  "vim.hlsearch": true,
+  "cSpell.enabledLanguageIds": [
+    "asciidoc",
+    "c",
+    "cpp",
+    "csharp",
+    "css",
+    "elixir",
+    "erlang",
+    "git-commit",
+    "go",
+    "graphql",
+    "handlebars",
+    "haskell",
+    "html",
+    "jade",
+    "java",
+    "javascript",
+    "javascriptreact",
+    "json",
+    "jsonc",
+    "jupyter",
+    "latex",
+    "less",
+    "markdown",
+    "php",
+    "plaintext",
+    "python",
+    "pug",
+    "restructuredtext",
+    "rust",
+    "scala",
+    "scss",
+    "scminput",
+    "swift",
+    "text",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "yaml",
+    "yml",
+    "clojure",
+    "edn"
+  ],
+  "indentRainbow.excludedLanguages": [
+    "clojure",
+    "plaintext"
+  ],
+  "dart.sdkPath": "~/sdk/flutter/bin/dart",
+  "workbench.iconTheme": "vscode-great-icons",
+  "search.exclude": {
+    "**/.calva/output-window/output.calva-repl": true
+  },
+  "editor.largeFileOptimizations": false,
+  "files.watcherExclude": {
+    "**/.clj-kondo/.cache/**": true,
+    "**/.lsp/.cache/**": true,
+    "**/target/classes/**": true
+  },
+  "calva.paredit.defaultKeyMap": "original",
+  "git.pullBeforeCheckout": true,
+  "luahelper.format.indent_width": 2,
+  "vim.incsearch": true,
+  "terminal.integrated.fontFamily": "'D2Coding ligature'",
+  "vim.statusBarColors.surroundinputmode": "#007ACC",
+  "luahelper.format.continuation_indent_width": 2,
+  "vim.statusBarColors.normal": [
+    "#304149",
+    "#EEEEEE"
+  ],
+  "git.autofetch": true,
+  "python.languageServer": "Pylance",
+  "codestream.email": "jacegem@gmail.com",
+  "editor.fontFamily": "'Fira Code', 'Fira Code iScript',monospace, 'D2Coding ligature' ",
+  "files.autoSave": "afterDelay",
+  "window.commandCenter": false,
+  "calva.referencesCodeLens.enabled": true,
+  "editor.foldingMaximumRegions": 500,
+  "vim.easymotion": true,
+  "workbench.tree.indent": 12,
+  "vim.autoSwitchInputMethod.switchIMCmd": "/opt/homebrew/bin/im-select {im}",
+  "terminal.integrated.fontSize": 13,
+  "jupyter.alwaysTrustNotebooks": true,
+  "dart.flutterHotReloadOnSave": "all",
+  "vim.statusBarColors.replace": "#D08770",
+  "debug.openDebug": "openOnDebugBreak",
+  "git.openRepositoryInParentFolders": "never",
+  "python.analysis.diagnosticMode": "workspace",
+  "git.confirmSync": false,
+  "vim.statusBarColors.visualblock": "#A3BE8C",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false,
+    "<D-v>": false
+  },
+  "dart.previewFlutterUiGuides": true,
+  "explorer.fileNesting.enabled": true,
+  "vim.autoSwitchInputMethod.obtainIMCmd": "/opt/homebrew/bin/im-select",
+  "luahelper.format.tab_width": 2,
+  "dart.showTodos": false,
+  "vim.statusBarColors.insert": "#BF616A",
+  "calva.paredit.strictPreventUnmatchedClosingBracket": true,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "q"
+      ],
+      "after": [
+        "b"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "9"
+      ],
+      "after": [
+        "y",
+        "s",
+        "i",
+        "w",
+        "("
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "'"
+      ],
+      "after": [
+        "y",
+        "s",
+        "i",
+        "w",
+        "\""
+      ]
+    },
+    {
+      "before": [
+        "="
+      ],
+      "after": [
+        "i"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "d",
+        "9"
+      ],
+      "after": [
+        "d",
+        "s",
+        "("
+      ]
+    },
+    {
+      "before": [
+        "I"
+      ],
+      "after": [
+        "i"
+      ]
+    },
+    {
+      "before": [
+        "o"
+      ],
+      "after": [
+        "i"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "/"
+      ],
+      "after": [
+        "<leader>",
+        "<leader>",
+        "/"
+      ]
+    },
+    {
+      "before": [
+        "O"
+      ],
+      "after": [
+        "o"
+      ]
+    },
+    {
+      "before": [
+        "F"
+      ],
+      "after": [
+        "<leader>",
+        "<leader>",
+        "<leader>",
+        "j"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "d",
+        "'"
+      ],
+      "after": [
+        "d",
+        "s",
+        "\\"
+      ]
+    },
+    {
+      "before": [
+        "<D-.>"
+      ],
+      "after": [
+        "."
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "]"
+      ],
+      "after": [
+        "y",
+        "s",
+        "i",
+        "w",
+        "{"
+      ]
+    },
+    {
+      "before": [
+        "<D-,>"
+      ],
+      "after": [
+        ","
+      ]
+    },
+    {
+      "before": [
+        "<C-.>"
+      ],
+      "after": [
+        "."
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "d",
+        "0"
+      ],
+      "after": [
+        "d",
+        "s",
+        ")"
+      ]
+    },
+    {
+      "before": [
+        "k"
+      ],
+      "after": [
+        "j"
+      ]
+    },
+    {
+      "before": [
+        "d",
+        "d"
+      ],
+      "after": [
+        "\"",
+        "_",
+        "d",
+        "d"
+      ]
+    },
+    {
+      "before": [
+        "c",
+        "i",
+        "\""
+      ],
+      "after": [
+        "\"",
+        "_",
+        "c",
+        "i",
+        "\""
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "["
+      ],
+      "after": [
+        "y",
+        "s",
+        "i",
+        "w",
+        "["
+      ]
+    },
+    {
+      "before": [
+        "j"
+      ],
+      "after": [
+        "h"
+      ]
+    },
+    {
+      "before": [
+        "<C-w>",
+        "j"
+      ],
+      "after": [
+        "<C-w>",
+        "h"
+      ]
+    },
+    {
+      "before": [
+        "h"
+      ],
+      "after": [
+        "^"
+      ]
+    },
+    {
+      "before": [
+        "<D-m>"
+      ],
+      "after": [
+        "m"
+      ]
+    },
+    {
+      "before": [
+        ";"
+      ],
+      "after": [
+        "<S-a>"
+      ]
+    },
+    {
+      "before": [
+        ","
+      ],
+      "after": [
+        "<C-d>"
+      ]
+    },
+    {
+      "before": [
+        "f"
+      ],
+      "after": [
+        "<leader>",
+        "<leader>",
+        "<leader>",
+        "b",
+        "d",
+        "w"
+      ]
+    },
+    {
+      "before": [
+        "t"
+      ],
+      "after": [
+        "%"
+      ]
+    },
+    {
+      "before": [
+        "x"
+      ],
+      "after": [
+        "\"",
+        "_",
+        "x"
+      ]
+    },
+    {
+      "before": [
+        "\u3150"
+      ],
+      "after": [
+        "i"
+      ]
+    },
+    {
+      "before": [
+        "U"
+      ],
+      "after": [
+        "<C-r>"
+      ]
+    },
+    {
+      "before": [
+        "\u3151"
+      ],
+      "after": [
+        "k"
+      ]
+    },
+    {
+      "before": [
+        "m"
+      ],
+      "after": [
+        "<C-u>"
+      ]
+    },
+    {
+      "before": [
+        "p"
+      ],
+      "after": [
+        "<S-p>"
+      ]
+    },
+    {
+      "before": [
+        "i"
+      ],
+      "after": [
+        "k"
+      ]
+    },
+    {
+      "before": [
+        "a"
+      ],
+      "after": [
+        "o"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "d",
+        "]"
+      ],
+      "after": [
+        "d",
+        "s",
+        "{"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "d",
+        "["
+      ],
+      "after": [
+        "d",
+        "s",
+        "["
+      ]
+    },
+    {
+      "before": [
+        "m",
+        "p"
+      ],
+      "commands": [
+        "markdown.showPreview"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "g",
+        "g"
+      ],
+      "commands": [
+        "magit.status"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "i",
+        "w"
+      ],
+      "commands": [
+        "workbench.action.increaseViewWidth"
+      ]
+    },
+    {
+      "before": [
+        "]"
+      ],
+      "commands": [
+        "workbench.action.navigateForwardInNavigationLocations"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "c",
+        "h"
+      ],
+      "commands": [
+        "calva.clearReplHistory"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "q"
+      ],
+      "commands": [
+        "workbench.action.closeActiveEditor"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "c",
+        "e"
+      ],
+      "commands": [
+        "calva.evaluateSelection"
+      ]
+    },
+    {
+      "before": [
+        "s",
+        "h"
+      ],
+      "commands": [
+        "workbench.action.splitEditor"
+      ]
+    },
+    {
+      "before": [
+        "<S-l>"
+      ],
+      "commands": [
+        "workbench.action.nextEditorInGroup"
+      ]
+    },
+    {
+      "before": [
+        "s",
+        "f"
+      ],
+      "commands": [
+        "paredit.slurpSexpForward"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "f",
+        "m"
+      ],
+      "commands": [
+        "calva-fmt.alignCurrentForm"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "a",
+        "x"
+      ],
+      "commands": [
+        "workbench.view.extensions"
+      ]
+    },
+    {
+      "before": [
+        "g",
+        "a"
+      ],
+      "commands": [
+        "workbench.action.showAllSymbols"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "o"
+      ],
+      "commands": [
+        "workbench.action.quickOpen"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        ","
+      ],
+      "commands": [
+        "workbench.action.focusNextGroup"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "s",
+        "w"
+      ],
+      "commands": [
+        "paredit.sexpRangeExpansion"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "k",
+        "r"
+      ],
+      "commands": [
+        "paredit.killRight"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "l",
+        "p"
+      ],
+      "commands": [
+        "clojureLsp.refactor.moveToLet"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "r",
+        "o"
+      ],
+      "commands": [
+        {
+          "command": "calva.runCustomREPLCommand",
+          "args": {
+            "snippet": "(require '[portal.api :as p]) (def p (p/open)) (add-tap #'p/submit)"
+          }
+        }
+      ]
+    },
+    {
+      "before": [
+        "r",
+        "b"
+      ],
+      "commands": [
+        "debug.removeBreakpoint"
+      ]
+    },
+    {
+      "before": [
+        "s",
+        "g"
+      ],
+      "commands": [
+        "workbench.view.scm"
+      ]
+    },
+    {
+      "before": [
+        "r",
+        "s"
+      ],
+      "commands": [
+        "workbench.action.debug.restart"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "a",
+        "f"
+      ],
+      "commands": [
+        "workbench.action.findInFiles"
+      ]
+    },
+    {
+      "before": [
+        "s",
+        "c"
+      ],
+      "commands": [
+        "paredit.selectForwardSexp",
+        "execCopy",
+        "extension.vim_escape"
+      ]
+    },
+    {
+      "before": [
+        "b"
+      ],
+      "commands": [
+        "editor.action.revealDefinition"
+      ]
+    },
+    {
+      "before": [
+        "<S-j>"
+      ],
+      "commands": [
+        "workbench.action.previousEditorInGroup"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "t",
+        "l"
+      ],
+      "commands": [
+        {
+          "command": "calva.runCustomREPLCommand",
+          "args": {
+            "snippet": "(tap> *1)"
+          }
+        }
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "w",
+        "q"
+      ],
+      "commands": [
+        "paredit.wrapAroundQuote"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "c",
+        "o"
+      ],
+      "commands": [
+        "workbench.action.closeEditorsInOtherGroups"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "t",
+        "i"
+      ],
+      "commands": [
+        {
+          "command": "calva.runCustomREPLCommand",
+          "args": {
+            "snippet": "(tap> (let [v (read-string (clojure.string/replace (read-line) \"*v\" \"@dev/*v\"))] (eval v)))"
+          }
+        }
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "d",
+        "l"
+      ],
+      "commands": [
+        "paredit.killListForward"
+      ]
+    },
+    {
+      "before": [
+        "g",
+        "s"
+      ],
+      "commands": [
+        "workbench.action.gotoSymbol"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "n"
+      ],
+      "commands": [
+        "extension.advancedNewFile"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "u",
+        "a"
+      ],
+      "commands": [
+        "clojureLsp.refactor.unwindAll"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "a",
+        "m"
+      ],
+      "commands": [
+        "clojureLsp.refactor.addMissingLibspec"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "l",
+        "i"
+      ],
+      "commands": [
+        "clojureLsp.refactor.introduceLet"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "d",
+        "s"
+      ],
+      "commands": [
+        "paredit.spliceSexp"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "l",
+        "s"
+      ],
+      "commands": [
+        "paredit.splitSexp"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "s",
+        "r"
+      ],
+      "commands": [
+        "paredit.selectRight",
+        "editor.action.clipboardCopyAction",
+        "vim_escape"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "."
+      ],
+      "commands": [
+        "workbench.action.quickFix"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "f",
+        "t"
+      ],
+      "commands": [
+        "calva-fmt.trimCurrentFormWhiteSpace"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "w",
+        "j"
+      ],
+      "commands": [
+        "workbench.action.moveActiveEditorGroupLeft"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "t",
+        "t"
+      ],
+      "commands": [
+        {
+          "command": "calva.loadFile"
+        },
+        {
+          "command": "calva.runCustomREPLCommand",
+          "args": {
+            "snippet": "(run-tests)"
+          }
+        }
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "f",
+        "l"
+      ],
+      "commands": [
+        "calva.loadFile"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "l",
+        "f"
+      ],
+      "commands": [
+        "calva.loadFile"
+      ]
+    },
+    {
+      "before": [
+        "s",
+        "n"
+      ],
+      "commands": [
+        "clojureLsp.refactor.cleanNs"
+      ]
+    },
+    {
+      "before": [
+        "s",
+        "k"
+      ],
+      "commands": [
+        "paredit.killListForward"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "y"
+      ],
+      "commands": [
+        {
+          "command": "calva.runCustomREPLCommand",
+          "args": {
+            "snippet": "(tap> $top-level-form)"
+          }
+        }
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "i",
+        "s"
+      ],
+      "commands": [
+        "clojureLsp.refactor.inlineSymbol"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "w",
+        "p"
+      ],
+      "commands": [
+        "paredit.wrapAroundParens"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "r",
+        "c"
+      ],
+      "commands": [
+        "paredit.rewrapCurly"
+      ]
+    },
+    {
+      "before": [
+        "s",
+        "x"
+      ],
+      "commands": [
+        "paredit.selectForwardSexp",
+        "editor.action.clipboardCutAction",
+        "extension.vim_escape"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "w",
+        "l"
+      ],
+      "commands": [
+        "workbench.action.moveActiveEditorGroupRight"
+      ]
+    },
+    {
+      "before": [
+        "c",
+        "o"
+      ],
+      "commands": [
+        "workbench.action.closeEditorsInOtherGroups"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "s",
+        "k",
+        "f"
+      ],
+      "commands": [
+        "paredit.spliceSexpKillForward"
+      ]
+    },
+    {
+      "before": [
+        "c",
+        "n"
+      ],
+      "commands": [
+        "clojureLsp.refactor.cleanNs"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "<leader>",
+        "k"
+      ],
+      "commands": [
+        "bookmarks.list"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "r",
+        "q"
+      ],
+      "commands": [
+        "paredit.rewrapQuote"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "s",
+        "s"
+      ],
+      "commands": [
+        "paredit.sexpRangeContraction"
+      ]
+    },
+    {
+      "before": [
+        "l",
+        "f"
+      ],
+      "commands": [
+        "calva.loadFile"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "d",
+        "f"
+      ],
+      "commands": [
+        "paredit.killSexpForward"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "k"
+      ],
+      "commands": [
+        "bookmarks.toggle"
+      ]
+    },
+    {
+      "before": [
+        "g",
+        "m"
+      ],
+      "commands": [
+        "magit.status"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "h"
+      ],
+      "commands": [
+        "workbench.action.moveEditorToLeftGroup"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "w",
+        "c"
+      ],
+      "commands": [
+        "paredit.wrapAroundCurly"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "m"
+      ],
+      "commands": [
+        "bookmarks.toggle"
+      ]
+    },
+    {
+      "before": [
+        "<S-r>"
+      ],
+      "commands": [
+        "editor.action.rename"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "l"
+      ],
+      "commands": [
+        "bookmarks.jumpToNext"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "f",
+        "f"
+      ],
+      "commands": [
+        "actions.find"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "r",
+        "s"
+      ],
+      "commands": [
+        "paredit.rewrapSquare"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "c",
+        "j"
+      ],
+      "commands": [
+        "calva.jackIn"
+      ]
+    },
+    {
+      "before": [
+        ":"
+      ],
+      "commands": [
+        "workbench.action.showCommands"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "k",
+        "l",
+        "f"
+      ],
+      "commands": [
+        "paredit.killListForward"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "w",
+        "s"
+      ],
+      "commands": [
+        "workbench.action.splitEditor"
+      ]
+    },
+    {
+      "before": [
+        "."
+      ],
+      "commands": [
+        "editor.action.quickFix"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "k",
+        "f"
+      ],
+      "commands": [
+        "paredit.killSexpForward"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "k",
+        "l",
+        "b"
+      ],
+      "commands": [
+        "paredit.killListBackward"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "c",
+        "i"
+      ],
+      "commands": [
+        "calva.clearInlineResults"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "d",
+        "j"
+      ],
+      "commands": [
+        "paredit.splitSexp"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "r",
+        "t"
+      ],
+      "commands": [
+        "calva.runAllTests"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "s",
+        "x"
+      ],
+      "commands": [
+        "paredit.selectForwardSexp",
+        "editor.action.clipboardCutAction",
+        "extension.vim_escape"
+      ]
+    },
+    {
+      "before": [
+        "s",
+        "d"
+      ],
+      "commands": [
+        "paredit.spliceSexp"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "u",
+        "t"
+      ],
+      "commands": [
+        "clojureLsp.refactor.unwindThread"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "t",
+        "e"
+      ],
+      "commands": [
+        {
+          "command": "calva.runCustomREPLCommand",
+          "args": {
+            "snippet": "(tap> (Throwable->map *e))"
+          }
+        }
+      ]
+    },
+    {
+      "before": [
+        "["
+      ],
+      "commands": [
+        "workbench.action.navigateBackInNavigationLocations"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "e",
+        "e"
+      ],
+      "commands": [
+        "workbench.files.action.showActiveFileInExplorer"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "i",
+        "h"
+      ],
+      "commands": [
+        "workbench.action.increaseViewHeight"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "p"
+      ],
+      "commands": [
+        "workbench.action.showCommands"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "x"
+      ],
+      "commands": [
+        "workbench.action.closeActiveEditor"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "b"
+      ],
+      "commands": [
+        "bookmarks.listFromAllFiles"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "r",
+        "p"
+      ],
+      "commands": [
+        "paredit.rewrapParens"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        ";"
+      ],
+      "commands": [
+        "workbench.action.moveEditorToRightGroup"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "r",
+        "a"
+      ],
+      "commands": [
+        "paredit.raiseSexp"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "k",
+        "b"
+      ],
+      "commands": [
+        "paredit.killSexpBackward"
+      ]
+    },
+    {
+      "before": [
+        "s",
+        "b"
+      ],
+      "commands": [
+        "paredit.barfSexpForward"
+      ]
+    },
+    {
+      "before": [
+        "s",
+        "r"
+      ],
+      "commands": [
+        "paredit.raiseSexp"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "a",
+        "e"
+      ],
+      "commands": [
+        "workbench.view.explorer"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "z"
+      ],
+      "commands": [
+        "workbench.action.toggleZenMode"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "s",
+        "f"
+      ],
+      "commands": [
+        "paredit.selectForwardSexp",
+        "execCopy",
+        "extension.vim_escape"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "s",
+        "k",
+        "b"
+      ],
+      "commands": [
+        "paredit.spliceSexpKillBackward"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "e",
+        "f"
+      ],
+      "commands": [
+        "clojureLsp.refactor.extractFunction"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "s",
+        "t"
+      ],
+      "commands": [
+        "paredit.rangeForDefun"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "s",
+        "v"
+      ],
+      "commands": [
+        "workbench.action.toggleSidebarVisibility"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "t",
+        "s"
+      ],
+      "commands": [
+        {
+          "command": "calva.loadFile"
+        },
+        {
+          "command": "calva.runCustomREPLCommand",
+          "args": {
+            "snippet": "(clojure.test/test-vars [#'$top-level-defined-symbol])"
+          }
+        }
+      ]
+    },
+    {
+      "before": [
+        "s",
+        "a"
+      ],
+      "commands": [
+        "clojureLsp.refactor.addMissingLibspec"
+      ]
+    },
+    {
+      "before": [
+        "K"
+      ],
+      "commands": [
+        "editor.action.insertLineAfter"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "l",
+        "j"
+      ],
+      "commands": [
+        "paredit.joinSexp"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "f",
+        "a"
+      ],
+      "commands": [
+        "clojureLsp.refactor.threadFirstAll"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "d",
+        "w"
+      ],
+      "commands": [
+        "workbench.action.decreaseViewWidth"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "j"
+      ],
+      "commands": [
+        "bookmarks.jumpToPrevious"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "w",
+        "e"
+      ],
+      "commands": [
+        "workbench.view.explorer"
+      ]
+    }
+  ],
+  "vim.leader": "<space>",
+  "html.format.enable": false,
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "dart.openDevTools": "flutter",
+  "markdown-preview-enhanced.liveUpdate": true,
+  "dart.debugSdkLibraries": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "hediet.vscode-drawio.codeLinkActivated": false,
+  "vim.cursorStylePerMode.normal": "block-outline",
+  "githubPullRequests.fileListLayout": "tree",
+  "vim.statusBarColors.searchinprogressmode": "#007ACC",
+  "explorer.fileNesting.patterns": {
+    "*.dart": "$(capture).g.dart, $(capture).freezed.dart"
+  },
+  "quarto.mathjax.theme": "dark",
+  "editor.formatOnSave": true,
+  "calva.enableClojureLspOnStart": "when-file-opened-use-furthest-project",
+  "vim.statusBarColors.easymotioninputmode": "#007ACC",
+  "searchEverywhere.exclude": [
+    "**/.git",
+    "**/.svn",
+    "**/.hg",
+    "**/.CVS",
+    "**/.DS_Store",
+    "**/package-lock.json",
+    "**/yarn.lock",
+    "**/node_modules/**",
+    "**/bower_components/**",
+    "**/coverage/**",
+    "**/.vscode/**",
+    "**/.vscode-test/**",
+    "**/.history/**",
+    "**/.cache/**",
+    "**/.cache-loader/**",
+    "**/out/**",
+    "**/dist/**",
+    "**/altair/**"
+  ],
+  "editor.fontSize": 14.5,
+  "vim.autoSwitchInputMethod.enable": true,
+  "asciidoc.preview.breaks": true,
+  "vim.statusBarColors.easymotionmode": "#007ACC",
+  "vim.easymotionKeys": "hklyuiopnmqwertzxcvbasdgjf",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.matchBrackets": "never",
+  "typescript.inlayHints.parameterNames.enabled": "all",
+  "italicc.plugin.enabled": true,
+  "python.terminal.activateEnvironment": false,
+  "githubPullRequests.pullBranch": "never",
+  "githubIssues.queries": [
+    {
+      "label": "My Issues",
+      "query": "default"
+    },
+    {
+      "label": "Created Issues",
+      "query": "author:${user} state:open repo:${owner}/${repository} sort:created-desc"
+    }
+  ],
+  "asciidoc.enableErrorDiagnostics": false,
+  "workbench.colorCustomizations": {
+    "editorBracketPairGuide.background5": "#DAD8D8",
+    "editorBracketPairGuide.activeBackground5": "#DAD8D8",
+    "editorBracketPairGuide.background1": "#F8B46C",
+    "tab.activeBorder": "#39eff8",
+    "statusBar.foreground": "#EEEEEE",
+    "editorBracketPairGuide.background3": "#4AACFB",
+    "statusBar.background": "#304149",
+    "statusBar.debuggingBackground": "#304149",
+    "editorBracketPairGuide.activeBackground1": "#F8B46C",
+    "tab.activeBackground": "#21618f55",
+    "editorBracketPairGuide.background2": "#FB78B5",
+    "statusBar.noFolderBackground": "#304149",
+    "editorBracketPairGuide.activeBackground3": "#4AACFB",
+    "editorBracketPairGuide.background6": "#18EECE",
+    "editorBracketPairGuide.activeBackground2": "#FB78B5",
+    "statusBar.debuggingForeground": "#EEEEEE",
+    "editorBracketPairGuide.activeBackground6": "#18EECE",
+    "tab.activeBorderTop": "#23a6c76c",
+    "editorBracketPairGuide.background4": "#B98BF5",
+    "editorBracketPairGuide.activeBackground4": "#B98BF5"
+  },
+  "files.insertFinalNewline": true,
+  "vim.useCtrlKeys": true,
+  "[lua]": {
+    "editor.defaultFormatter": "sumneko.lua"
+  },
+  "editor.semanticTokenColorCustomizations": {
+    "rules": {}
+  },
+  "editor.fontLigatures": true,
+  "markdown.preview.breaks": true,
+  "dart.previewFlutterUiGuidesCustomTracking": true,
+  "editor.formatOnType": true,
+  "calva.customREPLCommandSnippets": [
+    {
+      "name": "go",
+      "repl": "clj",
+      "snippet": "(user/go)"
+    },
+    {
+      "name": "reset",
+      "repl": "clj",
+      "snippet": "(user/reset)"
+    },
+    {
+      "name": "reset-all",
+      "repl": "clj",
+      "snippet": "(user/reset-all)"
+    }
+  ],
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "editor.insertSpaces": true,
+  "vim.autoSwitchInputMethod.defaultIM": "com.apple.keylayout.ABC",
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "clojure.trace.server": "verbose",
+  "todo-tree.tree.showScanModeButton": false,
+  "git.enableSmartCommit": true,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "name": "markdown list - not italic",
+        "scope": [
+          "markup.list.numbered.markdown meta.paragraph.markdown",
+          "markup.list.unnumbered.markdown meta.paragraph.markdown"
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
+      },
+      {
+        "name": "all keywords",
+        "scope": [
+          "constant.keyword.clojure"
+        ],
+        "settings": {
+          "foreground": "#3cc75a"
+        }
+      },
+      {
+        "name": "Odd-numbered keywords in map",
+        "scope": [
+          "meta.map.clojure constant.keyword.clojure",
+          "meta.map.clojure meta.map.clojure meta.map.clojure constant.keyword.clojure",
+          "meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure constant.keyword.clojure",
+          "meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure constant.keyword.clojure"
+        ],
+        "settings": {
+          "foreground": "#DAD8D8"
+        }
+      },
+      {
+        "name": "Even-numbered keywords in map",
+        "scope": [
+          "meta.map.clojure meta.map.clojure constant.keyword.clojure",
+          "meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure constant.keyword.clojure",
+          "meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure constant.keyword.clojure",
+          "meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure constant.keyword.clojure"
+        ],
+        "settings": {
+          "foreground": "#FB78B5"
+        }
+      },
+      {
+        "name": "ns, defn, def, let ...",
+        "scope": [
+          "meta.definition.global.clojure storage.control.clojure"
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "name": "namespace italic",
+        "scope": [
+          "entity.name.namespace.clojure"
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "name": "clojure function name",
+        "scope": [
+          "entity.global.clojure"
+        ],
+        "settings": {
+          "fontStyle": "bold",
+          "foreground": "#27a69a"
+        }
+      }
+    ],
+    "[Noctis Minimus]": {
+      "textMateRules": [
+        {
+          "name": "markdown list - not italic",
+          "scope": [
+            "markup.list.numbered.markdown meta.paragraph.markdown",
+            "markup.list.unnumbered.markdown meta.paragraph.markdown"
+          ],
+          "settings": {
+            "fontStyle": ""
+          }
+        },
+        {
+          "name": "all keywords",
+          "scope": [
+            "constant.keyword.clojure"
+          ],
+          "settings": {
+            "foreground": "#3cc75a"
+          }
+        },
+        {
+          "name": "Odd-numbered keywords in map",
+          "scope": [
+            "meta.map.clojure constant.keyword.clojure",
+            "meta.map.clojure meta.map.clojure meta.map.clojure constant.keyword.clojure",
+            "meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure constant.keyword.clojure",
+            "meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure constant.keyword.clojure"
+          ],
+          "settings": {
+            "foreground": "#DAD8D8"
+          }
+        },
+        {
+          "name": "Even-numbered keywords in map",
+          "scope": [
+            "meta.map.clojure meta.map.clojure constant.keyword.clojure",
+            "meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure constant.keyword.clojure",
+            "meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure constant.keyword.clojure",
+            "meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure meta.map.clojure constant.keyword.clojure"
+          ],
+          "settings": {
+            "foreground": "#FB78B5"
+          }
+        },
+        {
+          "name": "ns, defn, def, let ...",
+          "scope": [
+            "meta.definition.global.clojure storage.control.clojure"
+          ],
+          "settings": {
+            "fontStyle": "italic"
+          }
+        },
+        {
+          "name": "namespace italic",
+          "scope": [
+            "entity.name.namespace.clojure"
+          ],
+          "settings": {
+            "fontStyle": "italic"
+          }
+        },
+        {
+          "name": "clojure function name",
+          "scope": [
+            "entity.global.clojure"
+          ],
+          "settings": {
+            "fontStyle": "bold",
+            "foreground": "#27a69a"
+          }
+        }
+      ]
+    }
+  },
+  "vim.statusBarColors.visual": "#B48EAD",
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "githubPullRequests.terminalLinksHandler": "github",
+  "tabnine.experimentalAutoImports": true,
+  "vim.enableNeovim": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "dart.debugExternalLibraries": false,
+  "files.trimFinalNewlines": true,
+  "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+  "tabnine.disable_file_regex": [
+    "[.]md$",
+    "[.]html$",
+    "[.]css$",
+    "[.]adoc$"
+  ],
+  "editor.semanticHighlighting.enabled": false,
+  "vim.highlightedyank.enable": true,
+  "vim.neovimPath": "/opt/homebrew/bin/nvim",
+  "javascript.format.enable": false,
+  "python.analysis.indexing": true,
+  "vim.statusBarColorControl": true,
+  "[clojure]": {
+    "editor.autoClosingBrackets": "always",
+    "editor.autoClosingOvertype": "always",
+    "editor.defaultFormatter": "betterthantomorrow.calva",
+    "editor.formatOnPaste": true
+  },
+  "editor.stickyScroll.enabled": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "after": [
+        "<Esc>"
+      ],
+      "before": [
+        "\u3153",
+        "\u3153"
+      ]
+    },
+    {
+      "after": [
+        "<Esc>"
+      ],
+      "before": [
+        "<Esc>"
+      ]
+    }
+  ],
+  "editor.tabSize": 2,
+  "vim.statusBarColors.visualline": "#B48EAD",
+  "css.validate": false,
+  "python.analysis.completeFunctionParens": true,
+  "redhat.telemetry.enabled": false,
+  "gitflow.views.feature.showRemoteBranches": false,
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "cSpell.userWords": [
+    "cond",
+    "defn",
+    "defresolver",
+    "dissoc",
+    "doall",
+    "doseq",
+    "farmmorning",
+    "fnil",
+    "gosura",
+    "greenlabs",
+    "hato",
+    "honeysql",
+    "jdbc",
+    "kondo",
+    "lacinia",
+    "pmap",
+    "sectime",
+    "sinsun",
+    "sinsunhi",
+    "upcc",
+    "upsert",
+    "vals",
+    "varchar",
+    "walmartlabs"
+  ],
+  "asciidoc.use_kroki": true,
+  "debug.allowBreakpointsEverywhere": true,
+  "java.import.gradle.java.home": "/opt/homebrew/Cellar/openjdk@11/11.0.20/libexec/openjdk.jdk/Contents/Home",
+  "prettier.configPath": "~/Library/Application Support/Code/User/.prettierrc",
+  "vim.operatorPendingModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "("
+      ],
+      "after": [
+        "i("
+      ]
+    }
+  ],
+  "editor.guides.bracketPairs": "active",
+  "githubPullRequests.pushBranch": "always",
+  "vim.highlightedyank.duration": 200,
+  "markdown-preview-enhanced.previewTheme": "github-light.css",
+  "calva.highlight": {
+    "commentFormStyle": {
+      "fontStyle": "italic"
+    },
+    "enableBracketColors": false,
+    "matchedBracketStyle": {
+      "backgroundColor": "#18EECE44"
+    },
+    "rainbowIndentGuides": true
+  },
+  "vim.statusBarColors.commandlineinprogress": "#007ACC",
+  "nebulaOni.update.restoreConfiguration": {
+    "favoriteSettings": {
+      "background": "Glacial Blue",
+      "comments": "Dark Magenta",
+      "favorite": "Nebula Oni (Pegasus)",
+      "focusBorder": "ON",
+      "fontStyle": "Italic",
+      "highlight": "Ultra Violet",
+      "main": "Sakura"
+    },
+    "themeSettings": {
+      "background": "Grey",
+      "comments": "Dark Violet",
+      "favorite": "OFF",
+      "focusBorder": "ON",
+      "fontStyle": "Italic",
+      "highlight": "Ultra Violet",
+      "main": "Bumblebee"
+    }
+  },
+  "explorer.fileNesting.expand": false,
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        ">"
+      ],
+      "commands": [
+        "editor.action.indentLines"
+      ]
+    },
+    {
+      "before": [
+        "<"
+      ],
+      "commands": [
+        "editor.action.outdentLines"
+      ]
+    },
+    {
+      "before": [
+        "p"
+      ],
+      "after": [
+        "p",
+        "g",
+        "v",
+        "y"
+      ]
+    },
+    {
+      "after": [
+        "%"
+      ],
+      "before": [
+        "t"
+      ]
+    },
+    {
+      "before": [
+        "d",
+        "d"
+      ],
+      "after": [
+        "\"",
+        "_",
+        "d",
+        "d"
+      ]
+    },
+    {
+      "after": [
+        "k"
+      ],
+      "before": [
+        "i"
+      ]
+    },
+    {
+      "after": [
+        "j"
+      ],
+      "before": [
+        "k"
+      ]
+    },
+    {
+      "after": [
+        "h"
+      ],
+      "before": [
+        "j"
+      ]
+    },
+    {
+      "after": [
+        "<C-d>"
+      ],
+      "before": [
+        ","
+      ]
+    },
+    {
+      "after": [
+        "<C-b>"
+      ],
+      "before": [
+        "M"
+      ]
+    },
+    {
+      "after": [
+        "^"
+      ],
+      "before": [
+        "h"
+      ]
+    },
+    {
+      "after": [
+        "$"
+      ],
+      "before": [
+        ";"
+      ]
+    },
+    {
+      "after": [
+        "S"
+      ],
+      "before": [
+        "s"
+      ]
+    },
+    {
+      "before": [
+        "w"
+      ],
+      "commands": [
+        "paredit.sexpRangeExpansion"
+      ]
+    }
+  ],
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "vim.useSystemClipboard": true,
+  "workbench.editorAssociations": {
+    "*.html": "default",
+    "*.ipynb": "jupyter-notebook"
+  },
+  "workbench.editor.highlightModifiedTabs": true,
+  "python.autoComplete.addBrackets": true,
+  "hediet.vscode-drawio.theme": "automatic",
+  "vim.insertModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "j",
+        "j"
+      ],
+      "after": [
+        "<esc>"
+      ]
+    },
+    {
+      "before": [
+        "\u3153",
+        "\u3153"
+      ],
+      "after": [
+        "<esc>"
+      ]
+    }
+  ],
+  "dart.lineLength": 120,
+  "editor.accessibilitySupport": "off",
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": true,
+    "plaintext": false,
+    "markdown": true,
+    "clojure": true,
+    "lua": true,
+    "css": false,
+    "jsonc": false
+  },
+  "calva.jackInEnv": {},
+  "workbench.colorTheme": "Noctis Minimus",
+  "searchEverywhere.include": "**/*.{js,jsx,ts,tsx,clj,cljs,cljd,edn}",
+  "git.ignoreRebaseWarning": true,
+  "diffEditor.maxComputationTime": 0
 }

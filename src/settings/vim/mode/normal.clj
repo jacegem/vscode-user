@@ -7,15 +7,15 @@
    ":" "workbench.action.showCommands"
    "[" "workbench.action.navigateBackInNavigationLocations"
    "]" 	"workbench.action.navigateForwardInNavigationLocations"
-   ";" :S-a ;; insert end cursor
-   :a :o
    [:b] "editor.action.revealDefinition"
    [:c :n] "clojureLsp.refactor.cleanNs"
    [:c :o] "workbench.action.closeEditorsInOtherGroups"
    [:g :m] "magit.status"
    [:g :s] "workbench.action.gotoSymbol"
-   [:g :w] "workbench.action.showAllSymbols"
+   [:g :a] "workbench.action.showAllSymbols"
    [:K] "editor.action.insertLineAfter" ;; 대문자 K
+   [:l :f] "calva.loadFile"
+   [:m :p] "markdown.showPreview"
    [:s :a] "clojureLsp.refactor.addMissingLibspec"
    [:s :b] "paredit.barfSexpForward"
    [:s :c] ["paredit.selectForwardSexp"
@@ -24,17 +24,23 @@
    [:s :d] "paredit.spliceSexp"
    [:s :f] "paredit.slurpSexpForward"
    [:s :g] "workbench.view.scm"
+   [:s :h] "workbench.action.splitEditor"
    [:s :k] "paredit.killListForward"
    [:s :n] "clojureLsp.refactor.cleanNs"
    [:s :r] "paredit.raiseSexp"
    [:s :x]  ["paredit.selectForwardSexp",
              "editor.action.clipboardCutAction",
              "extension.vim_escape"]
+   [:r :b] "debug.removeBreakpoint"
+   [:r :s] "workbench.action.debug.restart"
+
   ;; MODIFIER
+   ;; [:D-b] "workbench.action.navigateForwardInNavigationLocations"
    [:S-j] "workbench.action.previousEditorInGroup" ;; left window
    [:S-l] "workbench.action.nextEditorInGroup" ;; right window
    [:S-r] "editor.action.rename"
   ;; LEADER
+ 
    [:leader :a :e] "workbench.view.explorer"
    [:leader :a :f] "workbench.action.findInFiles"
 ;;  [:leader :a :r] "clojureLsp.refactor.addMissingLibspec"
@@ -50,6 +56,7 @@
    [:leader :d :f] "paredit.killSexpForward"
    [:leader :d :s] "paredit.spliceSexp"
    [:leader :d :j] "paredit.splitSexp"
+   [:leader :d :w] "workbench.action.decreaseViewWidth" 
    [:leader :e :e] "workbench.files.action.showActiveFileInExplorer"
    [:leader :e :f] "clojureLsp.refactor.extractFunction"
    [:leader :f :a] "clojureLsp.refactor.threadFirstAll"
@@ -60,6 +67,8 @@
    [:leader :g :g] "magit.status"
    [:leader :h]	"workbench.action.moveEditorToLeftGroup"
    [:leader :i :s] "clojureLsp.refactor.inlineSymbol"
+   [:leader :i :w] "workbench.action.increaseViewWidth"
+   [:leader :i :h] "workbench.action.increaseViewHeight"
    [:leader :leader :k] "bookmarks.list"
 ;;  FIX 
    [:leader :k]	"bookmarks.toggle"
@@ -145,6 +154,14 @@
 
 (def before-after
   {"=" :i
+   ";" :S-a ;; insert end cursor
+   "," :C-d ;; page half down
+   "m" :C-u  ;; page half up
+   "D-," ","
+   "D-." "."
+   "C-." "."
+   "D-m" :m
+   :a :o
    [:c :i "\""] ["\"" "_" :c :i "\""]
    [:d :d] ["\"" "_" :d :d]
    :f [:leader :leader :leader :b :d :w]
