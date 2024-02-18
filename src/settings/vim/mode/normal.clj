@@ -1,7 +1,6 @@
 (ns settings.vim.mode.normal
   (:require [settings.vim.mode.util :refer [convert-after convert-commands]]))
 
-
 (def before-commands
   {"." "editor.action.quickFix"
    ":" "workbench.action.showCommands"
@@ -14,7 +13,6 @@
    [:g :s] "workbench.action.gotoSymbol"
    [:g :a] "workbench.action.showAllSymbols"
    [:K] "editor.action.insertLineAfter" ;; 대문자 K
-   [:l :f] "calva.loadFile"
    [:m :p] "markdown.showPreview"
    [:s :a] "clojureLsp.refactor.addMissingLibspec"
    [:s :b] "paredit.barfSexpForward"
@@ -24,23 +22,29 @@
    [:s :d] "paredit.spliceSexp"
    [:s :f] "paredit.slurpSexpForward"
    [:s :g] "workbench.view.scm"
+
    [:s :h] "workbench.action.splitEditor"
    [:s :k] "paredit.killListForward"
    [:s :n] "clojureLsp.refactor.cleanNs"
    [:s :r] "paredit.raiseSexp"
+   [:s :s] "workbench.action.toggleSidebarVisibility"
+
    [:s :x]  ["paredit.selectForwardSexp",
              "editor.action.clipboardCutAction",
              "extension.vim_escape"]
-   [:r :b] "debug.removeBreakpoint"
-   [:r :s] "workbench.action.debug.restart"
-
+   ;; [:r :b] "debug.removeBreakpoint"
+   ;; [:r :s] "workbench.action.debug.restart"
+   [:s :z] "workbench.action.toggleZenMode"
   ;; MODIFIER
    ;; [:D-b] "workbench.action.navigateForwardInNavigationLocations"
    [:S-j] "workbench.action.previousEditorInGroup" ;; left window
    [:S-l] "workbench.action.nextEditorInGroup" ;; right window
+   [:S-h] "workbench.action.focusPreviousGroup" ;; right window
+   [:S-t] "workbench.action.terminal.focusPrevious" ;; right window
    [:S-r] "editor.action.rename"
+   [:D-l] "workbench.action.terminal.focusNextPane"
   ;; LEADER
- 
+
    [:leader :a :e] "workbench.view.explorer"
    [:leader :a :f] "workbench.action.findInFiles"
 ;;  [:leader :a :r] "clojureLsp.refactor.addMissingLibspec"
@@ -56,7 +60,7 @@
    [:leader :d :f] "paredit.killSexpForward"
    [:leader :d :s] "paredit.spliceSexp"
    [:leader :d :j] "paredit.splitSexp"
-   [:leader :d :w] "workbench.action.decreaseViewWidth" 
+   [:leader :d :w] "workbench.action.decreaseViewWidth"
    [:leader :e :e] "workbench.files.action.showActiveFileInExplorer"
    [:leader :e :f] "clojureLsp.refactor.extractFunction"
    [:leader :f :a] "clojureLsp.refactor.threadFirstAll"
@@ -92,6 +96,8 @@
    [:leader :p] "workbench.action.showCommands"
    [:leader :q] "workbench.action.closeActiveEditor"
    [:leader :r :a] "paredit.raiseSexp"
+   [:leader :r :b] "debug.removeBreakpoint"
+   ;; [:leader :r :s] "workbench.action.debug.restart"
    [:leader :r :c] "paredit.rewrapCurly"
    [:leader :r :q] "paredit.rewrapQuote"
    [:leader :r :o] {:command "calva.runCustomREPLCommand",
@@ -99,6 +105,7 @@
    [:leader :r :p] "paredit.rewrapParens"
    [:leader :r :s] "paredit.rewrapSquare"
    [:leader :r :t] "calva.runAllTests"
+   [:leader :s :a] "editor.action.sourceAction"
    [:leader :s :f] ["paredit.selectForwardSexp"
                     "execCopy"
                     "extension.vim_escape"]

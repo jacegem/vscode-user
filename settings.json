@@ -619,6 +619,14 @@
     },
     {
       "before": [
+        "<S-h>"
+      ],
+      "commands": [
+        "workbench.action.focusPreviousGroup"
+      ]
+    },
+    {
+      "before": [
         "<S-l>"
       ],
       "commands": [
@@ -713,6 +721,14 @@
     },
     {
       "before": [
+        "<S-t>"
+      ],
+      "commands": [
+        "workbench.action.terminal.focusPrevious"
+      ]
+    },
+    {
+      "before": [
         "<leader>",
         "r",
         "o"
@@ -728,11 +744,12 @@
     },
     {
       "before": [
-        "r",
-        "b"
+        "<leader>",
+        "s",
+        "a"
       ],
       "commands": [
-        "debug.removeBreakpoint"
+        "editor.action.sourceAction"
       ]
     },
     {
@@ -742,15 +759,6 @@
       ],
       "commands": [
         "workbench.view.scm"
-      ]
-    },
-    {
-      "before": [
-        "r",
-        "s"
-      ],
-      "commands": [
-        "workbench.action.debug.restart"
       ]
     },
     {
@@ -780,6 +788,14 @@
       ],
       "commands": [
         "editor.action.revealDefinition"
+      ]
+    },
+    {
+      "before": [
+        "<S-b>"
+      ],
+      "commands": [
+        "editor.action.goToReferences"
       ]
     },
     {
@@ -916,6 +932,16 @@
       ],
       "commands": [
         "paredit.splitSexp"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "r",
+        "b"
+      ],
+      "commands": [
+        "debug.removeBreakpoint"
       ]
     },
     {
@@ -1141,15 +1167,6 @@
     },
     {
       "before": [
-        "l",
-        "f"
-      ],
-      "commands": [
-        "calva.loadFile"
-      ]
-    },
-    {
-      "before": [
         "<leader>",
         "d",
         "f"
@@ -1249,6 +1266,15 @@
       ],
       "commands": [
         "calva.jackIn"
+      ]
+    },
+    {
+      "before": [
+        "s",
+        "s"
+      ],
+      "commands": [
+        "workbench.action.toggleSidebarVisibility"
       ]
     },
     {
@@ -1551,6 +1577,15 @@
     },
     {
       "before": [
+        "s",
+        "z"
+      ],
+      "commands": [
+        "workbench.action.toggleZenMode"
+      ]
+    },
+    {
+      "before": [
         "<leader>",
         "s",
         "t"
@@ -1594,6 +1629,14 @@
       ],
       "commands": [
         "clojureLsp.refactor.addMissingLibspec"
+      ]
+    },
+    {
+      "before": [
+        "<D-l>"
+      ],
+      "commands": [
+        "workbench.action.terminal.focusNextPane"
       ]
     },
     {
@@ -1734,7 +1777,31 @@
     "editorBracketPairGuide.activeBackground6": "#18EECE",
     "tab.activeBorderTop": "#23a6c76c",
     "editorBracketPairGuide.background4": "#B98BF5",
-    "editorBracketPairGuide.activeBackground4": "#B98BF5"
+    "editorBracketPairGuide.activeBackground4": "#B98BF5",
+    "debugConsole.warningForeground": "#D381C3",
+    "debugConsole.errorForeground": "#FDA331",
+    "debugConsole.sourceForeground": "#6FB3D2",
+    "debugConsole.infoForeground": "#E0E0E0",
+    "terminal.background": "#000000",
+    "terminal.foreground": "#E0E0E0",
+    "terminalCursor.background": "#E0E0E0",
+    "terminalCursor.foreground": "#E0E0E0",
+    "terminal.ansiBlack": "#000000",
+    "terminal.ansiBlue": "#6FB3D2",
+    "terminal.ansiBrightBlack": "#B0B0B0",
+    "terminal.ansiBrightBlue": "#6FB3D2",
+    "terminal.ansiBrightCyan": "#76C7B7",
+    "terminal.ansiBrightGreen": "#A1C659",
+    "terminal.ansiBrightMagenta": "#D381C3",
+    "terminal.ansiBrightRed": "#FB0120",
+    "terminal.ansiBrightWhite": "#FFFFFF",
+    "terminal.ansiBrightYellow": "#FDA331",
+    "terminal.ansiCyan": "#76C7B7",
+    "terminal.ansiGreen": "#A1C659",
+    "terminal.ansiMagenta": "#D381C3",
+    "terminal.ansiRed": "#FB0120",
+    "terminal.ansiWhite": "#E0E0E0",
+    "terminal.ansiYellow": "#FDA331"
   },
   "files.insertFinalNewline": true,
   "vim.useCtrlKeys": true,
@@ -2063,6 +2130,110 @@
   "vim.visualModeKeyBindingsNonRecursive": [
     {
       "before": [
+        "p"
+      ],
+      "after": [
+        "p",
+        "g",
+        "v",
+        "y"
+      ]
+    },
+    {
+      "before": [
+        "s"
+      ],
+      "after": [
+        "S"
+      ]
+    },
+    {
+      "before": [
+        "k"
+      ],
+      "after": [
+        "j"
+      ]
+    },
+    {
+      "before": [
+        "j"
+      ],
+      "after": [
+        "h"
+      ]
+    },
+    {
+      "before": [
+        "h"
+      ],
+      "after": [
+        "^"
+      ]
+    },
+    {
+      "before": [
+        ";"
+      ],
+      "after": [
+        "$"
+      ]
+    },
+    {
+      "before": [
+        ","
+      ],
+      "after": [
+        "<C-d>"
+      ]
+    },
+    {
+      "before": [
+        "f"
+      ],
+      "after": [
+        "<leader>",
+        "<leader>",
+        "<leader>",
+        "b",
+        "d",
+        "w"
+      ]
+    },
+    {
+      "before": [
+        "t"
+      ],
+      "after": [
+        "%"
+      ]
+    },
+    {
+      "before": [
+        "\u3151"
+      ],
+      "after": [
+        "k"
+      ]
+    },
+    {
+      "before": [
+        "m"
+      ],
+      "after": [
+        "<C-u>"
+      ]
+    },
+    {
+      "before": [
+        "i"
+      ],
+      "after": [
+        "k"
+      ]
+    },
+    {
+      "before": [
         ">"
       ],
       "commands": [
@@ -2074,102 +2245,7 @@
         "<"
       ],
       "commands": [
-        "editor.action.outdentLines"
-      ]
-    },
-    {
-      "before": [
-        "p"
-      ],
-      "after": [
-        "p",
-        "g",
-        "v",
-        "y"
-      ]
-    },
-    {
-      "after": [
-        "%"
-      ],
-      "before": [
-        "t"
-      ]
-    },
-    {
-      "before": [
-        "d",
-        "d"
-      ],
-      "after": [
-        "\"",
-        "_",
-        "d",
-        "d"
-      ]
-    },
-    {
-      "after": [
-        "k"
-      ],
-      "before": [
-        "i"
-      ]
-    },
-    {
-      "after": [
-        "j"
-      ],
-      "before": [
-        "k"
-      ]
-    },
-    {
-      "after": [
-        "h"
-      ],
-      "before": [
-        "j"
-      ]
-    },
-    {
-      "after": [
-        "<C-d>"
-      ],
-      "before": [
-        ","
-      ]
-    },
-    {
-      "after": [
-        "<C-b>"
-      ],
-      "before": [
-        "M"
-      ]
-    },
-    {
-      "after": [
-        "^"
-      ],
-      "before": [
-        "h"
-      ]
-    },
-    {
-      "after": [
-        "$"
-      ],
-      "before": [
-        ";"
-      ]
-    },
-    {
-      "after": [
-        "S"
-      ],
-      "before": [
-        "s"
+        "editor.action.indentLines"
       ]
     },
     {
@@ -2226,7 +2302,7 @@
     "jsonc": false
   },
   "calva.jackInEnv": {},
-  "workbench.colorTheme": "Noctis Minimus",
+  "workbench.colorTheme": "Atom One Dark",
   "searchEverywhere.include": "**/*.{js,jsx,ts,tsx,clj,cljs,cljd,edn}",
   "git.ignoreRebaseWarning": true,
   "diffEditor.maxComputationTime": 0
