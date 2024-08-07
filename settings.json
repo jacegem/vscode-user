@@ -54,7 +54,7 @@
     "[ ]",
     "[x]",
     "fixme",
-    "new"
+    // "new"
   ],
   "githubPullRequests.queries": [
     {
@@ -2052,12 +2052,14 @@
     "editor.defaultFormatter": "vscode.json-language-features"
   },
   "cSpell.userWords": [
+    "calva",
     "cond",
     "defn",
     "defresolver",
     "dissoc",
     "doall",
     "doseq",
+    "esbenp",
     "farmmorning",
     "fnil",
     "gosura",
@@ -2071,6 +2073,8 @@
     "sectime",
     "sinsun",
     "sinsunhi",
+    "sonarlint",
+    "stylesheet",
     "upcc",
     "upsert",
     "vals",
@@ -2305,5 +2309,91 @@
   "workbench.colorTheme": "Atom One Dark",
   "searchEverywhere.include": "**/*.{js,jsx,ts,tsx,clj,cljs,cljd,edn}",
   "git.ignoreRebaseWarning": true,
-  "diffEditor.maxComputationTime": 0
+  "diffEditor.maxComputationTime": 0,
+  "erd-preview.erdPath": "/opt/homebrew/bin/erd-go",
+  "erd-preview.dotPath": "/opt/homebrew/bin/dot",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "security.workspace.trust.untrustedFiles": "open",
+  "[csharp]": {
+    "editor.maxTokenizationLineLength": 2500
+  },
+  "editor.wordWrapColumn": 120,
+  "sonarlint.rules": {
+    "typescript:S2004": {
+      "level": "off"
+    }
+  },
+  // "window.customTitleBarVisibility": "never",
+  // "window.title": "${activeEditorShort}${separator}${rootName}${sheparator}${profileName}",
+  "window.titleBarStyle": "native",
+  "apc.electron": {
+    "titleBarStyle": "hiddenInset",
+    // "trafficLightPosition": {
+    //   "x": 70,
+    //   "y": 70,
+    // }
+  },
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  "trailing-spaces.trimOnSave": true,
+  // "apc.header": {},
+  // "apc.font.family": "Dank Mono",
+  // "apc.menubar.compact": true,
+  // "apc.menubar.compact": true,
+  // "apc.electron": {
+  //   "backgroundColor": "rgba(123, 123, 123, 0.5)",
+  //   "frame": false,
+  //   "transparent": true,
+  //   "titleBarStyle": "hiddenInset",
+  //   "vibrancy": "ultra-dark",
+  //   "opacity": 0.8, // Range: 0-1 (To go fully transparent, set it to 0)
+  //   "visualEffectState": "active"
+  // }
+  // "apc.electron": {
+  //   "titleBarStyle": "hiddenInset",
+  //   "trafficLightPosition": {
+  //     "x": 7,
+  //     "y": 5
+  //   }
+  // }
+  // "apc.stylesheet": {
+  //   "body": {
+  //     // other panels should be transparent see "workbench.colorCustomizations"
+  //     "background-image": "url(/Users/aleksandarpopovic/imgs/19.png), linear-gradient(to top,rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2))",
+  //     "background-size": "cover",
+  //     "background-blend-mode": "multiply",
+  //     "background-repeat": "no-repeat"
+  //   }
+  // },
+  // "window.density.editorTabHeight": "compact",
+  // "apc.listRow": {
+  //   "height": 19,
+  //   "fontSize": 11
+  // },
+  // "apc.activityBar": {
+  //   "position": "bottom",
+  //   "size": 20
+  // },
+  // "apc.statusBar": {
+  //   "position": "editor-bottom",
+  //   "height": 20,
+  //   "fontSize": 10
+  // },
+  // "apc.electron": {
+  //   "titleBarStyle": "hiddenInset",
+  //   "trafficLightPosition": {
+  //     "x": 7,
+  //     "y": 5
+  //   }
+  // },
 }

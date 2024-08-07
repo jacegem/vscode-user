@@ -253,6 +253,11 @@
 	},
 	{
 		"key": "e",
+		"command": "python.execSelectionInTerminal",
+		"when": "editorTextFocus && !findInputFocussed && !jupyter.ownsSelection && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python' && activeEditor != 'workbench.editor.interactive' && vim.mode != 'Insert' && vim.mode != 'Visual' && vim.mode != 'EasyMotionMode' && vim.mode != 'EasyMotionInputMode'"
+	},
+	{
+		"key": "e",
 		"command": "calva.evaluateCurrentTopLevelForm",
 		"when": "calva:connected && calva:keybindingsEnabled && editorTextFocus && editorLangId == 'clojure' && vim.mode != 'Insert' && vim.mode != 'Visual' && vim.mode != 'EasyMotionMode' && vim.mode != 'EasyMotionInputMode'"
 	},
@@ -571,6 +576,26 @@
 	{
 		"key": "ctrl+shift+alt+cmd+r",
 		"command": "joyride.runCode"
+	},
+	{
+		"key": "alt+j",
+		"command": "workbench.action.gotoLine"
+	},
+	{
+		"key": "cmd+=",
+		"command": "-workbench.action.zoomIn"
+	},
+	{
+		"key": "cmd+-",
+		"command": "-workbench.action.zoomOut"
+	},
+	{
+		"key": "cmd+=",
+		"command": "workbench.action.increaseViewWidth"
+	},
+	{
+		"key": "cmd+-",
+		"command": "workbench.action.decreaseViewWidth"
 	}
 	// {
 	// 	"key": "cmd+alt+.",
