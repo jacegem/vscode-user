@@ -37,11 +37,11 @@
 		"command": "fileutils.moveFile",
 		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
 	},
-	{
-		"key": "e",
-		"command": "workbench.action.focusFirstEditorGroup",
-		"when": "explorerViewletVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
-	},
+	// {
+	// 	"key": "e",
+	// 	"command": "workbench.action.focusFirstEditorGroup",
+	// 	"when": "explorerViewletVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+	// },
 	{
 		"key": "p",
 		"command": "copyRelativeFilePath",
@@ -170,11 +170,11 @@
 		"command": "editor.action.diffReview.next",
 		"when": "isInDiffEditor"
 	},
-	{
-		"key": "cmd+l",
-		"command": "cursorBottom",
-		"when": "textInputFocus"
-	},
+	// {
+	// 	"key": "cmd+l",
+	// 	"command": "cursorBottom",
+	// 	"when": "textInputFocus"
+	// },
 	// {
 	// 	"key": "shift+cmd+enter",
 	// 	"command": "workbench.action.maximizeEditor"
@@ -257,7 +257,7 @@
 		"when": "editorTextFocus && !findInputFocussed && !jupyter.ownsSelection && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python' && activeEditor != 'workbench.editor.interactive' && vim.mode != 'Insert' && vim.mode != 'Visual' && vim.mode != 'EasyMotionMode' && vim.mode != 'EasyMotionInputMode'"
 	},
 	{
-		"key": "e",
+		"key": "e", // clojure
 		"command": "calva.evaluateCurrentTopLevelForm",
 		"when": "calva:connected && calva:keybindingsEnabled && editorTextFocus && editorLangId == 'clojure' && vim.mode != 'Insert' && vim.mode != 'Visual' && vim.mode != 'EasyMotionMode' && vim.mode != 'EasyMotionInputMode'"
 	},
@@ -544,11 +544,11 @@
 		"command": "-workbench.action.quit"
 	},
 	// Toggle between terminal and editor focus
-	{
-		"key": "cmd+k",
-		"command": "workbench.action.terminal.focus",
-		"when": "editorTextFocus"
-	},
+	// {
+	// 	"key": "cmd+k",
+	// 	"command": "workbench.action.terminal.focus",
+	// 	"when": "editorTextFocus"
+	// },
 	{
 		"key": "cmd+k",
 		"command": "workbench.action.focusActiveEditorGroup",
@@ -596,7 +596,17 @@
 	{
 		"key": "cmd+-",
 		"command": "workbench.action.decreaseViewWidth"
-	}
+	},
+	{
+		"key": "alt+l",
+		"command": "expandLineSelection",
+		"when": "textInputFocus"
+	},
+	// {
+	// 	"key": "cmd+l",
+	// 	"command": "-expandLineSelection",
+	// 	"when": "textInputFocus"
+	// }
 	// {
 	// 	"key": "cmd+alt+.",
 	// 	"command": "joyride.runWorkspaceScript"

@@ -4,14 +4,24 @@
 	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
 	// same ids are connected.
 	// Example:
-	"Fat arrow": {
-		"prefix": "fat",
+	"interface Props": {
+		"prefix": "ifp",
+		"body": [
+			"interface Props {",
+			"  className?: string",
+			"$1",
+			"}"
+					],
+		"description": "Arrow Function"
+	},
+	"Arrow Function": {
+		"prefix": "af",
 		"body": [
 			"() => {",
 			"$1",
 			"}"
 					],
-		"description": "Log output to console"
+		"description": "Arrow Function"
 	},
 	"ReactNode Children": {
 		"prefix": "chp",
@@ -33,7 +43,7 @@
 			"export const ${1:FnName} = () => {",
 			"  const onClick = () => {}",
 			"  return ( <div></div>",
-			"    $2",			
+			"    $2",
 			")",
 			"}"			],
 		"description": "Log output to console"
